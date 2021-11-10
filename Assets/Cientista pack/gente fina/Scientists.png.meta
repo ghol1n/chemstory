@@ -1,0 +1,3435 @@
+fileFormatVersion: 2
+guid: 8a176a104913ea54a896a5acf9b286a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1025970987969593984
+    second: Scientists_0
+  - first:
+      213: -5633608352220625748
+    second: Scientists_1
+  - first:
+      213: 5321252413420090899
+    second: Scientists_2
+  - first:
+      213: -3021629066927147837
+    second: Scientists_3
+  - first:
+      213: 6308925597205461675
+    second: Scientists_4
+  - first:
+      213: -8844610274654495465
+    second: Scientists_5
+  - first:
+      213: 6603517881099023766
+    second: Scientists_6
+  - first:
+      213: -950779823138632562
+    second: Scientists_7
+  - first:
+      213: -6756346434989253799
+    second: Scientists_8
+  - first:
+      213: -4529712537140581508
+    second: Scientists_9
+  - first:
+      213: -3972277650907659518
+    second: Scientists_10
+  - first:
+      213: -1333933690851785918
+    second: Scientists_11
+  - first:
+      213: 6864559673772368927
+    second: Scientists_12
+  - first:
+      213: 4895230321273128716
+    second: Scientists_13
+  - first:
+      213: -2254261128395578819
+    second: Scientists_14
+  - first:
+      213: -6395557279507797638
+    second: Scientists_15
+  - first:
+      213: -910913621811295572
+    second: Scientists_16
+  - first:
+      213: -1073717717327213970
+    second: Scientists_17
+  - first:
+      213: -2595824705902934175
+    second: Scientists_18
+  - first:
+      213: 6738491566642955445
+    second: Scientists_19
+  - first:
+      213: -7885595049371973892
+    second: Scientists_20
+  - first:
+      213: 8053750763439983301
+    second: Scientists_21
+  - first:
+      213: 2278378449456779881
+    second: Scientists_22
+  - first:
+      213: 2905529093292246308
+    second: Scientists_23
+  - first:
+      213: 4801818253161060368
+    second: Scientists_24
+  - first:
+      213: 4911053000435330766
+    second: Scientists_25
+  - first:
+      213: 1058841611424502915
+    second: Scientists_26
+  - first:
+      213: -4398203679771004624
+    second: Scientists_27
+  - first:
+      213: 4638446239346687264
+    second: Scientists_28
+  - first:
+      213: -1761941084430544656
+    second: Scientists_29
+  - first:
+      213: -6730804494479048956
+    second: Scientists_30
+  - first:
+      213: -438925467260332604
+    second: Scientists_31
+  - first:
+      213: -8382222754144170410
+    second: Scientists_32
+  - first:
+      213: -2264898281234935112
+    second: Scientists_33
+  - first:
+      213: -2094472211704589862
+    second: Scientists_34
+  - first:
+      213: -7863827942434953563
+    second: Scientists_35
+  - first:
+      213: -4934090438831179268
+    second: Scientists_36
+  - first:
+      213: 4391343321369090596
+    second: Scientists_37
+  - first:
+      213: 6574950327577902533
+    second: Scientists_38
+  - first:
+      213: 1962955989871456904
+    second: Scientists_39
+  - first:
+      213: -6553307715630397891
+    second: Scientists_40
+  - first:
+      213: 9068230492594046285
+    second: Scientists_41
+  - first:
+      213: 7763597260656085188
+    second: Scientists_42
+  - first:
+      213: 8295994334817594968
+    second: Scientists_43
+  - first:
+      213: 4535566834381064598
+    second: Scientists_44
+  - first:
+      213: -1230135163682333299
+    second: Scientists_45
+  - first:
+      213: -2439063036663266230
+    second: Scientists_46
+  - first:
+      213: 5843410933646035211
+    second: Scientists_47
+  - first:
+      213: -5977890510357400731
+    second: Scientists_48
+  - first:
+      213: 8512246214548331391
+    second: Scientists_49
+  - first:
+      213: -6384796503504332821
+    second: Scientists_50
+  - first:
+      213: 3798008764947524528
+    second: Scientists_51
+  - first:
+      213: 4599827750840353439
+    second: Scientists_52
+  - first:
+      213: -6646778169601937168
+    second: Scientists_53
+  - first:
+      213: 812094741003487592
+    second: Scientists_54
+  - first:
+      213: -8826329434522379376
+    second: Scientists_55
+  - first:
+      213: 3274595735018815536
+    second: Scientists_56
+  - first:
+      213: 707148361603709973
+    second: Scientists_57
+  - first:
+      213: -6657990106004448485
+    second: Scientists_58
+  - first:
+      213: -3101202834168895162
+    second: Scientists_59
+  - first:
+      213: -7402237913873239150
+    second: Scientists_60
+  - first:
+      213: -6715802310289329495
+    second: Scientists_61
+  - first:
+      213: -3797824382208960813
+    second: Scientists_62
+  - first:
+      213: 8222532068151785468
+    second: Scientists_63
+  - first:
+      213: 2298857614733646089
+    second: Scientists_64
+  - first:
+      213: 8999400002079908442
+    second: Scientists_65
+  - first:
+      213: 3036241259094950393
+    second: Scientists_66
+  - first:
+      213: 370682285762745768
+    second: Scientists_67
+  - first:
+      213: -713522302057682444
+    second: Scientists_68
+  - first:
+      213: -1503266823187827548
+    second: Scientists_69
+  - first:
+      213: -7086599612088817761
+    second: Scientists_70
+  - first:
+      213: 4152612129551369744
+    second: Scientists_71
+  - first:
+      213: 7087312463207289027
+    second: Scientists_72
+  - first:
+      213: -2912331947724853818
+    second: Scientists_73
+  - first:
+      213: 6887620983890445072
+    second: Scientists_74
+  - first:
+      213: -942301617499421170
+    second: Scientists_75
+  - first:
+      213: -2474242781349291537
+    second: Scientists_76
+  - first:
+      213: -8864886169908241125
+    second: Scientists_77
+  - first:
+      213: 4129905690631103205
+    second: Scientists_78
+  - first:
+      213: -7974523876995854839
+    second: Scientists_79
+  - first:
+      213: 7785836103133804453
+    second: Scientists_80
+  - first:
+      213: -7280051998338469741
+    second: Scientists_81
+  - first:
+      213: -2649625353598454991
+    second: Scientists_82
+  - first:
+      213: 7842639067403221197
+    second: Scientists_83
+  - first:
+      213: -4984839962788650998
+    second: Scientists_84
+  - first:
+      213: -4290709877694639833
+    second: Scientists_85
+  - first:
+      213: -6827408749790358917
+    second: Scientists_86
+  - first:
+      213: 5775715576464488339
+    second: Scientists_87
+  - first:
+      213: 5475414165415920733
+    second: Scientists_88
+  - first:
+      213: 7104456825891377586
+    second: Scientists_89
+  - first:
+      213: 1216135092324598362
+    second: Scientists_90
+  - first:
+      213: 2513787695700657334
+    second: Scientists_91
+  - first:
+      213: -4380877519652806420
+    second: Scientists_92
+  - first:
+      213: 7754350348408533531
+    second: Scientists_93
+  - first:
+      213: 8557339140046251501
+    second: Scientists_94
+  - first:
+      213: -4951753393814230220
+    second: Scientists_95
+  - first:
+      213: -761476804125704343
+    second: Scientists_96
+  - first:
+      213: -258015716313484290
+    second: Scientists_97
+  - first:
+      213: 7048636295721310041
+    second: Scientists_98
+  - first:
+      213: 6470921114996930442
+    second: Scientists_99
+  - first:
+      213: 7563429702257129783
+    second: Scientists_100
+  - first:
+      213: 4310465644541830819
+    second: Scientists_101
+  - first:
+      213: 7597258968797139338
+    second: Scientists_102
+  - first:
+      213: 8050872263353220586
+    second: Scientists_103
+  - first:
+      213: 3787576870046228831
+    second: Scientists_104
+  - first:
+      213: 4876719808381533095
+    second: Scientists_105
+  - first:
+      213: -8018970164146517321
+    second: Scientists_106
+  - first:
+      213: -640837283317831746
+    second: Scientists_107
+  - first:
+      213: 3296474062546729178
+    second: Scientists_108
+  - first:
+      213: 6531003463562504451
+    second: Scientists_109
+  - first:
+      213: 7391917216607734283
+    second: Scientists_110
+  - first:
+      213: -2698077266157706950
+    second: Scientists_111
+  - first:
+      213: -4377061413110712135
+    second: Scientists_112
+  - first:
+      213: 2838801226191623574
+    second: Scientists_113
+  - first:
+      213: 5993819971684440267
+    second: Scientists_114
+  - first:
+      213: 5319772118994125818
+    second: Scientists_115
+  - first:
+      213: -6647533721247309899
+    second: Scientists_116
+  - first:
+      213: 11824688062721677
+    second: Scientists_117
+  - first:
+      213: 1677602710383113765
+    second: Scientists_118
+  - first:
+      213: -5948929064419849423
+    second: Scientists_119
+  - first:
+      213: 3753490784499107185
+    second: Scientists_120
+  - first:
+      213: -8535853265538841295
+    second: Scientists_121
+  - first:
+      213: -2866755641785849756
+    second: Scientists_122
+  - first:
+      213: -6217053564283938283
+    second: Scientists_123
+  - first:
+      213: 1244510581265318352
+    second: Scientists_124
+  - first:
+      213: 5891626082380768011
+    second: Scientists_125
+  - first:
+      213: 6567556235762302156
+    second: Scientists_126
+  - first:
+      213: 6919698283237738768
+    second: Scientists_127
+  - first:
+      213: 2828331608395126348
+    second: Scientists_128
+  - first:
+      213: -3955692967655201190
+    second: Scientists_129
+  - first:
+      213: 2305922001988047153
+    second: Scientists_130
+  - first:
+      213: 6508376676468037971
+    second: Scientists_131
+  - first:
+      213: 6003358456008845995
+    second: Scientists_132
+  - first:
+      213: 4833156201437246193
+    second: Scientists_133
+  - first:
+      213: 7178934184726504443
+    second: Scientists_134
+  - first:
+      213: 3749567274857408453
+    second: Scientists_135
+  - first:
+      213: 2347827959306291057
+    second: Scientists_136
+  - first:
+      213: 4619031391269625867
+    second: Scientists_137
+  - first:
+      213: -5306927080847346015
+    second: Scientists_138
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Scientists_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 480
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d373082d403c1f0800000000000000
+      internalID: -1025970987969593984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 480
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca447324d0761d1b0800000000000000
+      internalID: -5633608352220625748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 480
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316381670e2e8d940800000000000000
+      internalID: 5321252413420090899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 480
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4ffc67f540116d0800000000000000
+      internalID: -3021629066927147837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_4
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 448
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baafccf876ecd8750800000000000000
+      internalID: 6308925597205461675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 451
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71dd272e0d1a14580800000000000000
+      internalID: -8844610274654495465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_6
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 452
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695f8d2a68864ab50800000000000000
+      internalID: 6603517881099023766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_7
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 451
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c863ec9c62ec2f0800000000000000
+      internalID: -950779823138632562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_8
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 448
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b1dfac6b2ac32a0800000000000000
+      internalID: -6756346434989253799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_9
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 451
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b2a19627a3321c0800000000000000
+      internalID: -4529712537140581508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_10
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 452
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2030d64c582afd8c0800000000000000
+      internalID: -3972277650907659518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_11
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 451
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2438ada206aec7de0800000000000000
+      internalID: -1333933690851785918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_12
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 416
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f146cae37a0d34f50800000000000000
+      internalID: 6864559673772368927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_13
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 416
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07c4398a0a5fe340800000000000000
+      internalID: 4895230321273128716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 413
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32a203827147b0e0800000000000000
+      internalID: -2254261128395578819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_15
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 416
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7926461a8a6e37a0800000000000000
+      internalID: -6395557279507797638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_16
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 416
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa8fde13e8cb53f0800000000000000
+      internalID: -910913621811295572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_17
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 416
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a0ba5cc636911f0800000000000000
+      internalID: -1073717717327213970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 414
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1670979ee27c9fbd0800000000000000
+      internalID: -2595824705902934175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_19
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 416
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b408b7b06ee38d50800000000000000
+      internalID: 6738491566642955445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_20
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 416
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6ca9f051db09290800000000000000
+      internalID: -7885595049371973892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_21
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 416
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca0f5416aba4cf60800000000000000
+      internalID: 8053750763439983301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_22
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 416
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962d6cfd02d6e9f10800000000000000
+      internalID: 2278378449456779881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_23
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 416
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4254f32f053825820800000000000000
+      internalID: 2905529093292246308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_24
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 416
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018d6a7924c73a240800000000000000
+      internalID: 4801818253161060368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_25
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 416
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece601c1fa0972440800000000000000
+      internalID: 4911053000435330766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_26
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 416
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3841c5ae5d2c1be00800000000000000
+      internalID: 1058841611424502915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_27
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 416
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031fe615e0176f2c0800000000000000
+      internalID: -4398203679771004624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_28
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 384
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d710677421f5040800000000000000
+      internalID: 4638446239346687264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_29
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 387
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0d95b3be35c87e0800000000000000
+      internalID: -1761941084430544656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_30
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 388
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f39fd39f06792a0800000000000000
+      internalID: -6730804494479048956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_31
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 387
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c55311fc9f98e9f0800000000000000
+      internalID: -438925467260332604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_32
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 384
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e4a07e0dc5cab80800000000000000
+      internalID: -8382222754144170410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_33
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 387
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2599e53077190e0800000000000000
+      internalID: -2264898281234935112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_34
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 388
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1db65de90fee2e0800000000000000
+      internalID: -2094472211704589862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_35
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 387
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6af5496221ed290800000000000000
+      internalID: -7863827942434953563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_36
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 352
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9f0d743e6968bb0800000000000000
+      internalID: -4934090438831179268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_37
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 352
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a1df40c7f21fc30800000000000000
+      internalID: 4391343321369090596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_38
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 352
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cd7e13cc7aee3b50800000000000000
+      internalID: 6574950327577902533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_39
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 352
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88273069212dd3b10800000000000000
+      internalID: 1962955989871456904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_40
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 320
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3606028a59fd05a0800000000000000
+      internalID: -6553307715630397891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_41
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 322
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d450f646693d8dd70800000000000000
+      internalID: 9068230492594046285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_42
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 323
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c80a944396ddbb60800000000000000
+      internalID: 7763597260656085188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_43
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 322
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ea479b4ea412370800000000000000
+      internalID: 8295994334817594968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_44
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 320
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6998352610291fe30800000000000000
+      internalID: 4535566834381064598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_45
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 322
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d5ffe069eadeee0800000000000000
+      internalID: -1230135163682333299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_46
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 323
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4486e24715b62ed0800000000000000
+      internalID: -2439063036663266230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_47
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 322
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b090b90d847f71150800000000000000
+      internalID: 5843410933646035211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_48
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 288
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563f7f7c0444a0da0800000000000000
+      internalID: -5977890510357400731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_49
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 284
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b11d215d2912670800000000000000
+      internalID: 8512246214548331391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_50
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 283
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7d77d7865a467a0800000000000000
+      internalID: -6384796503504332821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_51
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 288
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb648859dc35b430800000000000000
+      internalID: 3798008764947524528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_52
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 288
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92c2dce7fed5df30800000000000000
+      internalID: 4599827750840353439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_53
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 288
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f03e0c8876e1c3a0800000000000000
+      internalID: -6646778169601937168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_54
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 286
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869c9714dd3254b00800000000000000
+      internalID: 812094741003487592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_55
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 288
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b18b8a424928580800000000000000
+      internalID: -8826329434522379376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_56
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 288
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0304ec0b873b17d20800000000000000
+      internalID: 3274595735018815536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_57
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 256
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c73e030bb40d900800000000000000
+      internalID: 707148361603709973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_58
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 258
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b1a8d26411a93a0800000000000000
+      internalID: -6657990106004448485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_59
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 259
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649ade4047056f4d0800000000000000
+      internalID: -3101202834168895162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_60
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 258
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29338a806d7f54990800000000000000
+      internalID: -7402237913873239150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_61
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 256
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2f471716dacc2a0800000000000000
+      internalID: -6715802310289329495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_62
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 258
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d61e1b98da6b4bc0800000000000000
+      internalID: -3797824382208960813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_63
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 259
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7f174e95d4c1270800000000000000
+      internalID: 8222532068151785468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_64
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 258
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909966b12de27ef10800000000000000
+      internalID: 2298857614733646089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_65
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 224
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a526f9bfe9a44ec70800000000000000
+      internalID: 8999400002079908442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_66
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 224
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f14db4a655e22a20800000000000000
+      internalID: 3036241259094950393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_67
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 224
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a51b6f239de42500800000000000000
+      internalID: 370682285762745768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_68
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 224
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f968862f3f0916f0800000000000000
+      internalID: -713522302057682444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_69
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 192
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a47249f9c2532be0800000000000000
+      internalID: -1503266823187827548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_70
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 195
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f976600033757ad90800000000000000
+      internalID: -7086599612088817761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_71
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 197
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01643e7faba01a930800000000000000
+      internalID: 4152612129551369744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_72
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 195
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c05ba592213b5260800000000000000
+      internalID: 7087312463207289027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_73
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 192
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cda6d316815597d0800000000000000
+      internalID: -2912331947724853818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_74
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 195
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013015ceaceb59f50800000000000000
+      internalID: 6887620983890445072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_75
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 196
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06cba1eba54ce2f0800000000000000
+      internalID: -942301617499421170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_76
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 195
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9d999ac49b9add0800000000000000
+      internalID: -2474242781349291537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_77
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 160
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d98542ff899f480800000000000000
+      internalID: -8864886169908241125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_78
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 155
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e26eed285f505930800000000000000
+      internalID: 4129905690631103205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_79
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 155
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e8ac2e8ccc45190800000000000000
+      internalID: -7974523876995854839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_80
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 160
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7b3b64fa8dc0c60800000000000000
+      internalID: 7785836103133804453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_81
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 160
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390b9a4674f08fa90800000000000000
+      internalID: -7280051998338469741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_82
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 160
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13335ea77c3aa3bd0800000000000000
+      internalID: -2649625353598454991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_83
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 158
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc87b220ea6a6dc60800000000000000
+      internalID: 7842639067403221197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_84
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 160
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00afc3f67a42dab0800000000000000
+      internalID: -4984839962788650998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_85
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 160
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72150c179165474c0800000000000000
+      internalID: -4290709877694639833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_86
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 160
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b721a5c4aeb2041a0800000000000000
+      internalID: -6827408749790358917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_87
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 128
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3973bda37b6772050800000000000000
+      internalID: 5775715576464488339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_88
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 131
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5402c76c249cfb40800000000000000
+      internalID: 5475414165415920733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_89
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 133
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1da5597d9189260800000000000000
+      internalID: 7104456825891377586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_90
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 131
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5205e05c6490e010800000000000000
+      internalID: 1216135092324598362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_91
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 128
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b44cf23794c2e220800000000000000
+      internalID: 2513787695700657334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_92
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 131
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0a9945b1ff333c0800000000000000
+      internalID: -4380877519652806420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_93
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 132
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1231dcbe8cfc9b60800000000000000
+      internalID: 7754350348408533531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_94
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 131
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5e001fb96c1c670800000000000000
+      internalID: 8557339140046251501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_95
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 96
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b2e5a1686d74bb0800000000000000
+      internalID: -4951753393814230220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_96
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 96
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f336191e0be65f0800000000000000
+      internalID: -761476804125704343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_97
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 96
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3baa2b2185b6cf0800000000000000
+      internalID: -258015716313484290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_98
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 96
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957d46d9d59c1d160800000000000000
+      internalID: 7048636295721310041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_99
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 64
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8777fc38745dc950800000000000000
+      internalID: 6470921114996930442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_100
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 67
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739bcaecd33b6f860800000000000000
+      internalID: 7563429702257129783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_101
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 68
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6e0777aa9d1db30800000000000000
+      internalID: 4310465644541830819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_102
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 67
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81ddc5b7c2ee6960800000000000000
+      internalID: 7597258968797139338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_103
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 64
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aedb63d0ba17abf60800000000000000
+      internalID: 8050872263353220586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_104
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 67
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51679a881d209430800000000000000
+      internalID: 3787576870046228831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_105
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 68
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab31b7e3d69da340800000000000000
+      internalID: 4876719808381533095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_106
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 67
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba479d3f15e6b090800000000000000
+      internalID: -8018970164146517321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_107
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 32
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7a309d2e94b17f0800000000000000
+      internalID: -640837283317831746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_108
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 25
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8f265c1bd6fbd20800000000000000
+      internalID: 3296474062546729178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_109
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 31
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3092d702c09c2aa50800000000000000
+      internalID: 6531003463562504451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_110
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 32
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a8ff06b8d559660800000000000000
+      internalID: 7391917216607734283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_111
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 32
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31ec1e75018e8ad0800000000000000
+      internalID: -2698077266157706950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_112
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 27
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8777fd5dd8143c0800000000000000
+      internalID: -4377061413110712135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_113
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 21
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6955813bca2756720800000000000000
+      internalID: 2838801226191623574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_114
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 32
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc894e3f1835e2350800000000000000
+      internalID: 5993819971684440267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_115
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 32
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af30cae8e80a3d940800000000000000
+      internalID: 5319772118994125818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_116
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 32
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf9f98fc473fb3a0800000000000000
+      internalID: -6647533721247309899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_117
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 32
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8eee8bbd720a2000800000000000000
+      internalID: 11824688062721677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_118
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 32
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5263e9ad6ca084710800000000000000
+      internalID: 1677602710383113765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_119
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 32
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b0241e888217da0800000000000000
+      internalID: -5948929064419849423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_120
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 32
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17585cd4bf3171430800000000000000
+      internalID: 3753490784499107185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_121
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 32
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13503bc0eae8a8980800000000000000
+      internalID: -8535853265538841295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_122
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 32
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468e189beec3738d0800000000000000
+      internalID: -2866755641785849756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_123
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 32
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a974ff8b698b9a0800000000000000
+      internalID: -6217053564283938283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_124
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 32
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1c88ba7c3654110800000000000000
+      internalID: 1244510581265318352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_125
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 32
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b036bbde4b243c150800000000000000
+      internalID: 5891626082380768011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_126
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 32
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc730b9995a42b50800000000000000
+      internalID: 6567556235762302156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_127
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 32
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019044d2de4b70060800000000000000
+      internalID: 6919698283237738768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_128
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 32
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c469669dc90404720800000000000000
+      internalID: 2828331608395126348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_129
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 32
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56a66e343e8a19c0800000000000000
+      internalID: -3955692967655201190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_130
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 0
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1315140f7d7400020800000000000000
+      internalID: 2305922001988047153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_131
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 3
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3599059ba16625a50800000000000000
+      internalID: 6508376676468037971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_132
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 4
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baaaeb565b6305350800000000000000
+      internalID: 6003358456008845995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_133
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 3
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2b4a245f1d21340800000000000000
+      internalID: 4833156201437246193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_134
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 0
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3288afa92b0a360800000000000000
+      internalID: 7178934184726504443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_135
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 3
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c72e470293290430800000000000000
+      internalID: 3749567274857408453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_136
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 4
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1778e24f619259020800000000000000
+      internalID: 2347827959306291057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientists_137
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 3
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b002103e3981a1040800000000000000
+      internalID: 4619031391269625867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

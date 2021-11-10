@@ -1,0 +1,41 @@
+<?php
+
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, GET");
+header("Access-Control-Allow-Headers: *");
+header("Access-Control-Max-Age: 86400");
+
+$servername = "localhost";
+$username = "chemst75_admin";
+$password = "admin";
+$dbname = "chemst75_chemstorydb";
+
+$loginUser = $_POST["loginUser"];
+$loginPass = $_POST["loginPass"];
+
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+
+$sql = "SELECT Senha from usuarios WHERE Email = '" . $loginUser . "'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+      if($row["Senha"] == $loginPass){
+          echo "Login Sucess.";
+      }else
+        echo "Senha inválida";
+    }
+  } else {
+    echo "Usuário inexistente.";
+    echo($loginUser);
+  }
+  $conn->close();
+?>

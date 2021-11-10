@@ -1,0 +1,7 @@
+Scientist1: Idle, movement, take notes, run away 
+
+Scientist2: Idle, movement, scratch head, run away 
+
+Scientist3: Idle, movement, readjust glasses, run away 
+
+Scientist4: Idle, movement, mix chemicals, run away
