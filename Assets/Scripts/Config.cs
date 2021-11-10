@@ -40,7 +40,7 @@ public class Config : MonoBehaviour
 
         bool ingles = GUI.Button(new Rect(Screen.width / 2 - 100, 110, 200, 30), "Português");
         bool som = GUI.Button(new Rect(Screen.width / 2 - 100, 150, 200, 30), ativadotext);
-        bool logar = GUI.Button(new Rect(Screen.width / 2 - 100, 190, 200, 30), "Login");
+        bool logar = GUI.Button(new Rect(Screen.width / 2 - 50, 190, 100, 30), "Voltar");
 
 
 

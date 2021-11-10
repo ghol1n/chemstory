@@ -4,6 +4,8 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
+using System.Net;
+
 public class Web : MonoBehaviour
 {
 
@@ -73,6 +75,15 @@ public class Web : MonoBehaviour
         }
     }
 
+
+    public static string Session()
+    {
+        System.Net.WebClient wc = new System.Net.WebClient();
+        byte[] raw = wc.DownloadData("https://chemstory.space/ip.php");
+
+        return System.Text.Encoding.UTF8.GetString(raw);
+    }
+
     public static IEnumerator ConectarEng(string username, string password)
     {
         WWWForm form = new WWWForm();
@@ -114,7 +125,7 @@ public class Web : MonoBehaviour
         using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/RegisterUser.php", form))
         {
             yield return www.SendWebRequest();
-
+            
             if (www.result != UnityWebRequest.Result.Success)
             {
                 Debug.Log(www.error);
@@ -125,7 +136,10 @@ public class Web : MonoBehaviour
                 if (www.downloadHandler.text.Contains("cadastrado com sucesso."))
                 {
                     Cadastro.invalido = "Cadastrado com sucesso.";
-                }
+                    Thread.Sleep(1000);
+                    SceneManager.LoadScene("Tutorial");
+                    }
+                
                 else
                 {
                     Cadastro.invalido = "Email ou Apelido já cadastrados.";
@@ -157,6 +171,8 @@ public class Web : MonoBehaviour
                 if (www.downloadHandler.text.Contains("cadastrado com sucesso."))
                 {
                     CadastroEng.invalido = "Registered successfully.";
+                    Thread.Sleep(1000);
+                    SceneManager.LoadScene("TutorialEng");
                 }
                 else
                 {
@@ -167,6 +183,8 @@ public class Web : MonoBehaviour
             }
         }
     }
+
+
     // Update is called once per frame
     void Update()
     {

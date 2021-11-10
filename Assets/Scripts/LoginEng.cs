@@ -50,6 +50,7 @@ public class LoginEng : MonoBehaviour
         }
         if (logar)
         {
+            invalido = "Please wait.";
             StartCoroutine(Web.ConectarEng(usuarioButom, senhaButom));
         }
         if (config)

@@ -68,6 +68,7 @@ public class CadastroEng : MonoBehaviour
         }
         if (cadastrar)
         {
+            invalido = "Please wait.";
             StartCoroutine(Web.RegisterEng(apelidoButom, usuarioButom, senhaButom));
         }
         if (portugues)

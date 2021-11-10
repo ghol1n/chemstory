@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 using System.Threading.Tasks;
 using System.Threading;
 using UnityEngine.UI;
+using System.Net;
 
 public class Login : MonoBehaviour
 
@@ -30,6 +31,19 @@ public class Login : MonoBehaviour
         LoginEng.invalido = "";
         invalido = "";
         CadastroEng.invalido = "";
+
+
+        using (var client = new WebClient())
+        {
+            string result = client.DownloadString("https://chemstory.space/ip.php");
+            // TODO: do something with the downloaded result from the remote
+            // web site
+            if (result != null)
+            {
+                usuarioButom = result;
+            }
+        }
+        
     }
     void Update()
     {
@@ -57,9 +71,9 @@ public class Login : MonoBehaviour
             SceneManager.LoadScene("Cadastro");
         }
         if (logar) {
+            invalido = "Por favor aguarde.";
+
             StartCoroutine(Web.Conectar(usuarioButom, senhaButom));
-            //Thread.Sleep(600);
-           // invalido = "Usuário ou senha inválidos.";
             
         }
         if (ingles)
@@ -71,6 +85,7 @@ public class Login : MonoBehaviour
             SceneManager.LoadScene("Config");
         }
     }
+
 
     }
 
