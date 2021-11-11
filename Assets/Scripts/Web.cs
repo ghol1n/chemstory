@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using System.Net;
+using System;
+
 
 public class Web : MonoBehaviour
 {
@@ -76,13 +78,28 @@ public class Web : MonoBehaviour
     }
 
 
-    public static string Session()
+    public static IEnumerator Session()
     {
-        System.Net.WebClient wc = new System.Net.WebClient();
-        byte[] raw = wc.DownloadData("https://chemstory.space/ip.php");
+        WWWForm form = new WWWForm();
 
-        return System.Text.Encoding.UTF8.GetString(raw);
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/ip.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                if(!String.IsNullOrEmpty(www.downloadHandler.text))
+                    Login.usuarioButom = www.downloadHandler.text;
+            }
+        }
     }
+
+
 
     public static IEnumerator ConectarEng(string username, string password)
     {

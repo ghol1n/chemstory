@@ -11,11 +11,11 @@ using System.Net;
 public class Login : MonoBehaviour
 
 {
-
+   // public static string IP;
     [SerializeField]
-    private string usuarioButom = "E-mail";
+    public static string usuarioButom = "E-mail";
     [SerializeField]
-    private string senhaButom = "Senha";
+    public static string senhaButom = "Senha";
     [SerializeField] Image buttonImage;
 
     public static string invalido = "";
@@ -24,26 +24,17 @@ public class Login : MonoBehaviour
     public Texture ingles;
     public float largura;
     public float altura;
-
+    //public static string ip;
+    public bool temIP;
     void Start()
     {
+        temIP = false;
+        usuarioButom = "E-mail";
         Cadastro.invalido = "";
         LoginEng.invalido = "";
         invalido = "";
         CadastroEng.invalido = "";
 
-
-        using (var client = new WebClient())
-        {
-            string result = client.DownloadString("https://chemstory.space/ip.php");
-            // TODO: do something with the downloaded result from the remote
-            // web site
-            if (result != null)
-            {
-                usuarioButom = result;
-            }
-        }
-        
     }
     void Update()
     {
@@ -52,6 +43,13 @@ public class Login : MonoBehaviour
     void OnGUI()
 
     {
+        if (temIP == false)
+        {
+            StartCoroutine(Web.Session());
+            temIP = true;
+        }
+        //int i = 0;
+
 
         GUI.Label(new Rect(Screen.width / 2 - 100, 320, 200, 30), invalido);
 
@@ -66,6 +64,7 @@ public class Login : MonoBehaviour
         
         bool logar = GUI.Button(new Rect(Screen.width / 2 - 100, 230, 200, 30), "Logar");
         bool cadastrar = GUI.Button(new Rect(Screen.width / 2 - 100, 270, 200, 30), "Cadastre-se");
+
         if (cadastrar)
         {
             SceneManager.LoadScene("Cadastro");
@@ -84,6 +83,10 @@ public class Login : MonoBehaviour
         {
             SceneManager.LoadScene("Config");
         }
+        
+
+
+
     }
 
 
