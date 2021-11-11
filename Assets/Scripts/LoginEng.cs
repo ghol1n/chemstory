@@ -10,18 +10,21 @@ public class LoginEng : MonoBehaviour
     public static string invalido = "";
 
     [SerializeField]
-    private string usuarioButom = "Email";
+    public static string usuarioButom = "Email";
     [SerializeField]
-    private string senhaButom = "Password";
+    public static string senhaButom = "Password";
 
 
     public char PasswordChar { get; set; }
     public Texture ingles;
     public float largura;
     public float altura;
+    public bool temIP;
 
     void Start()
     {
+        temIP = false;
+        usuarioButom = "Email";
         Cadastro.invalido = "";
         Login.invalido = "";
         invalido = "";
@@ -34,6 +37,13 @@ public class LoginEng : MonoBehaviour
 
     void OnGUI()
     {
+
+        if (temIP == false)
+        {
+            StartCoroutine(Web.Session());
+            temIP = true;
+        }
+
         GUI.Label(new Rect(Screen.width / 2 - 100, 320, 200, 30), invalido);
 
         bool ingles = GUI.Button(new Rect(Screen.width/2 - 100, 110, 200, 30), "English");

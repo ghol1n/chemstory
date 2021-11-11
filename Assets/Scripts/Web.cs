@@ -92,12 +92,15 @@ public class Web : MonoBehaviour
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
+                //Debug.Log(www.downloadHandler.text);
                 if(!String.IsNullOrEmpty(www.downloadHandler.text))
                     Login.usuarioButom = www.downloadHandler.text;
+                    LoginEng.usuarioButom = www.downloadHandler.text;
             }
         }
     }
+
+
 
 
 

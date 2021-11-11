@@ -16,7 +16,6 @@ public class Login : MonoBehaviour
     public static string usuarioButom = "E-mail";
     [SerializeField]
     public static string senhaButom = "Senha";
-    [SerializeField] Image buttonImage;
 
     public static string invalido = "";
 
@@ -48,7 +47,6 @@ public class Login : MonoBehaviour
             StartCoroutine(Web.Session());
             temIP = true;
         }
-        //int i = 0;
 
 
         GUI.Label(new Rect(Screen.width / 2 - 100, 320, 200, 30), invalido);
