@@ -23,7 +23,7 @@ if ($conn->connect_error) {
 }
 echo "Connected successfully";
 
-$sql = "SELECT * from Usuarios WHERE Email = '" . $loginUser . "' or Apelido = '" . $loginNick . "'";
+$sql = "SELECT * from Usuario WHERE Email = '" . $loginUser . "' or Apelido = '" . $loginNick . "'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -31,7 +31,7 @@ if ($result->num_rows > 0) {
     
         echo "Apelido ou Email já cadastrado.";
   } else {
-    $sql1 = "INSERT INTO Usuarios (Apelido, Email, Senha)
+    $sql1 = "INSERT INTO Usuario (Apelido, Email, Senha)
     VALUES ('". $loginNick ."', '".  $loginUser ."', AES_ENCRYPT('". $loginPass . "', 'zeus'))";
     if ($conn->query($sql1) === TRUE) {
         echo "Usuário cadastrado com sucesso.";

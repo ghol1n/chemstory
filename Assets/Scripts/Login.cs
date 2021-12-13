@@ -42,27 +42,27 @@ public class Login : MonoBehaviour
     void OnGUI()
 
     {
-        if (temIP == false)
+        /*if (temIP == false)
         {
             StartCoroutine(Web.Session());
             temIP = true;
-        }
+        }*/
 
 
         GUI.Label(new Rect(Screen.width / 2 - 100, 320, 200, 30), invalido);
 
-
-        bool ingles = GUI.Button(new Rect(Screen.width / 2 - largura / 2, 110, largura, altura), "Português");
-        bool config = GUI.Button(new Rect(Screen.width / 2 +160, 110, 100, 30), "Configurações");
+        //bool ingles = GUI.Button(new Rect(Screen.width / 2 - largura / 2, 110, largura, altura), "Português");
+        bool ingles = GUI.Button(new Rect(Screen.width / 3 , Screen.width / 6, Screen.width / 3, 30), "Português");
+        bool config = GUI.Button(new Rect(Screen.width / 3 + Screen.width / 3 + 30, Screen.width / 6, Screen.width / 5, 30), "Configurações");
         
 
-        usuarioButom = GUI.TextField(new Rect(Screen.width / 2 - largura / 2, 150, largura, altura), usuarioButom);
-        senhaButom = GUI.PasswordField(new Rect(Screen.width / 2 - 100, 190, 200, 30), senhaButom, "*"[0]);
+        usuarioButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + 30, Screen.width / 3, 30), usuarioButom);
+        senhaButom = GUI.PasswordField(new Rect(Screen.width / 3, Screen.width / 6 + 60, Screen.width / 3, 30), senhaButom, "*"[0]);
 
         
-        bool logar = GUI.Button(new Rect(Screen.width / 2 - 100, 230, 200, 30), "Logar");
-        bool cadastrar = GUI.Button(new Rect(Screen.width / 2 - 100, 270, 200, 30), "Cadastre-se");
-
+        bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 90, Screen.width / 3, 30), "Logar");
+        bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 120, Screen.width / 3, 30), "Cadastre-se");
+       // bool cadastrar = GUI.Button(new Rect(Screen.width / 2 - 100, 270, 200, 30), "Cadastre-se");
         if (cadastrar)
         {
             SceneManager.LoadScene("Cadastro");

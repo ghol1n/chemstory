@@ -32,6 +32,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ConfigEng.unity
     guid: d6d35c84bb733ea4586c4d6e8b0c3dc7
+  - enabled: 1
+    path: Assets/Scenes/lvl_1.unity
+    guid: d077765913d7442469d7c9510934503a
+  - enabled: 1
+    path: Assets/Scenes/lvl_1Eng.unity
+    guid: 97cdeca5b3ee54349b5bf01f710dc6e7
   - enabled: 0
     path: Assets/Bundles/Scenes/Start.unity
     guid: d6c08f41002f6fe4680a88cf753f1a1d

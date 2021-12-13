@@ -6,9 +6,17 @@ using UnityEngine.UI;
 public class Instruction : MonoBehaviour
 {
 
-    string myText = "Bem-vindo a Chemstory, vamos ao tutorial!";
-    public Text viewer;
+    string textointroducao = "Bem-vindo a Chemstory, vamos ao tutorial!          ";
+    string textocomandos = "Para movimentar o personagem utilize as setas do teclado. Para pular utilize a barra de espaco.";
+    string textoobjetivo = "O objetivo é chegar ao fim da fase, onde voce sera direcionado ao desafio. apos realizar o desafio voce tera concluido a fase.";
+    string textoconclusao = "Colecione o maximo de cerejas possivel e conclua a fase no menor tempo para uma boa pontuacao! boa sorte!";
+    string textofase1 = "Fase 1";
 
+    public Text introducao;
+    public Text comandos;
+    public Text objetivo;
+    public Text conclusao;
+    public Text fase1;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +27,38 @@ public class Instruction : MonoBehaviour
     IEnumerator ShowText()
     {
         int count = 0;
-        while(count < myText.Length)
+        while(count < textointroducao.Length)
         {
-            yield return new WaitForSeconds(0.07f);
-            viewer.text += myText[count];
+            yield return new WaitForSeconds(0.05f);
+            introducao.text += textointroducao[count];
+            count++;
+        }
+        count = 0;
+        while (count < textocomandos.Length)
+        {
+            yield return new WaitForSeconds(0.05f);
+            comandos.text += textocomandos[count];
+            count++;
+        }
+        count = 0;
+        while (count < textoobjetivo.Length)
+        {
+            yield return new WaitForSeconds(0.05f);
+            objetivo.text += textoobjetivo[count];
+            count++;
+        }
+        count = 0;
+        while (count < textoconclusao.Length)
+        {
+            yield return new WaitForSeconds(0.05f);
+            conclusao.text += textoconclusao[count];
+            count++;
+        }
+        count = 0;
+        while (count < textofase1.Length)
+        {
+            yield return new WaitForSeconds(0.05f);
+            fase1.text += textofase1[count];
             count++;
         }
     }

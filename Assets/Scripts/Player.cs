@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -28,18 +29,20 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-        Vector3 movment = new Vector3(Input.GetAxis("Horizontal"),0f,0f); 
-        transform.position += movment * Time.deltaTime * Speed;
+        //Vector3 movment = new Vector3(Input.GetAxis("Horizontal"),0f,0f); 
+        //transform.position += movment * Time.deltaTime * Speed;
+        float movement = Input.GetAxis("Horizontal");
+        rig.velocity = new Vector2(movement * Speed, rig.velocity.y);
 
-        if(Input.GetAxis("Horizontal") > 0f){
+        if(movement > 0f){
             anim.SetBool("walk",true);
             transform.eulerAngles = new Vector3(0f,0f,0f);
         }
-         if(Input.GetAxis("Horizontal") < 0f){
+         if(movement < 0f){
             anim.SetBool("walk",true);
             transform.eulerAngles = new Vector3(0f,180f,0f);
         }
-         if(Input.GetAxis("Horizontal") == 0f){
+         if(movement == 0f){
         anim.SetBool("walk",false);
         }
     }
@@ -67,6 +70,11 @@ public class Player : MonoBehaviour
         if(collision.gameObject.layer == 8){
             isJumping = false;
             anim.SetBool("jump",false);
+        }
+        if (collision.gameObject.tag == "spike1")
+        {
+            Debug.Log("Tocou o espinho");
+            SceneManager.LoadScene("lvl_1");
         }
     }
     void OnCollisionExit2D(Collision2D collision){

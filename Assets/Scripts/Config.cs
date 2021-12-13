@@ -38,9 +38,9 @@ public class Config : MonoBehaviour
         // GUI.Label(new Rect(Screen.width / 2 - 100, 320, 200, 30), invalido);
 
 
-        bool ingles = GUI.Button(new Rect(Screen.width / 2 - 100, 110, 200, 30), "Português");
-        bool som = GUI.Button(new Rect(Screen.width / 2 - 100, 150, 200, 30), ativadotext);
-        bool logar = GUI.Button(new Rect(Screen.width / 2 - 50, 190, 100, 30), "Voltar");
+        bool ingles = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6, Screen.width / 3, 30), "Português");
+        bool som = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 33, Screen.width / 3, 30), ativadotext);
+        bool logar = GUI.Button(new Rect(Screen.width / 3 + Screen.width / 15, Screen.width / 6 + 75, Screen.width / 5, 30), "Voltar");
 
 
 

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!-- git web interface version 2.25.1, (C) 2005-2006, Kay Sievers <kay.sievers@vrfy.org>, Christian Gierke -->
+<!-- git core binaries version 2.25.1 -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="gitweb/2.25.1 git/2.25.1"/>
+<meta name="robots" content="index, nofollow"/>
+<title>git.ffmpeg.org Git - ffmpeg.git/summary</title>
+<base href="/gitweb/" />
+<link rel="stylesheet" type="text/css" href="static/gitweb.css"/>
+<link rel="alternate" title="ffmpeg.git - log - RSS feed" href="/gitweb/ffmpeg.git/rss" type="application/rss+xml" />
+<link rel="alternate" title="ffmpeg.git - log - RSS feed (no merges)" href="/gitweb/ffmpeg.git/rss?opt=--no-merges" type="application/rss+xml" />
+<link rel="alternate" title="ffmpeg.git - log - Atom feed" href="/gitweb/ffmpeg.git/atom" type="application/atom+xml" />
+<link rel="alternate" title="ffmpeg.git - log - Atom feed (no merges)" href="/gitweb/ffmpeg.git/atom?opt=--no-merges" type="application/atom+xml" />
+<link rel="shortcut icon" href="static/git-favicon.png" type="image/png" />
+</head>
+<body>
+<div class="page_header">
+<a href="http://git-scm.com/" title="git homepage"><img alt="git" class="logo" height="27" src="static/git-logo.png" width="72" /></a><a href="/">projects</a> / <a href="/gitweb/ffmpeg.git">ffmpeg.git</a> / summary
+</div>
+<form method="get" action="/gitweb/ffmpeg.git" enctype="multipart/form-data"><div class="search">
+<input name="a" type="hidden" value="search" />
+<input name="h" type="hidden" value="HEAD" />
+<select name="st" >
+<option selected="selected" value="commit">commit</option>
+<option value="grep">grep</option>
+<option value="author">author</option>
+<option value="committer">committer</option>
+<option value="pickaxe">pickaxe</option>
+</select> <a href="/gitweb/ffmpeg.git/search_help" title="search help">?</a> search:
+<input type="text" name="s"  />
+<span title="Extended regular expression"><label><input type="checkbox" name="sr" value="1" />re</label></span></div>
+</form>
+<div class="page_nav">
+summary | <a href="/gitweb/ffmpeg.git/shortlog">shortlog</a> | <a href="/gitweb/ffmpeg.git/log">log</a> | <a href="/gitweb/ffmpeg.git/commit/047c362d3cd71605628dc510e0b8747310f1db86">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/047c362d3cd71605628dc510e0b8747310f1db86">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree">tree</a><br/>
+<br/>
+</div>
+<div class="title">&nbsp;</div>
+<table class="projects_list">
+<tr id="metadata_desc"><td>description</td><td>FFmpeg git repo</td></tr>
+<tr id="metadata_lchange"><td>last change</td><td><span class="datetime">Thu, 11 Nov 2021 20:54:46 +0000</span> (21:54 +0100)</td></tr>
+<tr class="metadata_url"><td>URL</td><td>https://git.ffmpeg.org/ffmpeg.git</td></tr>
+</table>
+<div class="header">
+<a class="title" href="/gitweb/ffmpeg.git/shortlog">shortlog</a>
+</div>
+<table class="shortlog">
+<tr class="dark">
+<td title="2021-11-11"><i>6 hours ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Paul+B+Mahol;st=author" title="Search for commits authored by Paul B Mahol">Paul B Mahol</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/047c362d3cd71605628dc510e0b8747310f1db86">avfilter/vf_nlmeans: add x86 SIMD</a> <span class="refs"> <span class="head" title="heads/master"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/master">master</a></span></span></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/047c362d3cd71605628dc510e0b8747310f1db86">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/047c362d3cd71605628dc510e0b8747310f1db86">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/047c362d3cd71605628dc510e0b8747310f1db86">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/047c362d3cd71605628dc510e0b8747310f1db86.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="light">
+<td title="2021-11-11"><i>6 hours ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Paul+B+Mahol;st=author" title="Search for commits authored by Paul B Mahol">Paul B Mahol</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/aebdffb9c5d67171a53be16dbf6649f5f02fb225">avfilter/vf_estdif: allow to change two more options</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/aebdffb9c5d67171a53be16dbf6649f5f02fb225">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/aebdffb9c5d67171a53be16dbf6649f5f02fb225">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/aebdffb9c5d67171a53be16dbf6649f5f02fb225">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/aebdffb9c5d67171a53be16dbf6649f5f02fb225.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="dark">
+<td title="2021-11-11"><i>6 hours ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Paul+B+Mahol;st=author" title="Search for commits authored by Paul B Mahol">Paul B Mahol</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/946493eb3e072b499909f606625480c928834a44" title="avcodec/mlpdec: cover case when &gt;2 channels are in single substream">avcodec/mlpdec: cover case when &gt;2 channels are in... </a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/946493eb3e072b499909f606625480c928834a44">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/946493eb3e072b499909f606625480c928834a44">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/946493eb3e072b499909f606625480c928834a44">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/946493eb3e072b499909f606625480c928834a44.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="light">
+<td title="2021-11-11"><i>6 hours ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Limin+Wang;st=author" title="Search for commits authored by Limin Wang">Limin Wang</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/afcf226b337584f5028265b361d8a5a930696a31">avfilter/af_atilt: use ff_filter_execute()</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/afcf226b337584f5028265b361d8a5a930696a31">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/afcf226b337584f5028265b361d8a5a930696a31">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/afcf226b337584f5028265b361d8a5a930696a31">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/afcf226b337584f5028265b361d8a5a930696a31.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="dark">
+<td title="2021-11-11"><i>14 hours ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Zhao+Zhili;st=author" title="Search for commits authored by Zhao Zhili">Zhao Zhili</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/9fd2b39428165c2319106e82a3c1ca1bba11aa54">avutil/opt: handle whole range of int64_t in av_opt_get_int</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/9fd2b39428165c2319106e82a3c1ca1bba11aa54">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/9fd2b39428165c2319106e82a3c1ca1bba11aa54">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/9fd2b39428165c2319106e82a3c1ca1bba11aa54">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/9fd2b39428165c2319106e82a3c1ca1bba11aa54.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="light">
+<td title="2021-11-10"><i>36 hours ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Andreas+Rheinhardt;st=author" title="Search for commits authored by Andreas Rheinhardt">Andreas Rheinhardt</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/44c65c6cc0ba3a08834b7c4d83cb5f56321f914d" title="fftools/ffmpeg_opt: Fix copyinkf option name in warning message">fftools/ffmpeg_opt: Fix copyinkf option name in warning... </a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/44c65c6cc0ba3a08834b7c4d83cb5f56321f914d">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/44c65c6cc0ba3a08834b7c4d83cb5f56321f914d">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/44c65c6cc0ba3a08834b7c4d83cb5f56321f914d">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/44c65c6cc0ba3a08834b7c4d83cb5f56321f914d.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="dark">
+<td title="2021-11-09"><i>2 days ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Andreas+Rheinhardt;st=author" title="Search for commits authored by Andreas Rheinhardt">Andreas Rheinhardt</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/945b2dcc631a891fcc8c911891fd6730a40b8248">avformat/hls_sample_encryption: Fix precedence</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/945b2dcc631a891fcc8c911891fd6730a40b8248">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/945b2dcc631a891fcc8c911891fd6730a40b8248">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/945b2dcc631a891fcc8c911891fd6730a40b8248">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/945b2dcc631a891fcc8c911891fd6730a40b8248.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="light">
+<td title="2021-11-09"><i>2 days ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Andreas+Rheinhardt;st=author" title="Search for commits authored by Andreas Rheinhardt">Andreas Rheinhardt</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/ddd701fbbf71a85711bbb1fc52f5de86cdca1261">avcodec/speexdec: Remove dead code</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/ddd701fbbf71a85711bbb1fc52f5de86cdca1261">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/ddd701fbbf71a85711bbb1fc52f5de86cdca1261">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/ddd701fbbf71a85711bbb1fc52f5de86cdca1261">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/ddd701fbbf71a85711bbb1fc52f5de86cdca1261.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="dark">
+<td title="2021-11-09"><i>2 days ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Andreas+Rheinhardt;st=author" title="Search for commits authored by Andreas Rheinhardt">Andreas Rheinhardt</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/b59138b6819b97544fd2fc40a27fdac0d75b2287">avcodec/libx264: Simplify copying packet data</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/b59138b6819b97544fd2fc40a27fdac0d75b2287">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/b59138b6819b97544fd2fc40a27fdac0d75b2287">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/b59138b6819b97544fd2fc40a27fdac0d75b2287">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/b59138b6819b97544fd2fc40a27fdac0d75b2287.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="light">
+<td title="2021-11-09"><i>2 days ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Andreas+Rheinhardt;st=author" title="Search for commits authored by Andreas Rheinhardt">Andreas Rheinhardt</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/19ed9236db8796104c5a4f3343596172b01ebd1b">avcodec/libx264: Remove always-false checks</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/19ed9236db8796104c5a4f3343596172b01ebd1b">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/19ed9236db8796104c5a4f3343596172b01ebd1b">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/19ed9236db8796104c5a4f3343596172b01ebd1b">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/19ed9236db8796104c5a4f3343596172b01ebd1b.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="dark">
+<td title="2021-11-09"><i>2 days ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Andreas+Rheinhardt;st=author" title="Search for commits authored by Andreas Rheinhardt">Andreas Rheinhardt</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/6f1130be7880dc9e5e7c812f377dc3e480580704">avcodec/libx264: Check for overflow if necessary</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/6f1130be7880dc9e5e7c812f377dc3e480580704">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/6f1130be7880dc9e5e7c812f377dc3e480580704">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/6f1130be7880dc9e5e7c812f377dc3e480580704">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/6f1130be7880dc9e5e7c812f377dc3e480580704.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="light">
+<td title="2021-11-09"><i>2 days ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Andreas+Rheinhardt;st=author" title="Search for commits authored by Andreas Rheinhardt">Andreas Rheinhardt</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/e5199eebb44fa5b63dcec06d38cab515eaa52b6c">avformat/apngenc: Use UINT16_MAX instead of USHRT_MAX</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/e5199eebb44fa5b63dcec06d38cab515eaa52b6c">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/e5199eebb44fa5b63dcec06d38cab515eaa52b6c">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/e5199eebb44fa5b63dcec06d38cab515eaa52b6c">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/e5199eebb44fa5b63dcec06d38cab515eaa52b6c.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="dark">
+<td title="2021-11-09"><i>2 days ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=songyutong;st=author" title="Search for commits authored by songyutong">songyutong</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/8a969e1280aa7aef31de6bd3db5ce46dc123fde0">avcodec/videotoolboxenc: fix pixel buffer memory leak</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/8a969e1280aa7aef31de6bd3db5ce46dc123fde0">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/8a969e1280aa7aef31de6bd3db5ce46dc123fde0">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/8a969e1280aa7aef31de6bd3db5ce46dc123fde0">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/8a969e1280aa7aef31de6bd3db5ce46dc123fde0.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="light">
+<td title="2021-11-09"><i>2 days ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Paul+B+Mahol;st=author" title="Search for commits authored by Paul B Mahol">Paul B Mahol</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/a13646639fcddb1de3bf08c25a243218cec39a0b" title="avfilter/vf_estdif: do some clip calculations only once in loop">avfilter/vf_estdif: do some clip calculations only... </a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/a13646639fcddb1de3bf08c25a243218cec39a0b">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/a13646639fcddb1de3bf08c25a243218cec39a0b">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/a13646639fcddb1de3bf08c25a243218cec39a0b">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/a13646639fcddb1de3bf08c25a243218cec39a0b.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="dark">
+<td title="2021-11-09"><i>2 days ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Paul+B+Mahol;st=author" title="Search for commits authored by Paul B Mahol">Paul B Mahol</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/dcf83fd59d42b8ee6a601cdf9fc8946a1aa30520" title="avfilter/vf_estdif: export distance cost as filter option">avfilter/vf_estdif: export distance cost as filter... </a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/dcf83fd59d42b8ee6a601cdf9fc8946a1aa30520">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/dcf83fd59d42b8ee6a601cdf9fc8946a1aa30520">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/dcf83fd59d42b8ee6a601cdf9fc8946a1aa30520">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/dcf83fd59d42b8ee6a601cdf9fc8946a1aa30520.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr class="light">
+<td title="2021-11-07"><i>4 days ago</i></td>
+<td class="author"><a class="list" href="/gitweb/ffmpeg.git/search?s=Paul+B+Mahol;st=author" title="Search for commits authored by Paul B Mahol">Paul B Mahol</a></td><td><a class="list subject" href="/gitweb/ffmpeg.git/commit/45dc668aea0edac34969b5a1ff76cf9ad3a09be1">avfilter/f_reverse: readjust frame timestamps for areverse</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/commit/45dc668aea0edac34969b5a1ff76cf9ad3a09be1">commit</a> | <a href="/gitweb/ffmpeg.git/commitdiff/45dc668aea0edac34969b5a1ff76cf9ad3a09be1">commitdiff</a> | <a href="/gitweb/ffmpeg.git/tree/45dc668aea0edac34969b5a1ff76cf9ad3a09be1">tree</a> | <a href="/gitweb/ffmpeg.git/snapshot/45dc668aea0edac34969b5a1ff76cf9ad3a09be1.tar.gz" title="in format: tar.gz">snapshot</a></td>
+</tr>
+<tr>
+<td colspan="4"><a href="/gitweb/ffmpeg.git/shortlog">...</a></td>
+</tr>
+</table>
+<div class="header">
+<a class="title" href="/gitweb/ffmpeg.git/tags">tags</a>
+</div>
+<table class="tags">
+<tr class="dark">
+<td><i>2 weeks ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/7e0d640edf6c3eee1816b105c2f7498c4f948e74">n4.4.1</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/2aa4f5cc8be5e3168191cd13a61178a167687eac">FFmpeg 4.4.1 release</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/2aa4f5cc8be5e3168191cd13a61178a167687eac">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/7e0d640edf6c3eee1816b105c2f7498c4f948e74">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n4.4.1">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n4.4.1">log</a></td>
+</tr><tr class="light">
+<td><i>3 weeks ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/a77521cd5d27e955b16e8097eecefc779ffdcb6d">n4.3.3</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/ba0f51d2272672bf21524e2d875c6329eca72a39">FFmpeg 4.3.3 release</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/ba0f51d2272672bf21524e2d875c6329eca72a39">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/a77521cd5d27e955b16e8097eecefc779ffdcb6d">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n4.3.3">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n4.3.3">log</a></td>
+</tr><tr class="dark">
+<td><i>3 weeks ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/4679bab2feca54585aa2413d89c55ee0ad968635">n2.8.18</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/0283b13ede68db5fecc1bedc61b38e6e6f4d79f3">FFmpeg 2.8.18 release</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/0283b13ede68db5fecc1bedc61b38e6e6f4d79f3">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/4679bab2feca54585aa2413d89c55ee0ad968635">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n2.8.18">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n2.8.18">log</a></td>
+</tr><tr class="light">
+<td><i>3 weeks ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/a5d2008e2a2360d351798e9abe883d603e231442">n4.1.8</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/29d0aa36c4eb59b617d2c2270ad613cb02ec7e43">FFmpeg 4.1.8 release</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/29d0aa36c4eb59b617d2c2270ad613cb02ec7e43">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/a5d2008e2a2360d351798e9abe883d603e231442">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n4.1.8">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n4.1.8">log</a></td>
+</tr><tr class="dark">
+<td><i>3 weeks ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/79ea2bba3f64cca267cc65a4d2fb8acd91e29e51">n3.2.16</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/21fae029d38b373934ae9b68cfa0ac63f0e31911">FFmpeg 3.2.16 release</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/21fae029d38b373934ae9b68cfa0ac63f0e31911">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/79ea2bba3f64cca267cc65a4d2fb8acd91e29e51">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n3.2.16">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n3.2.16">log</a></td>
+</tr><tr class="light">
+<td><i>3 weeks ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/60037d6693f51d475e1b619c0763234287fcf422">n4.2.5</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/2c0c8b602cff632a3a7e1c332617d34fce4ed719">FFmpeg 4.2.5 release</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/2c0c8b602cff632a3a7e1c332617d34fce4ed719">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/60037d6693f51d475e1b619c0763234287fcf422">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n4.2.5">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n4.2.5">log</a></td>
+</tr><tr class="dark">
+<td><i>4 weeks ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/1eca11f81a0204acfc85748c5f8d3c95719d8bab">n3.4.9</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/4d76a1a975c5a596b06b07fcfb2c41469baaa944">FFmpeg 3.4.9 release</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/4d76a1a975c5a596b06b07fcfb2c41469baaa944">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/1eca11f81a0204acfc85748c5f8d3c95719d8bab">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n3.4.9">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n3.4.9">log</a></td>
+</tr><tr class="light">
+<td><i>2 months ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/fbb83f3d413fa33cd543015856b0171d0bd7de11">n4.1.7</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/ee8b1aab773f5865fc737545bc0c7afb4b3892ce">FFmpeg 4.1.7 release</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/ee8b1aab773f5865fc737545bc0c7afb4b3892ce">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/fbb83f3d413fa33cd543015856b0171d0bd7de11">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n4.1.7">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n4.1.7">log</a></td>
+</tr><tr class="dark">
+<td><i>7 months ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/c361fa9e215cf21fb0e5b3395d675aec3d216719">n4.5-dev</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/3187c3628c0c05e2e02968c2ac1449e15f0fad3e" title="Main development, master branch after release/4.4 branched off">Main development, master branch... </a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/3187c3628c0c05e2e02968c2ac1449e15f0fad3e">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/c361fa9e215cf21fb0e5b3395d675aec3d216719">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n4.5-dev">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n4.5-dev">log</a></td>
+</tr><tr class="light">
+<td><i>7 months ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/dc91b913b6260e85e1304c74ff7bb3c22a8c9fb1">n4.4</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/09c358362008e2d04cec8239526c6827543da4cf">FFmpeg 4.4 release</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/09c358362008e2d04cec8239526c6827543da4cf">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/dc91b913b6260e85e1304c74ff7bb3c22a8c9fb1">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n4.4">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n4.4">log</a></td>
+</tr><tr class="dark">
+<td><i>8 months ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/f719f869907764e6412a6af6e178c46e5f915d25">n4.3.2</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/c872040562ef2988b107a01921dcc20c18b2deef">FFmpeg 4.3.2 release</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/c872040562ef2988b107a01921dcc20c18b2deef">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/f719f869907764e6412a6af6e178c46e5f915d25">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n4.3.2">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n4.3.2">log</a></td>
+</tr><tr class="light">
+<td><i>16 months ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/6b6b9e593dd4d3aaf75f48d40a13ef03bdef9fdb">n4.3.1</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/a3a26a98652fbdaa474e95cfbc12f68b64ca1e6f">FFmpeg 4.3.1 release</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/a3a26a98652fbdaa474e95cfbc12f68b64ca1e6f">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/6b6b9e593dd4d3aaf75f48d40a13ef03bdef9fdb">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n4.3.1">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n4.3.1">log</a></td>
+</tr><tr class="dark">
+<td><i>16 months ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/f9f95ceebfbd7b7f43c1b7ad34e25d366e6e2d2b">n4.2.4</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/7e04a97fdb8cc511cfa11e6215200097a78328bf">FFmpeg 4.2.4 release</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/7e04a97fdb8cc511cfa11e6215200097a78328bf">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/f9f95ceebfbd7b7f43c1b7ad34e25d366e6e2d2b">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n4.2.4">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n4.2.4">log</a></td>
+</tr><tr class="light">
+<td><i>16 months ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/d5b9ecc2d1ed345282064e41a2d6fbe4fa03bb4e">n2.8.17</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/62afc82a6e0d068e161f4f600eca37cb917137be">FFmpeg 2.8.17</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/62afc82a6e0d068e161f4f600eca37cb917137be">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/d5b9ecc2d1ed345282064e41a2d6fbe4fa03bb4e">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n2.8.17">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n2.8.17">log</a></td>
+</tr><tr class="dark">
+<td><i>16 months ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/918a41d40e8459aee8c415d2f8692bb8a54dfef0">n4.1.6</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/d95ff17343f6cd7a0b1f9a0f46fe37e7a2661309">FFmpeg 4.1.6 release</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/d95ff17343f6cd7a0b1f9a0f46fe37e7a2661309">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/918a41d40e8459aee8c415d2f8692bb8a54dfef0">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n4.1.6">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n4.1.6">log</a></td>
+</tr><tr class="light">
+<td><i>16 months ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/commit/567c20f78109588620c57696ab39ff314fe12d6c">n3.4.8</a></td>
+<td><a class="list subject" href="/gitweb/ffmpeg.git/tag/7acacc49dee9c2a0a16f978204b2e4a5a43eba86">FFmpeg release 3.4.8</a></td>
+<td class="selflink"><a href="/gitweb/ffmpeg.git/tag/7acacc49dee9c2a0a16f978204b2e4a5a43eba86">tag</a></td>
+<td class="link"> | <a href="/gitweb/ffmpeg.git/commit/567c20f78109588620c57696ab39ff314fe12d6c">commit</a> | <a href="/gitweb/ffmpeg.git/shortlog/refs/tags/n3.4.8">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/tags/n3.4.8">log</a></td>
+</tr><tr>
+<td colspan="5"><a href="/gitweb/ffmpeg.git/tags">...</a></td>
+</tr>
+</table>
+<div class="header">
+<a class="title" href="/gitweb/ffmpeg.git/heads">heads</a>
+</div>
+<table class="heads">
+<tr class="dark">
+<td><i>6 hours ago</i></td>
+<td class="current_head"><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/master">master</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/master">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/master">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/master">tree</a></td>
+</tr><tr class="light">
+<td><i>6 days ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/4.4">release/4.4</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/4.4">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/4.4">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/4.4">tree</a></td>
+</tr><tr class="dark">
+<td><i>3 weeks ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/4.3">release/4.3</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/4.3">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/4.3">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/4.3">tree</a></td>
+</tr><tr class="light">
+<td><i>3 weeks ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/2.8">release/2.8</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/2.8">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/2.8">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/2.8">tree</a></td>
+</tr><tr class="dark">
+<td><i>3 weeks ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/4.1">release/4.1</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/4.1">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/4.1">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/4.1">tree</a></td>
+</tr><tr class="light">
+<td><i>3 weeks ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/3.2">release/3.2</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/3.2">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/3.2">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/3.2">tree</a></td>
+</tr><tr class="dark">
+<td><i>4 weeks ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/4.2">release/4.2</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/4.2">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/4.2">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/4.2">tree</a></td>
+</tr><tr class="light">
+<td><i>4 weeks ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/3.4">release/3.4</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/3.4">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/3.4">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/3.4">tree</a></td>
+</tr><tr class="dark">
+<td><i>13 months ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/4.0">release/4.0</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/4.0">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/4.0">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/4.0">tree</a></td>
+</tr><tr class="light">
+<td><i>16 months ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/3.3">release/3.3</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/3.3">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/3.3">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/3.3">tree</a></td>
+</tr><tr class="dark">
+<td><i>17 months ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/3.0">release/3.0</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/3.0">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/3.0">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/3.0">tree</a></td>
+</tr><tr class="light">
+<td><i>17 months ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/3.1">release/3.1</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/3.1">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/3.1">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/3.1">tree</a></td>
+</tr><tr class="dark">
+<td><i>3 years ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/2.4">release/2.4</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/2.4">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/2.4">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/2.4">tree</a></td>
+</tr><tr class="light">
+<td><i>5 years ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/2.7">release/2.7</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/2.7">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/2.7">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/2.7">tree</a></td>
+</tr><tr class="dark">
+<td><i>5 years ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/2.6">release/2.6</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/2.6">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/2.6">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/2.6">tree</a></td>
+</tr><tr class="light">
+<td><i>5 years ago</i></td>
+<td><a class="list name" href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/2.5">release/2.5</a></td>
+<td class="link"><a href="/gitweb/ffmpeg.git/shortlog/refs/heads/release/2.5">shortlog</a> | <a href="/gitweb/ffmpeg.git/log/refs/heads/release/2.5">log</a> | <a href="/gitweb/ffmpeg.git/tree/refs/heads/release/2.5">tree</a></td>
+</tr><tr>
+<td colspan="3"><a href="/gitweb/ffmpeg.git/heads">...</a></td>
+</tr>
+</table>
+<div class="page_footer">
+<div class="page_footer_text">FFmpeg git repo</div>
+<a class="rss_logo" href="/gitweb/ffmpeg.git/rss" title="log RSS feed">RSS</a>
+<a class="rss_logo" href="/gitweb/ffmpeg.git/atom" title="log Atom feed">Atom</a>
+</div>
+<script type="text/javascript" src="static/gitweb.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+	var tz_cookie = { name: 'gitweb_tz', expires: 14, path: '/' };
+	onloadTZSetup('local', tz_cookie, 'datetime');
+};
+</script>
+</body>
+</html>

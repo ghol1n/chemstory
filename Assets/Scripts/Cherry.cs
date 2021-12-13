@@ -27,8 +27,8 @@ public class Cherry : MonoBehaviour
             circle.enabled = false;
             collected.SetActive(true);
 
-            GameController.instance.totalScore += Score;
-            GameController.instance.UpdateScoreText();
+            GameController1.totalScore += Score;
+            GameController1.instance.UpdateScoreText();
 
             Destroy(gameObject, 0.25f);
         }
