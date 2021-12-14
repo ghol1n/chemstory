@@ -24,11 +24,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/challange_1.unity
+    guid: a6e76fbc521ede24f8c232f14a915e4b
+  - enabled: 1
     path: Assets/Scenes/TutorialEng.unity
     guid: dfa8649033787ca41a0eb2e742bc77cf
   - enabled: 1
     path: Assets/Scenes/Config.unity
     guid: d6d7c8eba9ca21846a1668de23aa2219
+  - enabled: 1
+    path: Assets/Scenes/Pontuacao.unity
+    guid: 3d7cf01b86bc76746821fa3b240d2292
   - enabled: 1
     path: Assets/Scenes/ConfigEng.unity
     guid: d6d35c84bb733ea4586c4d6e8b0c3dc7

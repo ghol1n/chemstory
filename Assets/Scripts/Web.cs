@@ -64,6 +64,7 @@ public class Web : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("Login Sucess")) 
                 {
+                    
                     SceneManager.LoadScene("Tutorial");
 
                 }
@@ -93,9 +94,10 @@ public class Web : MonoBehaviour
             else
             {
                 //Debug.Log(www.downloadHandler.text);
-                if(!String.IsNullOrEmpty(www.downloadHandler.text))
-                    Login.usuarioButom = www.downloadHandler.text;
+                if (!String.IsNullOrEmpty(www.downloadHandler.text)) { 
+                Login.usuarioButom = www.downloadHandler.text;
                     LoginEng.usuarioButom = www.downloadHandler.text;
+                };
             }
         }
     }
@@ -135,6 +137,27 @@ public class Web : MonoBehaviour
         }
     }
 
+    public static IEnumerator getUserId(string username)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("loginUser", username);
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/getId.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                Login.usuarioid = www.downloadHandler.text;
+            }
+        }
+    }
+
     public static IEnumerator Register(string nickname,string username, string password)
     {
         WWWForm form = new WWWForm();
@@ -155,6 +178,7 @@ public class Web : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("cadastrado com sucesso."))
                 {
+                    Login.usuario = username;
                     Cadastro.invalido = "Cadastrado com sucesso.";
                     Thread.Sleep(1000);
                     SceneManager.LoadScene("Tutorial");
@@ -190,6 +214,7 @@ public class Web : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("cadastrado com sucesso."))
                 {
+                    Login.usuario = username;
                     CadastroEng.invalido = "Registered successfully.";
                     Thread.Sleep(1000);
                     SceneManager.LoadScene("TutorialEng");
@@ -204,9 +229,36 @@ public class Web : MonoBehaviour
         }
     }
 
+    
 
-    // Update is called once per frame
-    void Update()
+        public static IEnumerator Pontuar(int numfase, int coletaveis, int tempo, string usuario, int pontuacao)
+        {
+            WWWForm form = new WWWForm();
+            form.AddField("numfase", numfase);
+            form.AddField("coletaveis", coletaveis);
+            form.AddField("tempo", tempo);
+            form.AddField("usuario", usuario);
+            form.AddField("pontuacao", pontuacao);
+
+            using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/PontuarFase.php", form))
+            {
+                yield return www.SendWebRequest();
+
+                if (www.result != UnityWebRequest.Result.Success)
+                {
+                    Debug.Log(www.error);
+                }
+                else
+                {
+                    Debug.Log(www.downloadHandler.text);
+                        SceneManager.LoadScene("Pontuacao");
+
+                }
+            }
+        }
+
+        // Update is called once per frame
+        void Update()
     {
         
     }

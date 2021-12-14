@@ -60,6 +60,7 @@ public class LoginEng : MonoBehaviour
         }
         if (logar)
         {
+            Login.usuario = usuarioButom;
             invalido = "Please wait.";
             StartCoroutine(Web.ConectarEng(usuarioButom, senhaButom));
         }

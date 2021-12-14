@@ -18,7 +18,8 @@ public class Login : MonoBehaviour
     public static string senhaButom = "Senha";
 
     public static string invalido = "";
-
+    public static string usuario;
+    public static string usuarioid;
     public char PasswordChar { get; set; }
     public Texture ingles;
     public float largura;
@@ -33,6 +34,7 @@ public class Login : MonoBehaviour
         LoginEng.invalido = "";
         invalido = "";
         CadastroEng.invalido = "";
+
 
     }
     void Update()
@@ -69,8 +71,9 @@ public class Login : MonoBehaviour
         }
         if (logar) {
             invalido = "Por favor aguarde.";
-
+            Login.usuario = usuarioButom;
             StartCoroutine(Web.Conectar(usuarioButom, senhaButom));
+            Debug.Log(usuario);
             
         }
         if (ingles)
