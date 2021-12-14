@@ -19,13 +19,13 @@ if ($conn->connect_error) {
 }
 //echo "Connected successfully $var <br>";
 
-$sql = "SELECT * from Progresso_Fase WHERE Usuario = $usuario;";
+$sql = "SELECT * from Progresso_Fase WHERE Usuario = '" . $usuario . "' ORDER BY created_at DESC LIMIT 1;";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-      echo "Fase: ". $row["NumFase"]. " UsuÁrio: " . $row["Usuario"]. " ColetÁveis: " . $row["Coletaveis"]. " Tempo de ConclusÃo: " . $row["TempoConclusao"]. " PontuaÇÃo: ". $row["Pontuacao"]. " ConcluÍdo em: ".$row[created_at]. ";"
+      echo "Level: ". $row["NumFase"]. "                                     Username: " . $row["Usuario"]. "                              Collectables: " . $row["Coletaveis"]. "                                   Completion Time: " . $row["TempoConclusao"]. "                                Pontuation: ". $row["Pontuacao"]. "                                   Finished in: ".$row[created_at]. ";";
     }
   } else {
     echo "0 results";

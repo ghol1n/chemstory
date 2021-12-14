@@ -44,6 +44,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/lvl_1Eng.unity
     guid: 97cdeca5b3ee54349b5bf01f710dc6e7
+  - enabled: 1
+    path: Assets/Scenes/challange_1Eng.unity
+    guid: a0435d52f417de247b2a448eaee62e24
+  - enabled: 1
+    path: Assets/Scenes/Correto.unity
+    guid: f6e74ddb264276049baed80eb1f25abe
+  - enabled: 1
+    path: Assets/Scenes/PontuacaoEng.unity
+    guid: c67989928a57fe84ca458b69339af728
   - enabled: 0
     path: Assets/Bundles/Scenes/Start.unity
     guid: d6c08f41002f6fe4680a88cf753f1a1d

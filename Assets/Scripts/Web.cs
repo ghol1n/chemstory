@@ -125,7 +125,7 @@ public class Web : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("Login Sucess"))
                 {
-                    SceneManager.LoadScene("Tutorial");
+                    SceneManager.LoadScene("TutorialEng");
                 }
                 else
                 {
@@ -257,8 +257,76 @@ public class Web : MonoBehaviour
             }
         }
 
-        // Update is called once per frame
-        void Update()
+    public static IEnumerator PontuarEng(int numfase, int coletaveis, int tempo, string usuario, int pontuacao)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("numfase", numfase);
+        form.AddField("coletaveis", coletaveis);
+        form.AddField("tempo", tempo);
+        form.AddField("usuario", usuario);
+        form.AddField("pontuacao", pontuacao);
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/PontuarFase.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                SceneManager.LoadScene("PontuacaoEng");
+
+            }
+        }
+    }
+
+    public static IEnumerator GetPontuacao(string usuario)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("usuario", usuario);
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetPontuacaoFase.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                GetPontuacaoFase.pontuacao = www.downloadHandler.text;
+            }
+        }
+    }
+
+    public static IEnumerator GetPontuacaoEng(string usuario)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("usuario", usuario);
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetPontuacaoFaseEng.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                GetPontuacaoFaseEng.pontuacao = www.downloadHandler.text;
+            }
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
     {
         
     }
