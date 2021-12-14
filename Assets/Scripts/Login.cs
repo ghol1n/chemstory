@@ -51,7 +51,7 @@ public class Login : MonoBehaviour
         }*/
 
 
-        GUI.Label(new Rect(Screen.width / 2 - 100, 320, 200, 30), invalido);
+        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + 150, Screen.width / 3, 30), invalido);
 
         //bool ingles = GUI.Button(new Rect(Screen.width / 2 - largura / 2, 110, largura, altura), "Português");
         bool ingles = GUI.Button(new Rect(Screen.width / 3 , Screen.width / 6, Screen.width / 3, 30), "Português");

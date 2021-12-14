@@ -51,7 +51,7 @@ public class Cadastro : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(Screen.width / 2 - 100, 360, 200, 40), invalido);
+        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + 180, Screen.width / 3, 30), invalido);
         bool ingles = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6, Screen.width / 3, 30), "Português");
 
         apelidoButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + 30, Screen.width / 3, 30), apelidoButom);
