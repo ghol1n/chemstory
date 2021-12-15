@@ -26,15 +26,17 @@ public class Login : MonoBehaviour
     public float altura;
     //public static string ip;
     public bool temIP;
+    GUIStyle black = new GUIStyle();
+
     void Start()
     {
+        black.normal.textColor = Color.black;
         temIP = false;
         usuarioButom = "E-mail";
         Cadastro.invalido = "";
         LoginEng.invalido = "";
         invalido = "";
         CadastroEng.invalido = "";
-
 
     }
     void Update()
@@ -51,20 +53,17 @@ public class Login : MonoBehaviour
         }*/
 
 
-        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + 150, Screen.width / 3, 30), invalido);
+        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + 180, Screen.width / 3, 30), invalido, black);
 
-        //bool ingles = GUI.Button(new Rect(Screen.width / 2 - largura / 2, 110, largura, altura), "Português");
         bool ingles = GUI.Button(new Rect(Screen.width / 3 , Screen.width / 6, Screen.width / 3, 30), "Português");
         bool config = GUI.Button(new Rect(Screen.width / 3 + Screen.width / 3 + 30, Screen.width / 6, Screen.width / 5, 30), "Configurações");
         
 
         usuarioButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + 30, Screen.width / 3, 30), usuarioButom);
         senhaButom = GUI.PasswordField(new Rect(Screen.width / 3, Screen.width / 6 + 60, Screen.width / 3, 30), senhaButom, "*"[0]);
-
         
         bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 90, Screen.width / 3, 30), "Logar");
-        bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 120, Screen.width / 3, 30), "Cadastre-se");
-       // bool cadastrar = GUI.Button(new Rect(Screen.width / 2 - 100, 270, 200, 30), "Cadastre-se");
+        bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 150, Screen.width / 3, 30), "Cadastre-se");
         if (cadastrar)
         {
             SceneManager.LoadScene("Cadastro");
@@ -84,8 +83,6 @@ public class Login : MonoBehaviour
         {
             SceneManager.LoadScene("Config");
         }
-        
-
 
 
     }

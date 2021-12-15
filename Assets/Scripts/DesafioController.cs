@@ -21,10 +21,14 @@ public class DesafioController : MonoBehaviour
 
     }
 
+
     public void Correto()
     {
-        int pontuacao = (GameController1.totalScore / GameControllerD1.totalTime) * 100;
-
+        int pontuacao = (GameController1.totalScore / GameControllerD1.totalTime) * 175;
+        if (pontuacao < GameController1.totalScore)
+        {
+            pontuacao = GameController1.totalScore;
+        }
         //  Debug.Log(GameController1.totalScore);
         // Debug.Log(GameControllerD1.totalTime);
         Debug.Log(Login.usuario);

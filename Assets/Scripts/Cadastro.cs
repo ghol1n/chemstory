@@ -31,11 +31,10 @@ public class Cadastro : MonoBehaviour
 
     private static GameObject gameObj;
 
-
-
-    // Start is called before the first frame update 
+    GUIStyle black = new GUIStyle();
     void Start()
     {
+        black.normal.textColor = Color.black;
         invalido = "";
         Login.invalido = "";
         LoginEng.invalido = "";
@@ -51,7 +50,7 @@ public class Cadastro : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + 180, Screen.width / 3, 30), invalido);
+        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + 210, Screen.width / 3, 30), invalido, black);
         bool ingles = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6, Screen.width / 3, 30), "Português");
 
         apelidoButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + 30, Screen.width / 3, 30), apelidoButom);
@@ -60,7 +59,7 @@ public class Cadastro : MonoBehaviour
 
         senhaButom = GUI.PasswordField(new Rect(Screen.width / 3, Screen.width / 6 + 90, Screen.width / 3, 30), senhaButom, "*"[0]);
 
-        bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 150, Screen.width / 3, 30), "Fazer login");
+        bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 180, Screen.width / 3, 30), "Fazer login");
         bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 120, Screen.width / 3, 30), "Cadastrar");
         if (logar)
         {

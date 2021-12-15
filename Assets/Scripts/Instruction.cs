@@ -8,7 +8,7 @@ public class Instruction : MonoBehaviour
 
     string textointroducao = "Bem-vindo a Chemstory, vamos ao tutorial!          ";
     string textocomandos = "Para movimentar o personagem utilize as setas do teclado. Para pular utilize a barra de espaco.";
-    string textoobjetivo = "O objetivo … chegar ao fim da fase, onde voc  sera direcionado ao desafio. apos realizar o desafio voce ter¡ concluido a fase.";
+    string textoobjetivo = "O objetivo … chegar ao fim da fase, onde voc  ser¡ direcionado ao desafio. ap”s realizar o desafio voce ter¡ concluÕdo a fase.";
     string textoconclusao = "Colecione o m¡ximo de cerejas possÕvel e conclua a fase no menor tempo para uma boa pontuac√o! boa sorte!";
     string textofase1 = "Fase 1";
 

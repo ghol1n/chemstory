@@ -20,9 +20,10 @@ public class LoginEng : MonoBehaviour
     public float largura;
     public float altura;
     public bool temIP;
-
+    GUIStyle black = new GUIStyle();
     void Start()
     {
+        black.normal.textColor = Color.black;
         temIP = false;
         usuarioButom = "Email";
         Cadastro.invalido = "";
@@ -44,7 +45,7 @@ public class LoginEng : MonoBehaviour
             temIP = true;
         }*/
 
-        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + 150, Screen.width / 3, 30), invalido);
+        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + 180, Screen.width / 3, 30), invalido,black);
 
         bool ingles = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6, Screen.width / 3, 30), "English");
         bool config = GUI.Button(new Rect(Screen.width / 3 + Screen.width / 3 + 30, Screen.width / 6, Screen.width / 5, 30), "Configuration");
@@ -53,7 +54,7 @@ public class LoginEng : MonoBehaviour
         senhaButom = GUI.PasswordField(new Rect(Screen.width / 3, Screen.width / 6 + 60, Screen.width / 3, 30), senhaButom, "*"[0]);
 
         bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 90, Screen.width / 3, 30), "Login");
-        bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 120, Screen.width / 3, 30), "Register");
+        bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 150, Screen.width / 3, 30), "Register");
         if (cadastrar)
         {
             SceneManager.LoadScene("CadastroEng");
