@@ -15,9 +15,11 @@ public class CadastroEng : MonoBehaviour
     private bool emailnulo;
     private bool apelidonulo;
     [SerializeField]
-    private string usuarioButom = "Email";
+    private string usuarioButom = "";
     [SerializeField]
-    private string senhaButom = "Password";
+    private string usuarioSegButom = "";
+    [SerializeField]
+    private string senhaButom = "";
     [SerializeField]
     private string apelidoButom = "Nickname";
 
@@ -34,6 +36,9 @@ public class CadastroEng : MonoBehaviour
     GUIStyle black = new GUIStyle();
     void Start()
     {
+        apelidoButom = "";
+        usuarioButom = "";
+        senhaButom = "";
         Cadastro.invalido = "";
         Login.invalido = "";
         LoginEng.invalido = "";
@@ -50,24 +55,37 @@ public class CadastroEng : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + 210, Screen.width / 3, 30), invalido,black);
-        bool portugues = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6, Screen.width / 3, 30), "English");
+        if (Screen.height < 343)
+        {
+            altura = Screen.height / 11;
+        }
+        else
+        {
+            altura = 30;
+        }
+        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 6, Screen.width / 3, 30), invalido, black);
+        bool ingles = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6, Screen.width / 3, altura), "English");
 
-        apelidoButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + 30, Screen.width / 3, 30), apelidoButom);
+       // apelidoButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + Screen.width / 20, Screen.width / 3, altura), apelidoButom);
 
-        usuarioButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + 60, Screen.width / 3, 30), usuarioButom);
+       // usuarioButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 2, Screen.width / 3, altura), usuarioButom);
 
-        senhaButom = GUI.PasswordField(new Rect(Screen.width / 3, Screen.width / 6 + 90, Screen.width / 3, 30), senhaButom, "*"[0]);
+       // senhaButom = GUI.PasswordField(new Rect(Screen.width / 3, Screen.width / 6 + +(Screen.width / 20) * 3, Screen.width / 3, altura), senhaButom, "*"[0]);
 
-        bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 180, Screen.width / 3, 30), "Login");
-        bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 120, Screen.width / 3, 30), "Register");
+       // usuarioSegButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + +(Screen.width / 20) * 4, Screen.width / 3, altura), usuarioSegButom);
+
+        bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 7, Screen.width / 3, altura), "Login");
+        bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 5, Screen.width / 3, altura), "Register");
         if (logar)
         {
             SceneManager.LoadScene("LoginEng");
         }
         if (cadastrar)
         {
-
+            usuarioButom = Cadastro.usuarioButom;
+            senhaButom = Cadastro.senhaButom;
+            apelidoButom = Cadastro.apelidoButom;
+            usuarioSegButom = Cadastro.usuarioSegButom;
             if ((String.IsNullOrEmpty(usuarioButom)) | String.IsNullOrEmpty(senhaButom) | String.IsNullOrEmpty(apelidoButom))
             {
                 invalido = "Please fill out all fields.";
@@ -84,7 +102,7 @@ public class CadastroEng : MonoBehaviour
                     else
                     {
                         invalido = "Please wait.";
-                        StartCoroutine(Web.RegisterEng(apelidoButom, usuarioButom, senhaButom));
+                        StartCoroutine(Web.RegisterEng(apelidoButom, usuarioButom, senhaButom, usuarioSegButom));
                     }
                 }
                 else
@@ -93,7 +111,7 @@ public class CadastroEng : MonoBehaviour
                 }
             }
         }
-        if (portugues)
+        if (ingles)
         {
             SceneManager.LoadScene("Cadastro");
         }

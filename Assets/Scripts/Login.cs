@@ -7,19 +7,25 @@ using System.Threading.Tasks;
 using System.Threading;
 using UnityEngine.UI;
 using System.Net;
+using TMPro;
+using System;
 
 public class Login : MonoBehaviour
 
 {
-   // public static string IP;
-    [SerializeField]
-    public static string usuarioButom = "E-mail";
-    [SerializeField]
-    public static string senhaButom = "Senha";
+    public static int foi = 0;
+    // public static string IP;
+    public static string usuarioButom = "";
+    public static string usuarioSegButom = "";
+    public static string senhaButom = "";
 
     public static string invalido = "";
+    public static string EmailSeg;
+    public static string SenhaSeg;
     public static string usuario;
     public static string usuarioid;
+
+    public int forgotstep = 0;
     public char PasswordChar { get; set; }
     public Texture ingles;
     public float largura;
@@ -28,11 +34,14 @@ public class Login : MonoBehaviour
     public bool temIP;
     GUIStyle black = new GUIStyle();
 
+    //public TextMeshProUGUI emailinput;
+
+
     void Start()
     {
         black.normal.textColor = Color.black;
         temIP = false;
-        usuarioButom = "E-mail";
+        usuarioButom = "";
         Cadastro.invalido = "";
         LoginEng.invalido = "";
         invalido = "";
@@ -41,9 +50,9 @@ public class Login : MonoBehaviour
     }
     void Update()
     {
-
+       // usuarioButom.Select();
     }
-    void OnGUI()
+    async void OnGUI()
 
     {
         /*if (temIP == false)
@@ -52,18 +61,28 @@ public class Login : MonoBehaviour
             temIP = true;
         }*/
 
-
-        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + 180, Screen.width / 3, 30), invalido, black);
-
-        bool ingles = GUI.Button(new Rect(Screen.width / 3 , Screen.width / 6, Screen.width / 3, 30), "Português");
-        bool config = GUI.Button(new Rect(Screen.width / 3 + Screen.width / 3 + 30, Screen.width / 6, Screen.width / 5, 30), "Configurações");
+        if(Screen.height < 343)
+        {
+            altura = Screen.height / 11;
+        }
+        else
+        {
+            altura = 30;
+        }
+            
+        
+        bool ingles = GUI.Button(new Rect(Screen.width / 3 , Screen.width / 6, Screen.width / 3, altura), "Português");
+        bool config = GUI.Button(new Rect(Screen.width / 3 + Screen.width / 3 + 30, Screen.width / 6, Screen.width / 5, altura), "Configurações");
         
 
-        usuarioButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + 30, Screen.width / 3, 30), usuarioButom);
-        senhaButom = GUI.PasswordField(new Rect(Screen.width / 3, Screen.width / 6 + 60, Screen.width / 3, 30), senhaButom, "*"[0]);
+       // usuarioButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + Screen.width /20, Screen.width / 3, altura), usuarioButom);
+      //  senhaButom = GUI.PasswordField(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20)*2, Screen.width / 3, altura), senhaButom, "*"[0]);
         
-        bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 90, Screen.width / 3, 30), "Logar");
-        bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + 150, Screen.width / 3, 30), "Cadastre-se");
+        bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + +(Screen.width / 20) * 3, Screen.width / 3, altura), "Logar");
+        bool esqueci = GUI.Button(new Rect((Screen.width / 5) * 2, Screen.width / 6 + (Screen.width / 20) * 4, Screen.width / 5, altura / 2 + altura / 8), "Esqueci a senha");
+        bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 5, Screen.width / 3, altura), "Cadastre-se");
+        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 6, Screen.width / 3, altura), invalido, black);
+       // usuarioButom.onFocus();
         if (cadastrar)
         {
             SceneManager.LoadScene("Cadastro");
@@ -72,8 +91,6 @@ public class Login : MonoBehaviour
             invalido = "Por favor aguarde.";
             Login.usuario = usuarioButom;
             StartCoroutine(Web.Conectar(usuarioButom, senhaButom));
-            Debug.Log(usuario);
-            
         }
         if (ingles)
              {
@@ -83,7 +100,28 @@ public class Login : MonoBehaviour
         {
             SceneManager.LoadScene("Config");
         }
-
+        if (esqueci)
+        {
+             invalido = "Por favor aguarde.";
+            
+            StartCoroutine(Web.GetEmailSeg(usuarioButom));
+            StartCoroutine(Web.GetSenha(usuarioButom));
+            
+        }
+        if (foi == 1)
+        {
+            StartCoroutine(Web.Esqueci(usuarioButom, SenhaSeg));
+            foi = 0;
+        }
+        
+        /*if(!System.String.IsNullOrEmpty(EmailSeg))
+        {
+            StartCoroutine(Web.GetSenha(usuarioButom));
+        }
+        if (!System.String.IsNullOrEmpty(SenhaSeg))
+        {
+            StartCoroutine(Web.Esqueci(usuarioButom,SenhaSeg));
+        }*/
 
     }
 

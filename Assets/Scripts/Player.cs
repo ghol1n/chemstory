@@ -75,7 +75,7 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Math.Abs(collision.contacts[0].normal.y) > 0.5f)
+            if (Math.Abs(collision.contacts[0].normal.y) > 0.5f)
             // if (collision.gameObject.layer == 8)
             {
                 isJumping = false;
