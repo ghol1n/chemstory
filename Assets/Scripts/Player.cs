@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public float JumpForce;
 
     public bool isJumping;
-    public bool doubleJump;
+    //public bool doubleJump;
     private Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -58,16 +58,9 @@ public class Player : MonoBehaviour
             if (!isJumping)
             {
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
-                doubleJump = true;
+                //doubleJump = true;
+                isJumping = true;
                 anim.SetBool("jump", true);
-            }
-            else
-            {
-                if (doubleJump)
-                {
-                    rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
-                    doubleJump = false;
-                }
             }
 
         }
@@ -75,25 +68,26 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-            if (Math.Abs(collision.contacts[0].normal.y) > 0.5f)
-            // if (collision.gameObject.layer == 8)
+            
+             if (collision.gameObject.layer == 8)
+           // if (Math.Abs(collision.contacts[0].normal.y) < 0.5f)
             {
                 isJumping = false;
                 anim.SetBool("jump", false);
             }
-            if (collision.gameObject.tag == "spike1")
+        if (collision.gameObject.tag == "spike1")
             {
                 Debug.Log("Tocou o espinho");
                 SceneManager.LoadScene("lvl_1");
             }
         }
-        void OnCollisionExit2D(Collision2D collision)
+       /* void OnCollisionExit2D(Collision2D collision)
         {
-            if (collision.gameObject.layer == 8)
+            if (collision.gameObject.layer != 8)
             {
                 isJumping = true;
             }
-        }
+        }*/
     }
 
 

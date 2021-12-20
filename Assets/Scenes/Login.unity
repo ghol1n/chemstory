@@ -1687,8 +1687,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2066149344}
         m_TargetAssemblyTypeName: tmp, Assembly-CSharp
-        m_MethodName: ReadStringInput
-        m_Mode: 0
+        m_MethodName: StoreName
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1902,7 +1902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2bf16f67f68ca640a8c97c3cbcdba6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  usuario: {fileID: 0}
+  usuario: {fileID: 1390183660}
 --- !u!114 &2066149345
 MonoBehaviour:
   m_ObjectHideFlags: 0
