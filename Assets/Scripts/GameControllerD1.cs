@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class GameControllerD1 : MonoBehaviour
 {
-    public static int numFase = 1;
 
     public static int totalTime;
     public Text timeText;

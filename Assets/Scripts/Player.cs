@@ -78,7 +78,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "spike1")
             {
                 Debug.Log("Tocou o espinho");
-                SceneManager.LoadScene("lvl_1");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
        /* void OnCollisionExit2D(Collision2D collision)

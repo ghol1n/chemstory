@@ -72,9 +72,10 @@ public class LoginEng : MonoBehaviour
         {
            // Login.usuario = usuarioButom;
             invalido = "Please wait.";
+            Login.usuario = Login.usuarioButom;
             StartCoroutine(Web.ConectarEng(Login.usuarioButom, Login.senhaButom));
-            Debug.Log(Login.usuarioButom);
-            Debug.Log(Login.senhaButom);
+            Debug.Log(Login.usuario);
+
         }
         if (config)
         {

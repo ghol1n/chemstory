@@ -254,7 +254,7 @@ public class Web : MonoBehaviour
                 else
                 {
                     Debug.Log(www.downloadHandler.text);
-                        SceneManager.LoadScene("Pontuacao");
+                        SceneManager.LoadScene("Pontuacao_"+numfase.ToString());
 
                 }
             }
@@ -280,7 +280,7 @@ public class Web : MonoBehaviour
             else
             {
                 Debug.Log(www.downloadHandler.text);
-                SceneManager.LoadScene("PontuacaoEng");
+                SceneManager.LoadScene("Pontuacao_" + numfase.ToString()+"Eng");
 
             }
         }
