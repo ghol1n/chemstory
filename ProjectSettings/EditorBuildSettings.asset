@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/aaaa.unity
     guid: 208fceed0f3bdce428b06689d31239c6
   - enabled: 1
+    path: Assets/Scenes/challenge_2.unity
+    guid: d33c77d6ef62786489a7997bd45272b9
+  - enabled: 1
     path: Assets/Scenes/ErradoEng.unity
     guid: d3ee3325487429b4cb13c7ec3df61371
   - enabled: 1
@@ -38,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/lvl_3.unity
     guid: dc301e565b581c447bfad64bc262552a
+  - enabled: 1
+    path: Assets/Scenes/challenge_3.unity
+    guid: f6554b1efd974e54293ad38cc1ba6e65
   - enabled: 1
     path: Assets/Scenes/lvl_3Eng.unity
     guid: f66a6b03ff8eab54388644c8f3385c61
