@@ -512,6 +512,26 @@ public class Web : MonoBehaviour
             }
         }
     }
+
+    public static IEnumerator GetRanking()
+    {
+        WWWForm form = new WWWForm();
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetRanking.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                GetPontuacaoFase.pontuacao = www.downloadHandler.text;
+            }
+        }
+    }
     // Update is called once per frame
     void Update()
     {
