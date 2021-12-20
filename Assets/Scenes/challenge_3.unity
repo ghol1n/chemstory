@@ -308,6 +308,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e22a69523250b94ca4c8a68bb2d6123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextlevel: 
+  numfase: 0
+  currentlevel: 
 --- !u!114 &167043054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,7 +357,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1433073372}
         m_TargetAssemblyTypeName: DesafioController, Assembly-CSharp
-        m_MethodName: Errado
+        m_MethodName: Correto
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -472,7 +475,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "H\xC9lio (He)\n"
+  m_Text: "\xF3leo\n"
 --- !u!222 &504693992
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -595,7 +598,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Cript\xD4nio (Kr)\n"
+  m_Text: gasolina
 --- !u!222 &525996103
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -906,6 +909,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e22a69523250b94ca4c8a68bb2d6123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextlevel: 
+  numfase: 0
+  currentlevel: 
 --- !u!114 &1433073373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1156,7 +1162,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Rad\xD4nio (Rn)"
+  m_Text: "\xE1lcool"
 --- !u!222 &1575525779
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1309,6 +1315,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e22a69523250b94ca4c8a68bb2d6123, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextlevel: 
+  numfase: 0
+  currentlevel: 
 --- !u!114 &1870237467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,7 +1364,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1870237466}
         m_TargetAssemblyTypeName: DesafioController, Assembly-CSharp
-        m_MethodName: Correto
+        m_MethodName: Errado
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1473,8 +1482,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Achamos um bal\xC3o!\nQual g\xC1s podemos usar para que ele flutue e nos
-    leve para a fase 2?\n\n"
+  m_Text: "a \xE1rvore em nossa frente est\xE1 queimando!\nQual liqu\xEDdo podemos
+    usar para apagar o fogo?\n"
 --- !u!222 &1981803595
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1653,7 +1662,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Arg\xD4nio (Ar)"
+  m_Text: "\xC1gua"
 --- !u!222 &2082801174
 CanvasRenderer:
   m_ObjectHideFlags: 0
