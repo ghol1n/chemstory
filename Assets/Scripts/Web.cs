@@ -280,16 +280,17 @@ public class Web : MonoBehaviour
             else
             {
                 Debug.Log(www.downloadHandler.text);
-                SceneManager.LoadScene("Pontuacao_" + numfase.ToString()+"Eng");
+                SceneManager.LoadScene("Pontuacao_" + numfase.ToString()+"");
 
             }
         }
     }
 
-    public static IEnumerator GetPontuacao(string usuario)
+    public static IEnumerator GetPontuacao(string usuario, int numfase)
     {
         WWWForm form = new WWWForm();
         form.AddField("usuario", usuario);
+        form.AddField("numfase", numfase.ToString());
 
         using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetPontuacaoFase.php", form))
         {

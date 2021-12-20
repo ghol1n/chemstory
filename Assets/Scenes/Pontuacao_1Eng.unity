@@ -216,12 +216,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 297570758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e22a69523250b94ca4c8a68bb2d6123, type: 3}
+  m_Script: {fileID: 11500000, guid: c902d1cb3cf4a54428f31f30d1e22e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextlevel: 
-  numfase: 0
   currentlevel: 
+  numfase: 0
 --- !u!114 &297570761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,7 +266,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 297570760}
-        m_TargetAssemblyTypeName: DesafioController, Assembly-CSharp
+        m_TargetAssemblyTypeName: DesafioControllerEng, Assembly-CSharp
         m_MethodName: nextLevel
         m_Mode: 1
         m_Arguments:

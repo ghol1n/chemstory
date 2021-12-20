@@ -56,6 +56,10 @@ public class DesafioController : MonoBehaviour
     {
         SceneManager.LoadScene("lvl_"+(numfase+1).ToString());
     }
+    public void menu()
+    {
+        SceneManager.LoadScene("Login");
+    }
 }
 
 
