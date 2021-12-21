@@ -513,11 +513,11 @@ public class Web : MonoBehaviour
         }
     }
 
-    public static IEnumerator GetRanking()
+    public static IEnumerator GetRankingApelido()
     {
         WWWForm form = new WWWForm();
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetRanking.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetRankingNickname.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -528,7 +528,26 @@ public class Web : MonoBehaviour
             else
             {
                 Debug.Log(www.downloadHandler.text);
-                GetPontuacaoFase.pontuacao = www.downloadHandler.text;
+                GetRanking.apelido = www.downloadHandler.text;
+            }
+        }
+    }
+    public static IEnumerator GetRankingTotal()
+    {
+        WWWForm form = new WWWForm();
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetRankingTotal.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                GetRanking.total = www.downloadHandler.text;
             }
         }
     }

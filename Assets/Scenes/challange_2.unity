@@ -1761,8 +1761,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "H\xE1 um obst\xE1culo no caminho!\nQual combust\xEDvel usamos para fazer
-    fogo e queim\xE1-lo?"
+  m_Text: "H\xC1 um obst\xC1culo no caminho!\nQual combust\xEDvel usamos para fazer
+    fogo e queim\xC1-lo?"
 --- !u!222 &2130172365
 CanvasRenderer:
   m_ObjectHideFlags: 0

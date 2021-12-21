@@ -884,10 +884,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1841516502}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 591622d8aade8494db2274e34eb3881b, type: 3}
+  m_Script: {fileID: 11500000, guid: 100440714cd0f424093fac4d31cae36c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PontuacaoFim: {fileID: 1532737399}
+  PontuacaoFim: {fileID: 0}
 --- !u!4 &1841516504
 Transform:
   m_ObjectHideFlags: 0
