@@ -11,7 +11,7 @@ public class GetPontuacaoFaseEng : MonoBehaviour
     void Start()
     {
 
-        StartCoroutine(Web.GetPontuacaoEng(Login.usuario));
+        StartCoroutine(Web.GetPontuacaoEng(Login.usuario, GameController1.numFase));
         InvokeRepeating("atualizar", 1f, 1f);
 
 

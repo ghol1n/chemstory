@@ -18,12 +18,18 @@ EditorBuildSettings:
     path: Assets/Scenes/CadastroEng.unity
     guid: 0bd925da50346c643995675da3339d42
   - enabled: 1
+    path: Assets/Scenes/RankingEng.unity
+    guid: 2720199d5522f8648b28068b5d051a1c
+  - enabled: 1
     path: Assets/Scenes/Cadastro.unity
     guid: 13019a15b6a00a348a689986a1d4b975
   - enabled: 1
+    path: Assets/Scenes/Ranking.unity
+    guid: 30a9ea0dd6aa49c4d90618e6ff2ad310
+  - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/aaaa.unity
     guid: 208fceed0f3bdce428b06689d31239c6
   - enabled: 1
@@ -101,7 +107,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pontuacao_1Eng.unity
     guid: c67989928a57fe84ca458b69339af728
-  - enabled: 0
+  - enabled: 1
     path: Assets/Bundles/Scenes/Start.unity
     guid: d6c08f41002f6fe4680a88cf753f1a1d
   m_configObjects: {}

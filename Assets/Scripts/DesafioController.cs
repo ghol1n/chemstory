@@ -60,6 +60,10 @@ public class DesafioController : MonoBehaviour
     {
         SceneManager.LoadScene("Login");
     }
+    public void ranking()
+    {
+        SceneManager.LoadScene("Ranking");
+    }
 }
 
 

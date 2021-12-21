@@ -736,7 +736,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ferro
+  m_Text: iron
 --- !u!222 &889826683
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1193,7 +1193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xC1gua\n"
+  m_Text: water
 --- !u!222 &1469009593
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1382,7 +1382,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Carv\xE3o"
+  m_Text: coal
 --- !u!222 &1547657368
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1461,8 +1461,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "H\xE1 um obst\xE1culo no caminho!\nQual combust\xEDvel usamos para fazer
-    fogo e queim\xE1-lo?"
+  m_Text: There is a obstacle in the way! Which fuel we use to make fire and burn
+    it?
 --- !u!222 &1956420114
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1541,7 +1541,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Madeira
+  m_Text: wood
 --- !u!222 &2071956279
 CanvasRenderer:
   m_ObjectHideFlags: 0

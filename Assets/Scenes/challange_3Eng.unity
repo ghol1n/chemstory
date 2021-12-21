@@ -359,8 +359,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "a \xC1rvore em nossa frente est\xC1 queimando!\nQual l\xCDQUIdo podemos
-    usar para apagar o fogo?\n"
+  m_Text: There is an obstacle in the way! Which fuel can we use to make fire and
+    burn it down?
 --- !u!222 &122183227
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -439,7 +439,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xC1lcool"
+  m_Text: alcohol
 --- !u!222 &152572800
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -921,7 +921,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xD3leo\n"
+  m_Text: 'oil
+
+'
 --- !u!222 &1277016431
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1000,7 +1002,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xC1gua"
+  m_Text: water
 --- !u!222 &1433990048
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1637,7 +1639,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: gasolina
+  m_Text: gasoline
 --- !u!222 &2014256027
 CanvasRenderer:
   m_ObjectHideFlags: 0
