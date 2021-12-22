@@ -64,6 +64,10 @@ public class DesafioController : MonoBehaviour
     {
         SceneManager.LoadScene("Ranking");
     }
+    public void verificar()
+    {
+
+    }
 }
 
 
