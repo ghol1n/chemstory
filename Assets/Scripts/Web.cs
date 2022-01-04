@@ -552,6 +552,50 @@ public class Web : MonoBehaviour
             }
         }
     }
+    
+    public static IEnumerator GetPergunta(int idfase)
+    {
+        WWWForm form = new WWWForm();
+        
+        form.AddField("id", (idfase*2)-1);
+        
+        
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetPergunta.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                challange_new.respostas = www.downloadHandler.text.Split('#');
+            }
+        }
+    }
+    public static IEnumerator GetPerguntaEng(int idfase)
+    {
+        WWWForm form = new WWWForm();
+
+        form.AddField("id", (idfase * 2));
+
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetPerguntaEng.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+            }
+        }
+    }
     // Update is called once per frame
     void Update()
     {
