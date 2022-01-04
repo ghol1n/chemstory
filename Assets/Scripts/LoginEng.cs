@@ -26,6 +26,8 @@ public class LoginEng : MonoBehaviour
     void Start()
     {
         black.normal.textColor = Color.black;
+        black.fontSize = 16;
+        black.font = (Font)Resources.Load("Assets/retro_computer_personal_use.ttf");
         temIP = false;
         usuarioButom = "";
         Cadastro.invalido = "";
@@ -62,7 +64,7 @@ public class LoginEng : MonoBehaviour
         bool esqueci = GUI.Button(new Rect((Screen.width / 5) * 2, Screen.width / 6 + (Screen.width / 20) * 4, Screen.width / 5, altura / 2 + altura / 8), "Forgot Password");
         bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 5, Screen.width / 3, altura), "Register");
 
-        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 6, Screen.width / 3, altura), invalido, black);
+        GUI.Label(new Rect(Screen.width / 3 + Screen.width / 3 + 20, Screen.width / 6 + (Screen.width / 20) * 2, Screen.width / 3, altura * 3), invalido, black);
 
         if (cadastrar)
         {

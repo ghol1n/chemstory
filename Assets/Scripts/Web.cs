@@ -571,7 +571,12 @@ public class Web : MonoBehaviour
             else
             {
                 Debug.Log(www.downloadHandler.text);
-                challange_new.respostas = www.downloadHandler.text.Split('#');
+                challange_new.conteudo = www.downloadHandler.text.Split('#');
+                challange_new.respostas[0] = challange_new.conteudo[1];
+                challange_new.respostas[1] = challange_new.conteudo[2];
+                challange_new.respostas[2] = challange_new.conteudo[3];
+                challange_new.respostas[3] = challange_new.conteudo[4];
+              //  challange_new Pergunta = challange_new.conteudo[0];
             }
         }
     }
@@ -579,10 +584,10 @@ public class Web : MonoBehaviour
     {
         WWWForm form = new WWWForm();
 
-        form.AddField("id", (idfase * 2));
+        form.AddField("id", (idfase * 2) );
 
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetPerguntaEng.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetPergunta.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -593,6 +598,12 @@ public class Web : MonoBehaviour
             else
             {
                 Debug.Log(www.downloadHandler.text);
+                challange_newEng.conteudo = www.downloadHandler.text.Split('#');
+                challange_newEng.respostas[0] = challange_newEng.conteudo[1];
+                challange_newEng.respostas[1] = challange_newEng.conteudo[2];
+                challange_newEng.respostas[2] = challange_newEng.conteudo[3];
+                challange_newEng.respostas[3] = challange_newEng.conteudo[4];
+                //  challange_new Pergunta = challange_new.conteudo[0];
             }
         }
     }

@@ -206,8 +206,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1394005140}
-        m_TargetAssemblyTypeName: Challange_test, Assembly-CSharp
+      - m_Target: {fileID: 1394005144}
+        m_TargetAssemblyTypeName: challange_new, Assembly-CSharp
         m_MethodName: verificar4
         m_Mode: 1
         m_Arguments:
@@ -355,8 +355,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1394005140}
-        m_TargetAssemblyTypeName: Challange_test, Assembly-CSharp
+      - m_Target: {fileID: 1394005144}
+        m_TargetAssemblyTypeName: challange_new, Assembly-CSharp
         m_MethodName: verificar3
         m_Mode: 1
         m_Arguments:
@@ -930,8 +930,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1394005140}
-        m_TargetAssemblyTypeName: Challange_test, Assembly-CSharp
+      - m_Target: {fileID: 1394005144}
+        m_TargetAssemblyTypeName: challange_new, Assembly-CSharp
         m_MethodName: verificar1
         m_Mode: 1
         m_Arguments:
@@ -1079,8 +1079,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1394005140}
-        m_TargetAssemblyTypeName: Challange_test, Assembly-CSharp
+      - m_Target: {fileID: 1394005144}
+        m_TargetAssemblyTypeName: challange_new, Assembly-CSharp
         m_MethodName: verificar2
         m_Mode: 1
         m_Arguments:
@@ -1415,6 +1415,7 @@ MonoBehaviour:
   botao2: {fileID: 1549163049}
   botao3: {fileID: 1342594322}
   botao4: {fileID: 220860918}
+  Pergunta: {fileID: 1681754803}
 --- !u!1 &1478978499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,8 +1723,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Achamos um bal\xC3o!\nQual g\xC1s podemos usar para que ele flutue e nos
-    leve para a fase 2?\n\n"
+  m_Text: '
+
+
+'
 --- !u!222 &1681754804
 CanvasRenderer:
   m_ObjectHideFlags: 0

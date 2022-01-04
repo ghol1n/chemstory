@@ -422,7 +422,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ferro
+  m_Text: 
 --- !u!222 &645844751
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -693,7 +693,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Madeira
+  m_Text: 
 --- !u!222 &960454626
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1451,7 +1451,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Carv\xE3o"
+  m_Text: 
 --- !u!222 &1914017949
 CanvasRenderer:
   m_ObjectHideFlags: 0

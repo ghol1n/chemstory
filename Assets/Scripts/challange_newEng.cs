@@ -6,7 +6,7 @@ using System;
 using System.Linq;
 using UnityEngine.SceneManagement;
 
-public class challange_new : MonoBehaviour
+public class challange_newEng : MonoBehaviour
 {
     public Text botao1;
     public Text botao2;
@@ -17,8 +17,8 @@ public class challange_new : MonoBehaviour
     int posicao2;
     int posicao3;
     int posicao4;
-    public static string[] conteudo = { "", "", "", "", ""};
-    public static string[] respostas = {"", "", "", ""};
+    public static string[] conteudo = { "", "", "", "", "" };
+    public static string[] respostas = { "", "", "", "" };
     System.Random rnd = new System.Random();
     System.Random r = new System.Random();
     int i = 0;
@@ -27,27 +27,28 @@ public class challange_new : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
         Debug.Log(GameController1.numFase);
-        StartCoroutine(Web.GetPergunta(GameController1.numFase));
-        
+        StartCoroutine(Web.GetPerguntaEng(GameController1.numFase));
+
         //while (System.String.IsNullOrEmpty(respostas[0])) { Sort(); }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (i == 0){
-            if (System.String.IsNullOrEmpty(respostas[0]))
+        if (i == 0)
         {
-            Sort();
-        }
+            if (System.String.IsNullOrEmpty(respostas[0]))
+            {
+                Sort();
+            }
             if (!System.String.IsNullOrEmpty(respostas[0]))
             {
                 Sort();
                 i = 1;
             }
-         }
+        }
 
     }
     void Sort()
@@ -98,7 +99,7 @@ public class challange_new : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("errado");
+            SceneManager.LoadScene("ErradoEng");
         }
     }
     public void verificar2()
@@ -109,7 +110,7 @@ public class challange_new : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("errado");
+            SceneManager.LoadScene("ErradoEng");
         }
     }
     public void verificar3()
@@ -120,7 +121,7 @@ public class challange_new : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("errado");
+            SceneManager.LoadScene("ErradoEng");
         }
     }
     public void verificar4()
@@ -131,7 +132,7 @@ public class challange_new : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("errado");
+            SceneManager.LoadScene("ErradoEng");
         }
     }
 
@@ -150,7 +151,7 @@ public class challange_new : MonoBehaviour
         Debug.Log(Login.usuario);
         // Debug.Log(pontuacao);
 
-        StartCoroutine(Web.Pontuar(GameController1.numFase, GameController1.totalScore, GameControllerD1.totalTime, Login.usuario, pontuacao));
+        StartCoroutine(Web.PontuarEng(GameController1.numFase, GameController1.totalScore, GameControllerD1.totalTime, Login.usuario, pontuacao));
 
 
     }

@@ -36,6 +36,9 @@ public class CadastroEng : MonoBehaviour
     GUIStyle black = new GUIStyle();
     void Start()
     {
+        black.normal.textColor = Color.black;
+        black.fontSize = 16;
+        black.font = (Font)Resources.Load("Assets/retro_computer_personal_use.ttf");
         apelidoButom = "";
         usuarioButom = "";
         senhaButom = "";
@@ -43,7 +46,6 @@ public class CadastroEng : MonoBehaviour
         Login.invalido = "";
         LoginEng.invalido = "";
         invalido = "";
-        black.normal.textColor = Color.black;
     }
 
     // Update is called once per frame
@@ -63,7 +65,7 @@ public class CadastroEng : MonoBehaviour
         {
             altura = 30;
         }
-        GUI.Label(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 6, Screen.width / 3, 30), invalido, black);
+        GUI.Label(new Rect(Screen.width / 3 + Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 2, Screen.width / 2, altura), invalido, black);
         bool ingles = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6, Screen.width / 3, altura), "English");
 
        // apelidoButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + Screen.width / 20, Screen.width / 3, altura), apelidoButom);
