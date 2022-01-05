@@ -599,10 +599,10 @@ public class Web : MonoBehaviour
             {
                 Debug.Log(www.downloadHandler.text);
                 challange_newEng.conteudo = www.downloadHandler.text.Split('#');
-                challange_newEng.respostas[0] = challange_newEng.conteudo[1];
-                challange_newEng.respostas[1] = challange_newEng.conteudo[2];
-                challange_newEng.respostas[2] = challange_newEng.conteudo[3];
-                challange_newEng.respostas[3] = challange_newEng.conteudo[4];
+                challange_newEng.respostas[0] = challange_newEng.conteudo[2];
+                challange_newEng.respostas[1] = challange_newEng.conteudo[3];
+                challange_newEng.respostas[2] = challange_newEng.conteudo[4];
+                challange_newEng.respostas[3] = challange_newEng.conteudo[5];
                 //  challange_new Pergunta = challange_new.conteudo[0];
             }
         }

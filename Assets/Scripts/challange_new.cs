@@ -17,20 +17,33 @@ public class challange_new : MonoBehaviour
     int posicao2;
     int posicao3;
     int posicao4;
-    public static string[] conteudo = { "", "", "", "", ""};
+    public static string[] conteudo = {"", "", "", "", "", ""};
     public static string[] respostas = {"", "", "", ""};
+    public static string lastId = "";
     System.Random rnd = new System.Random();
     System.Random r = new System.Random();
     int i = 0;
+    int ix;
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        ix = 0;
         Debug.Log(GameController1.numFase);
-        StartCoroutine(Web.GetPergunta(GameController1.numFase));
-        
+        while (ix == 0)
+        {
+            StartCoroutine(Web.GetPergunta(r.Next(4)));
+            if (lastId != conteudo[0])
+            {
+                ix = 1;
+            }
+            else
+            {
+                ix = 0;
+            }
+        }
         //while (System.String.IsNullOrEmpty(respostas[0])) { Sort(); }
     }
 
@@ -86,7 +99,7 @@ public class challange_new : MonoBehaviour
         botao2.text = respostas[posicao2];
         botao3.text = respostas[posicao3];
         botao4.text = respostas[posicao4];
-        Pergunta.text = conteudo[0];
+        Pergunta.text = conteudo[1];
 
     }
 
@@ -151,7 +164,7 @@ public class challange_new : MonoBehaviour
         // Debug.Log(pontuacao);
 
         StartCoroutine(Web.Pontuar(GameController1.numFase, GameController1.totalScore, GameControllerD1.totalTime, Login.usuario, pontuacao));
-
+        lastId = conteudo[0];
 
     }
 
