@@ -19,37 +19,83 @@ public class challange_new : MonoBehaviour
     int posicao4;
     public static string[] conteudo = {"", "", "", "", "", ""};
     public static string[] respostas = {"", "", "", ""};
-    public static string lastId = "";
-    System.Random rnd = new System.Random();
+    public static bool correto;
+    public static int lastId;  
     System.Random r = new System.Random();
     int i = 0;
-    int ix;
-    
+    public static int lenguage;
+    public static bool jarecebeu;
+    public static int numPergunta;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        ix = 0;
-        Debug.Log(GameController1.numFase);
-        while (ix == 0)
+        correto = false;
+        jarecebeu = false;
+        Debug.Log("conteudo id = "+ conteudo[0]);
+        Array.Clear(conteudo, 0, 6);
+        Array.Clear(respostas, 0, 4);
+       // Debug.Log(GameController1.numFase);
+        getPerguntaVerificar();
+    }
+
+    void getPerguntaVerificar()
+    {
+        
+        if (SceneManager.GetActiveScene().name.Contains("Eng"))
         {
-            StartCoroutine(Web.GetPergunta(r.Next(4)));
-            if (lastId != conteudo[0])
+            lenguage = 1; 
+        }
+        else
+        {
+            lenguage = 0;
+        }
+
+        int cont = 0;
+        int aa = (r.Next(7) + 1);
+        if (aa == lastId)
+        {
+            while (aa == lastId)
             {
-                ix = 1;
+                aa = (r.Next(7) + 1);
+
+            }
+        }
+        else
+        {
+            if (lenguage == 1)
+            {
+                StartCoroutine(Web.GetPerguntaEng(aa));
             }
             else
             {
-                ix = 0;
+                StartCoroutine(Web.GetPergunta(aa));
             }
+            lastId = aa;
         }
-        //while (System.String.IsNullOrEmpty(respostas[0])) { Sort(); }
-    }
 
+        if (aa != lastId)
+        {
+            if (lenguage == 1)
+            {
+                StartCoroutine(Web.GetPerguntaEng(aa));
+            }
+            else
+            {
+                StartCoroutine(Web.GetPergunta(aa));
+            }
+            lastId = aa;
+        }
+
+    }
     // Update is called once per frame
     void Update()
     {
+            if(conteudo is null)
+        {
+            getPerguntaVerificar();
+        }
         if (i == 0){
             if (System.String.IsNullOrEmpty(respostas[0]))
         {
@@ -61,6 +107,12 @@ public class challange_new : MonoBehaviour
                 i = 1;
             }
          }
+        if (correto == true)
+        {
+            Correto();
+        }
+
+
 
     }
     void Sort()
@@ -105,47 +157,63 @@ public class challange_new : MonoBehaviour
 
     public void verificar1()
     {
-        if (botao1.text.Equals(respostas[0]))
+        StartCoroutine(Web.VerificarResposta(botao1.text,numPergunta));
+       /* if (correto)
         {
             Correto();
         }
         else
         {
+            if (lenguage == 1) { SceneManager.LoadScene("erradoEng"); }
+            else
             SceneManager.LoadScene("errado");
-        }
+            correto = false;
+        }*/
     }
     public void verificar2()
     {
-        if (botao2.text.Equals(respostas[0]))
+        StartCoroutine(Web.VerificarResposta(botao2.text, numPergunta));
+      /*  if (correto)
         {
             Correto();
         }
         else
         {
-            SceneManager.LoadScene("errado");
-        }
+            if (lenguage == 1) { SceneManager.LoadScene("erradoEng"); }
+            else
+                SceneManager.LoadScene("errado");
+            correto = false;
+        }*/
     }
     public void verificar3()
     {
-        if (botao3.text.Equals(respostas[0]))
+        StartCoroutine(Web.VerificarResposta(botao3.text, numPergunta));
+        /*if (correto)
         {
             Correto();
         }
         else
         {
-            SceneManager.LoadScene("errado");
-        }
+            if (lenguage == 1) { SceneManager.LoadScene("erradoEng"); }
+            else
+                SceneManager.LoadScene("errado");
+            correto = false;
+        }*/
     }
     public void verificar4()
     {
-        if (botao4.text.Equals(respostas[0]))
+        StartCoroutine(Web.VerificarResposta(botao4.text, numPergunta));
+       /* if (correto)
         {
             Correto();
         }
         else
         {
-            SceneManager.LoadScene("errado");
-        }
+            if (lenguage == 1) { SceneManager.LoadScene("erradoEng"); }
+            else
+                SceneManager.LoadScene("errado");
+            correto = false;
+        }*/
     }
 
 
@@ -162,10 +230,15 @@ public class challange_new : MonoBehaviour
         // Debug.Log(GameControllerD1.totalTime);
         Debug.Log(Login.usuario);
         // Debug.Log(pontuacao);
-
-        StartCoroutine(Web.Pontuar(GameController1.numFase, GameController1.totalScore, GameControllerD1.totalTime, Login.usuario, pontuacao));
-        lastId = conteudo[0];
+        if (!SceneManager.GetActiveScene().name.Contains("Eng"))
+            StartCoroutine(Web.Pontuar(GameController1.numFase, GameController1.totalScore, GameControllerD1.totalTime, Login.usuario, pontuacao));
+        else
+            StartCoroutine(Web.PontuarEng(GameController1.numFase, GameController1.totalScore, GameControllerD1.totalTime, Login.usuario, pontuacao));
 
     }
+
+
+
+
 
 }

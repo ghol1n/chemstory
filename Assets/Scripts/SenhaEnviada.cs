@@ -13,11 +13,23 @@ public class SenhaEnviada : MonoBehaviour
 {
     public static string result;
     public Text mensagem;
-    string textoMensagem = "sua senha foi enviada ao e-mail de seguranca '"+result+"'. nao esque«a de checar a caixa de spam. =)";
-    
+    string textoMensagem = "Insira o token enviado ao e-mail de seguranÁa '"+result+"'. N„o esque«a de checar a caixa de spam. =)";
+    public static string token;
+    public static bool valido;
+    GUIStyle black = new GUIStyle();
+    public static string invalido = "";
+    public static string emailSeg;
+
+
+
     public float altura;
     void Start()
     {
+        black.normal.textColor = Color.black;
+        black.fontSize = 16;
+        valido = false;
+        invalido = "";
+        token = "";
         StartCoroutine(ShowText());
     }
     void Update()
@@ -48,12 +60,21 @@ public class SenhaEnviada : MonoBehaviour
         {
             altura = 30;
         }
-
-        bool voltar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + +(Screen.width / 20) * 3, Screen.width / 3, altura), "Voltar");
+        token = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 3, Screen.width / 3, altura), token);
+        bool enviar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 4, Screen.width / 3, altura), "Ok");
+        bool voltar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 5, Screen.width / 3, altura), "Voltar");
+        GUI.Label(new Rect(Screen.width / 3 + Screen.width / 3 + 20, Screen.width / 6 + (Screen.width / 20) * 4, Screen.width / 3, altura * 3), invalido, black);
 
         if (voltar)
         {
             SceneManager.LoadScene("Login");
+            
+        }
+        if (enviar)
+        {
+            Debug.Log(emailSeg);
+            StartCoroutine(Web.VerificarToken(token,emailSeg));
+           
         }
 
     }

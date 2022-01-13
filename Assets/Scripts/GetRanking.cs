@@ -14,6 +14,8 @@ public class GetRanking : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        nickname.text = null;
+        pontuacao.text = null;
         StartCoroutine(Web.GetRankingApelido());
         StartCoroutine(Web.GetRankingTotal());
         

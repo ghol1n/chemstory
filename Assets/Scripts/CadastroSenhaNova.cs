@@ -8,12 +8,8 @@ using System;
 using UnityEngine;
 using System.Threading;
 
-public class Cadastro : MonoBehaviour
+public class CadastroSenhaNova : MonoBehaviour
 {
-    [SerializeField]
-    public static string usuarioButom;
-    [SerializeField]
-    public static string usuarioSegButom;
     [SerializeField]
     public static string senhaButom;
     [SerializeField]
@@ -40,7 +36,6 @@ public class Cadastro : MonoBehaviour
         black.fontSize = 16;
         black.font = (Font)Resources.Load("Assets/retro_computer_personal_use.ttf");
         apelidoButom = "";
-        usuarioButom = "";
         senhaButom = "";
         invalido = "";
         Login.invalido = "";
@@ -71,55 +66,38 @@ public class Cadastro : MonoBehaviour
         GUI.Label(new Rect(Screen.width / 3 + Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 2, Screen.width / 2, altura), invalido, black);
         bool ingles = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6, Screen.width / 3, altura), "Português");
 
-        bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 6, Screen.width / 3, altura), "Voltar");
-        
-        bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 5, Screen.width / 3, altura), "Cadastrar");
+        bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 5, Screen.width / 3, altura), "Cancelar");
+
+        bool AlterarSenha = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 4, Screen.width / 3, altura), "Alterar Senha");
         if (logar)
         {
             SceneManager.LoadScene("Login");
         }
-        if (cadastrar)
-        {if ((String.IsNullOrEmpty(usuarioButom)) | String.IsNullOrEmpty(senhaButom) | String.IsNullOrEmpty(apelidoButom) | String.IsNullOrEmpty(usuarioSegButom))
+        if (AlterarSenha)
+        {
+            if ((Cadastro.senhaButom != Cadastro.senhaconfButom))
             {
-                invalido = "Por favor preencha todos os campos.";
+                invalido = "As senhas não são iguais.";
             }
             else
             {
-                bool isOk = IsValidEmail(usuarioButom);
-                if (isOk == true)
-                {if (senhaButom.Length < 8)
+               
+                    if (Cadastro.senhaButom.Length < 8)
                     {
                         invalido = "A senha precisa ter no mínimo 8 caracteres.";
                     }
                     else
                     {
                         invalido = "Por favor aguarde.";
-                        StartCoroutine(Web.Register(apelidoButom, usuarioButom, senhaButom,usuarioSegButom));
+                        StartCoroutine(Web.AlterarSenha(Login.usuarioButom, Cadastro.senhaButom));
                     }
-                }
-                else
-                {
-                    invalido = "E-mail inválido.";
-                }
             }
         }
         if (ingles)
         {
-            SceneManager.LoadScene("CadastroEng");
+            SceneManager.LoadScene("AlterarSenhaEng");
         }
     }
 
-    static bool IsValidEmail(string email)
-    {
-        try
-        {
-            var addr = new System.Net.Mail.MailAddress(email);
-            return addr.Address == email;
-        }
-        catch
-        {
-            return false;
-        }
-    }
 
 }

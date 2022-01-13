@@ -76,7 +76,7 @@ public class CadastroEng : MonoBehaviour
 
        // usuarioSegButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + +(Screen.width / 20) * 4, Screen.width / 3, altura), usuarioSegButom);
 
-        bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 7, Screen.width / 3, altura), "Login");
+        bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 6, Screen.width / 3, altura), "Back");
         bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 5, Screen.width / 3, altura), "Register");
         if (logar)
         {

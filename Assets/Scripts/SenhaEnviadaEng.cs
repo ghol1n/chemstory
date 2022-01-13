@@ -13,12 +13,14 @@ public class SenhaEnviadaEng : MonoBehaviour
 {
     
     public Text mensagem;
-    string textoMensagem = "your password was sent to the security email '" + SenhaEnviada.result + "'. don't forget to check the spam box. =)";
-
+    string textoMensagem = "Enter the token sent to the security email '" + SenhaEnviada.result + "'. don't forget to check the spam box. =)";
+    public static string token = "";
     public float altura;
+    public static bool valido;
     void Start()
     {
         StartCoroutine(ShowText());
+        token = "";
     }
     void Update()
     {
@@ -49,11 +51,17 @@ public class SenhaEnviadaEng : MonoBehaviour
             altura = 30;
         }
 
-        bool voltar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + +(Screen.width / 20) * 3, Screen.width / 3, altura), "Voltar");
+        token = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 +(Screen.width / 20) * 3, Screen.width / 3, altura), token);
+        bool enviar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 4, Screen.width / 3, altura), "Ok");
+        bool voltar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 5, Screen.width / 3, altura), "Back");
 
         if (voltar)
         {
             SceneManager.LoadScene("Login");
+        }
+        if (enviar)
+            {
+            StartCoroutine(Web.VerificarTokenEng(token, Login.EmailSeg));
         }
 
     }

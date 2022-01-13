@@ -5,6 +5,7 @@ using MySql.Data.MySqlClient;
 using UnityEngine.Networking;
 using System.Threading;
 using UnityEngine.EventSystems;
+using System.Linq;
 
 public class LoginEng : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class LoginEng : MonoBehaviour
     [SerializeField]
     public static string senhaButom = "";
 
-
+    public static string token;
     public char PasswordChar { get; set; }
     public Texture ingles;
     public float largura;
@@ -25,6 +26,7 @@ public class LoginEng : MonoBehaviour
     GUIStyle black = new GUIStyle();
     void Start()
     {
+        Login.foi = 0;
         black.normal.textColor = Color.black;
         black.fontSize = 16;
         black.font = (Font)Resources.Load("Assets/retro_computer_personal_use.ttf");
@@ -89,17 +91,28 @@ public class LoginEng : MonoBehaviour
         }
         if (esqueci)
         {
+            token = gerarToken(6);
             invalido = "Wait a moment please.";
 
-            StartCoroutine(Web.GetEmailSegEng(Login.usuarioButom));
-            StartCoroutine(Web.GetSenhaEng(Login.usuarioButom));
+            StartCoroutine(Web.GetEmailSeg(Login.usuarioButom));
+           // StartCoroutine(Web.GetSenhaEng(Login.usuarioButom));
 
         }
-        if (foi == 1)
+        if (Login.foi == 1)
         {
-            StartCoroutine(Web.EsqueciEng(Login.usuarioButom, Login.SenhaSeg));
-            foi = 0;
+            StartCoroutine(Web.EsqueciEng(Login.EmailSeg, token));
+            Login.foi = 0;
         }
+    }
+    public static string gerarToken(int tamanho)
+    {
+        var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        var random = new System.Random();
+        var result = new string(
+            Enumerable.Repeat(chars, tamanho)
+                      .Select(s => s[random.Next(s.Length)])
+                      .ToArray());
+        return result;
     }
 }
 

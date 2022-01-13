@@ -9,6 +9,7 @@ using UnityEngine.UI;
 using System.Net;
 using TMPro;
 using System;
+using System.Linq;
 
 public class Login : MonoBehaviour
 
@@ -24,7 +25,7 @@ public class Login : MonoBehaviour
     public static string SenhaSeg;
     public static string usuario;
     public static string usuarioid;
-
+    public static string token;
     public int forgotstep = 0;
     public char PasswordChar { get; set; }
     public Texture ingles;
@@ -39,6 +40,7 @@ public class Login : MonoBehaviour
 
     void Start()
     {
+        foi = 0;
         black.normal.textColor = Color.black;
         black.fontSize = 16;
         black.font = (Font)Resources.Load("Assets/retro_computer_personal_use.ttf"); 
@@ -104,30 +106,32 @@ public class Login : MonoBehaviour
         }
         if (esqueci)
         {
+            
              invalido = "Por favor aguarde.";
             
             StartCoroutine(Web.GetEmailSeg(usuarioButom));
-            StartCoroutine(Web.GetSenha(usuarioButom));
+            //StartCoroutine(Web.GetSenha(usuarioButom));
             
         }
         if (foi == 1)
         {
-            StartCoroutine(Web.Esqueci(usuarioButom, SenhaSeg));
+            SenhaEnviada.emailSeg = EmailSeg;
+            StartCoroutine(Web.Esqueci(EmailSeg));
             foi = 0;
         }
         
-        /*if(!System.String.IsNullOrEmpty(EmailSeg))
-        {
-            StartCoroutine(Web.GetSenha(usuarioButom));
-        }
-        if (!System.String.IsNullOrEmpty(SenhaSeg))
-        {
-            StartCoroutine(Web.Esqueci(usuarioButom,SenhaSeg));
-        }*/
-
     }
 
-
+    public static string gerarToken(int tamanho)
+    {
+        var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        var random = new System.Random();
+        var result = new string(
+            Enumerable.Repeat(chars, tamanho)
+                      .Select(s => s[random.Next(s.Length)])
+                      .ToArray());
+        return result;
     }
+}
 
     

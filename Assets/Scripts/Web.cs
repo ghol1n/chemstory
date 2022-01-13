@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using System.Net;
 using System;
-
+using UnityEngine.UI;
 
 public class Web : MonoBehaviour
 {
@@ -253,10 +253,17 @@ public class Web : MonoBehaviour
                 }
                 else
                 {
+                if(numfase != 3) { 
                     Debug.Log(www.downloadHandler.text);
                         SceneManager.LoadScene("Pontuacao_"+numfase.ToString());
-
                 }
+                else
+                {
+                    Debug.Log(www.downloadHandler.text);
+                    SceneManager.LoadScene("PontuacaoFinal");
+                }
+
+            }
             }
         }
 
@@ -279,9 +286,16 @@ public class Web : MonoBehaviour
             }
             else
             {
-                Debug.Log(www.downloadHandler.text);
-                SceneManager.LoadScene("Pontuacao_" + numfase.ToString()+"Eng");
-
+                if (numfase != 3)
+                {
+                    Debug.Log(www.downloadHandler.text);
+                    SceneManager.LoadScene("Pontuacao_" + numfase.ToString() + "Eng");
+                }
+                else
+                {
+                    Debug.Log(www.downloadHandler.text);
+                    SceneManager.LoadScene("PontuacaoFinalEng");
+                }
             }
         }
     }
@@ -357,6 +371,7 @@ public class Web : MonoBehaviour
                 {
                     Login.EmailSeg = www.downloadHandler.text;
                     SenhaEnviada.result = Login.EmailSeg.Substring(Login.EmailSeg.Length - 16).PadLeft(Login.EmailSeg.Length, '*');
+                    Login.foi = 1;
                 }
 
 
@@ -364,7 +379,7 @@ public class Web : MonoBehaviour
         }
     }
 
-    public static IEnumerator GetSenha(string username)
+   /* public static IEnumerator GetSenha(string username)
     {
         WWWForm form = new WWWForm();
         form.AddField("loginUser", username);
@@ -386,13 +401,12 @@ public class Web : MonoBehaviour
 
             }
         }
-    }
+    }*/
 
-    public static IEnumerator Esqueci(string username, string password)
+    public static IEnumerator Esqueci(string username)
     {
         WWWForm form = new WWWForm();
         form.AddField("loginUser", username);
-        form.AddField("loginPass", password);
 
 
         using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/EnvioSenha.php", form))
@@ -422,7 +436,7 @@ public class Web : MonoBehaviour
         }
     }
 
-    public static IEnumerator GetEmailSegEng(string username)
+   /* public static IEnumerator GetEmailSegEng(string username)
     {
         WWWForm form = new WWWForm();
         form.AddField("loginUser", username);
@@ -454,7 +468,7 @@ public class Web : MonoBehaviour
 
             }
         }
-    }
+    }*/
 
     public static IEnumerator GetSenhaEng(string username)
     {
@@ -506,7 +520,7 @@ public class Web : MonoBehaviour
 
                 else
                 {
-                    Cadastro.invalido = "Inexistent Email.";
+                    Cadastro.invalido = "Nonexistent Email.";
                 }
 
 
@@ -553,13 +567,14 @@ public class Web : MonoBehaviour
         }
     }
     
-    public static IEnumerator GetPergunta(int idfase)
+    public static IEnumerator GetPergunta(int id)
     {
         WWWForm form = new WWWForm();
-        
-        form.AddField("id", (idfase*2)-1);
-        
-        
+        Debug.Log(id);
+        form.AddField("id", (id*2)-1);
+        challange_new.numPergunta = (id * 2 -1);
+        Debug.Log("numero procurado: " + challange_new.numPergunta);
+
         using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetPergunta.php", form))
         {
             yield return www.SendWebRequest();
@@ -572,20 +587,20 @@ public class Web : MonoBehaviour
             {
                 Debug.Log(www.downloadHandler.text);
                 challange_new.conteudo = www.downloadHandler.text.Split('#');
-                challange_new.respostas[0] = challange_new.conteudo[1];
-                challange_new.respostas[1] = challange_new.conteudo[2];
-                challange_new.respostas[2] = challange_new.conteudo[3];
-                challange_new.respostas[3] = challange_new.conteudo[4];
-              //  challange_new Pergunta = challange_new.conteudo[0];
+                challange_new.respostas[0] = challange_new.conteudo[2];
+                challange_new.respostas[1] = challange_new.conteudo[3];
+                challange_new.respostas[2] = challange_new.conteudo[4];
+                challange_new.respostas[3] = challange_new.conteudo[5];
+                //challange_new Pergunta.text = challange_new.conteudo[0];
             }
         }
     }
-    public static IEnumerator GetPerguntaEng(int idfase)
+    public static IEnumerator GetPerguntaEng(int id)
     {
         WWWForm form = new WWWForm();
-
-        form.AddField("id", (idfase * 2) );
-
+        Debug.Log(id);
+        form.AddField("id", (id * 2));
+        challange_new.numPergunta = (id * 2);
 
         using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetPergunta.php", form))
         {
@@ -598,12 +613,188 @@ public class Web : MonoBehaviour
             else
             {
                 Debug.Log(www.downloadHandler.text);
-                challange_newEng.conteudo = www.downloadHandler.text.Split('#');
-                challange_newEng.respostas[0] = challange_newEng.conteudo[2];
-                challange_newEng.respostas[1] = challange_newEng.conteudo[3];
-                challange_newEng.respostas[2] = challange_newEng.conteudo[4];
-                challange_newEng.respostas[3] = challange_newEng.conteudo[5];
-                //  challange_new Pergunta = challange_new.conteudo[0];
+                challange_new.conteudo = www.downloadHandler.text.Split('#');
+                challange_new.respostas[0] = challange_new.conteudo[2];
+                challange_new.respostas[1] = challange_new.conteudo[3];
+                challange_new.respostas[2] = challange_new.conteudo[4];
+                challange_new.respostas[3] = challange_new.conteudo[5];
+            }
+        }
+    }
+
+    public static IEnumerator AlterarSenha(string username, string password)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("loginUser", username);
+        form.AddField("loginPass", password);
+
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/AlterarSenha.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                if (www.downloadHandler.text.Contains("com sucesso."))
+                {
+                    Login.usuario = username;
+                    SceneManager.LoadScene("SenhaAlterada");
+                }
+
+                else
+                {
+                    Cadastro.invalido = "Email invalido.";
+                }
+
+
+            }
+        }
+    }
+    public static IEnumerator AlterarSenhaEng(string username, string password)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("loginUser", username);
+        form.AddField("loginPass", password);
+
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/AlterarSenha.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                if (www.downloadHandler.text.Contains("com sucesso."))
+                {
+                    Login.usuario = username;
+                    SceneManager.LoadScene("SenhaAlteradaEng");
+                }
+
+                else
+                {
+                    Cadastro.invalido = "Email invalido.";
+                }
+
+
+            }
+        }
+    }
+    public static IEnumerator VerificarToken(string token, string user)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("UserToken", token);
+        form.AddField("loginUser", user);
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/VerificarToken.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                if (www.downloadHandler.text.Contains("validado"))
+                {
+                    SceneManager.LoadScene("AlterarSenha");
+                }
+                else
+                {
+                    SenhaEnviada.invalido = "Token Incorreto.";
+                }
+            } 
+
+            }
+        }
+
+    public static IEnumerator VerificarTokenEng(string token, string user)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("UserToken", token);
+        form.AddField("loginUser", user);
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/VerificarToken.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                if (www.downloadHandler.text.Contains("validado"))
+                {
+                    SceneManager.LoadScene("AlterarSenhaEng");
+                }
+                else
+                {
+                    SenhaEnviada.invalido = "Token Incorreto.";
+                }
+            }
+
+        }
+    }
+
+    public static IEnumerator VerificarResposta(string resposta, int pergunta)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("resposta", resposta);
+        form.AddField("numPergunta", pergunta);
+
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/VerificarResposta.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {Debug.Log(resposta);
+                Debug.Log(www.downloadHandler.text);
+                if (www.downloadHandler.text.Contains("correta"))
+                {
+                    challange_new.correto = true;
+                    Debug.Log(www.downloadHandler.text);
+                    challange_new.jarecebeu = true;
+
+
+                    int pontuacao = (GameController1.totalScore / GameControllerD1.totalTime) * 175;
+                    if (pontuacao < GameController1.totalScore)
+                    {
+                        pontuacao = GameController1.totalScore;
+                    }
+                    //  Debug.Log(GameController1.totalScore);
+                    // Debug.Log(GameControllerD1.totalTime);
+                    Debug.Log(Login.usuario);
+                    // Debug.Log(pontuacao);
+                    
+                }
+                else
+                {
+                    challange_new.correto = false;
+                    Debug.Log(www.downloadHandler.text);
+                    if (challange_new.lenguage == 1) { SceneManager.LoadScene("erradoEng"); }
+                    else
+                        SceneManager.LoadScene("errado");
+                    challange_new.correto = false;
+                }
+
+
             }
         }
     }
