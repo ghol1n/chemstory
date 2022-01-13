@@ -370,7 +370,8 @@ public class Web : MonoBehaviour
                 else
                 {
                     Login.EmailSeg = www.downloadHandler.text;
-                    SenhaEnviada.result = Login.EmailSeg.Substring(Login.EmailSeg.Length - 16).PadLeft(Login.EmailSeg.Length, '*');
+                    Debug.Log(www.downloadHandler.text + Login.EmailSeg);
+                    SenhaEnviada.result = Login.EmailSeg.Substring(5).PadLeft(Login.EmailSeg.Length, '*');
                     Login.foi = 1;
                 }
 

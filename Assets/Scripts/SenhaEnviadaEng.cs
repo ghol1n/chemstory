@@ -11,7 +11,7 @@ using System.Net;
 public class SenhaEnviadaEng : MonoBehaviour
 
 {
-    
+    public bool jafez = false;
     public Text mensagem;
     string textoMensagem = "Enter the token sent to the security email '" + SenhaEnviada.result + "'. don't forget to check the spam box. =)";
     public static string token = "";
@@ -24,7 +24,6 @@ public class SenhaEnviadaEng : MonoBehaviour
     }
     void Update()
     {
-
     }
 
     IEnumerator ShowText()

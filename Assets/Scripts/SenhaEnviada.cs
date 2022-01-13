@@ -19,21 +19,20 @@ public class SenhaEnviada : MonoBehaviour
     GUIStyle black = new GUIStyle();
     public static string invalido = "";
     public static string emailSeg;
-
+    public bool jafez = false;
 
 
     public float altura;
     void Start()
     {
+        //result = Login.EmailSeg.Substring(Login.EmailSeg.Length/2).PadLeft(Login.EmailSeg.Length, '*');
         black.normal.textColor = Color.black;
         black.fontSize = 16;
         valido = false;
         invalido = "";
         token = "";
         StartCoroutine(ShowText());
-    }
-    void Update()
-    {
+
 
     }
 
