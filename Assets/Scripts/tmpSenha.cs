@@ -8,7 +8,7 @@ public class tmpSenha : MonoBehaviour
 {
 
     private string theName;
-    public TMP_InputField texto;
+    public static TMP_InputField texto;
     // Start is called before the first frame update
     void Start()
     {
