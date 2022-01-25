@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 using System.Net;
 using System;
 using UnityEngine.UI;
+using Mgl;
 
 public class Web : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class Web : MonoBehaviour
         }
     }
     
+
     public static IEnumerator Conectar(string username, string password)
     {
         WWWForm form = new WWWForm();
@@ -70,7 +72,8 @@ public class Web : MonoBehaviour
                 }
                 else
                 {
-                    Login.invalido = "Email ou Senha inválidos";
+                    I18n i18n = I18n.Instance;    
+                    Login.invalido = i18n.__("Invalid Email or Password");
                 }
                    
 
@@ -363,8 +366,8 @@ public class Web : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("0 results"))
                 {
-                    Thread.Sleep(1000);
-                    Login.invalido = "Email inexistente";
+                    I18n i18n = I18n.Instance;
+                    Login.invalido = i18n.__("Non-existent email");
                 }
 
                 else
@@ -426,13 +429,6 @@ public class Web : MonoBehaviour
                     Thread.Sleep(1000);
                     SceneManager.LoadScene("SenhaEnviada");
                 }
-
-                else
-                {
-                    Cadastro.invalido = "Email inexistente.";
-                }
-
-
             }
         }
     }

@@ -1372,6 +1372,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nickname: {fileID: 1747560116}
   pontuacao: {fileID: 1851826740}
+  Apelido: {fileID: 1146997664}
+  Pontuacao: {fileID: 1177112309}
 --- !u!4 &1841516504
 Transform:
   m_ObjectHideFlags: 0

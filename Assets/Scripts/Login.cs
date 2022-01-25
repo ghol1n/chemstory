@@ -28,30 +28,26 @@ public class Login : MonoBehaviour
     //public static string ip;
     public bool temIP;
     GUIStyle black = new GUIStyle();
-    private I18n i18n = I18n.Instance;
-    //public TextMeshProUGUI emailinput;
-    //I18n i18n = I18n.Instance;
-    private Text hintText;
+    public I18n i18n = I18n.Instance;
+    public static string Language;
+    public static string InvalidoFrase;
 
     void Start()
     {
         foi = 0;
         black.normal.textColor = Color.black;
         black.fontSize = 16;
-        black.font = (Font)Resources.Load("Assets/retro_computer_personal_use.ttf"); 
+        black.font = (Font)Resources.Load("Assets/retro_computer_personal_use.ttf");
         temIP = false;
         usuarioButom = "";
         Cadastro.invalido = "";
         LoginEng.invalido = "";
         invalido = "";
         CadastroEng.invalido = "";
-        Debug.Log(i18n.__("Hello"));
-
-
     }
     void Update()
     {
-       
+
     }
     async void OnGUI()
 
@@ -67,16 +63,16 @@ public class Login : MonoBehaviour
         black.fontSize = Screen.height / 30;
 
 
-        GUI.Label(new Rect(Screen.width / 3 - (Screen.width / 13) , Screen.width / 4 - Screen.width/45, Screen.width / 3, altura), (i18n.__("Username")+":"), black);
+        GUI.Label(new Rect(Screen.width / 3 - (Screen.width / 13), Screen.width / 4 - Screen.width / 45, Screen.width / 3, altura), (i18n.__("Username") + ":"), black);
         GUI.Label(new Rect(Screen.width / 3 - (Screen.width / 13), Screen.width / 3 - Screen.width / 17, Screen.width / 3, altura), (i18n.__("Password") + ":"), black);
 
-        bool ingles = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6, Screen.width / 3, altura), i18n.__("Lenguage"));
+        bool ingles = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6, Screen.width / 3, altura), i18n.__("Language"));
         bool config = GUI.Button(new Rect(Screen.width / 3 + Screen.width / 3 + 30, Screen.width / 6, Screen.width / 5, altura), i18n.__("Configuration"));
 
         // usuarioButom = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + Screen.width / 20, Screen.width / 3, altura), usuarioButom);
         // senhaButom = GUI.PasswordField(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 2, Screen.width / 3, altura), senhaButom, "*"[0]);
 
-        bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 +(Screen.width / 20) * 3, Screen.width / 3, altura), "Login");
+        bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 3, Screen.width / 3, altura), "Login");
         bool esqueci = GUI.Button(new Rect((Screen.width / 5) * 2, Screen.width / 6 + (Screen.width / 20) * 4, Screen.width / 5, altura / 2 + altura / 8), i18n.__("Forgot Password"));
         bool cadastrar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 5, Screen.width / 3, altura), i18n.__("Register"));
 
@@ -87,18 +83,21 @@ public class Login : MonoBehaviour
             SceneManager.LoadScene("Cadastro");
         }
         if (logar) {
-            invalido = "Por favor aguarde.";
+            invalido = i18n.__("Await") + "...";
             Login.usuario = usuarioButom;
+            Language = i18n.GetLocale();
             StartCoroutine(Web.Conectar(usuarioButom, senhaButom));
         }
         if (ingles)
-             {if(i18n.GetLocale() == "pt-BR")
+        { if (i18n.GetLocale() == "pt-BR")
             {
                 i18n.SetLocale("en-US");
+                invalido = null;
             }
             else
             {
                 i18n.SetLocale("pt-BR");
+                invalido = null;
             }
         }
         if (config)
@@ -107,20 +106,19 @@ public class Login : MonoBehaviour
         }
         if (esqueci)
         {
-            
-             invalido = "Por favor aguarde.";
-            
+            invalido = i18n.__("Await") + "...";
+            token = gerarToken(6);
+
             StartCoroutine(Web.GetEmailSeg(usuarioButom));
-            //StartCoroutine(Web.GetSenha(usuarioButom));
-            
+            // StartCoroutine(Web.GetSenhaEng(Login.usuarioButom));
+
         }
-        if (foi == 1)
+        if (Login.foi == 1)
         {
-            SenhaEnviada.emailSeg = EmailSeg;
             StartCoroutine(Web.Esqueci(EmailSeg));
-            foi = 0;
+            Login.foi = 0;
         }
-        
+
     }
 
     public static string gerarToken(int tamanho)
@@ -133,6 +131,7 @@ public class Login : MonoBehaviour
                       .ToArray());
         return result;
     }
+    
 }
 
     

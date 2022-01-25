@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Mgl;
 
 public class GetRanking : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class GetRanking : MonoBehaviour
     public static string apelido;
     public TMP_Text nickname;
     public TMP_Text pontuacao;
+    public TMP_Text Apelido;
+    public TMP_Text Pontuacao;
+    private I18n i18n = I18n.Instance;
     int i;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +28,8 @@ public class GetRanking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Apelido.text = i18n.__("Nickname");
+        Pontuacao.text = i18n.__("Points");
         if (System.String.IsNullOrEmpty(nickname.text) || System.String.IsNullOrEmpty(pontuacao.text))
         {
             nickname.text = total;

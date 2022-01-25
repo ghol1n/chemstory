@@ -7,24 +7,26 @@ using System.Threading.Tasks;
 using System.Threading;
 using UnityEngine.UI;
 using System.Net;
+using Mgl;
 
 public class SenhaEnviada : MonoBehaviour
 
 {
     public static string result;
     public Text mensagem;
-    string textoMensagem = "Insira o token enviado ao e-mail de segurança '"+result+"'. Não esqueÇa de checar a caixa de spam. =)";
+    string textoMensagem;
     public static string token;
     public static bool valido;
     GUIStyle black = new GUIStyle();
     public static string invalido = "";
     public static string emailSeg;
     public bool jafez = false;
-
+    public I18n i18n = I18n.Instance;
 
     public float altura;
     void Start()
     {
+        textoMensagem = i18n.__("Token Sent 1") + result + i18n.__("Token Sent 2");
         //result = Login.EmailSeg.Substring(Login.EmailSeg.Length/2).PadLeft(Login.EmailSeg.Length, '*');
         black.normal.textColor = Color.black;
         black.fontSize = 16;
@@ -61,7 +63,7 @@ public class SenhaEnviada : MonoBehaviour
         }
         token = GUI.TextField(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 3, Screen.width / 3, altura), token);
         bool enviar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 4, Screen.width / 3, altura), "Ok");
-        bool voltar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 5, Screen.width / 3, altura), "Voltar");
+        bool voltar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 5, Screen.width / 3, altura), i18n.__("Turn Back"));
         GUI.Label(new Rect(Screen.width / 3 + Screen.width / 3 + 20, Screen.width / 6 + (Screen.width / 20) * 4, Screen.width / 3, altura * 3), invalido, black);
 
         if (voltar)

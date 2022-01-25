@@ -8,7 +8,7 @@ public class tmp : MonoBehaviour
 {
 
     private string theName;
-    public static TMP_InputField usuario;
+    public TMP_InputField usuario;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +25,7 @@ public class tmp : MonoBehaviour
     {
         theName = usuario.text;
         Login.usuarioButom = theName;
+        
     }
 
 }

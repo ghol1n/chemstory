@@ -1,11 +1,23 @@
 {
-    "See Ranking": "Ver Ranking",
-    "Login": "Login",
-    "Lenguage": "Português",
-    "Email": "E-mail",
-    "Password": "Senha",
-    "Forgot Password": "Esqueci a senha",
-    "Register": "Cadastrar",
+    "Await": "Aguarde",
     "Configuration": "Configuração",
-    "Username": "Usuário"
-    }
+    "Email": "E-mail",
+    "Forgot Password": "Esqueci a senha",
+    "Invalid Email or Password": "Email ou Senha inválidos",
+    "Language": "Português",
+    "Login": "Login",
+    "Nickname": "Apelido",
+    "Off": "Desligado",
+    "On": "Ligado",
+    "Password": "Senha",
+    "Points": "Pontos",
+    "Register": "Cadastrar",
+    "Security Email": "Email de segurança",
+    "See Ranking": "Ver Ranking",
+    "Sound": "Som",
+    "Turn Back": "Voltar",
+    "Username": "Usuário",
+    "Non-existent email": "E-mail inexistente",
+    "Token Sent 1": "Insira o token enviado ao e-mail de segurança '",
+    "Token Sent 2": "'. Não esqueÇa de checar a caixa de spam. =)"
+}
