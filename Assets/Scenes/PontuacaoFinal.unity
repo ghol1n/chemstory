@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 340644424}
   - component: {fileID: 340644423}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VOLTAR AO MENU
+  m_Text: 
 --- !u!222 &340644424
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -476,7 +476,7 @@ GameObject:
   - component: {fileID: 729863512}
   - component: {fileID: 729863511}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Ranking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -534,7 +534,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ver ranking
+  m_Text: 
 --- !u!222 &729863512
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -871,6 +871,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PontuacaoFim: {fileID: 2036763468}
+  Titulo: {fileID: 718806300}
+  Botao: {fileID: 340644423}
+  Botao2: {fileID: 729863511}
 --- !u!4 &1745118333
 Transform:
   m_ObjectHideFlags: 0

@@ -191,7 +191,8 @@ public class Web : MonoBehaviour
                 
                 else
                 {
-                    Cadastro.invalido = "Email, Apelido ou Email de segurança já cadastrados.";
+                    I18n i18n = I18n.Instance;
+                    Cadastro.invalido = i18n.__("Email, Nickname or Security Email already registered.");
                 }
 
 
@@ -258,7 +259,7 @@ public class Web : MonoBehaviour
                 {
                 if(numfase != 3) { 
                     Debug.Log(www.downloadHandler.text);
-                        SceneManager.LoadScene("Pontuacao_"+numfase.ToString());
+                        SceneManager.LoadScene("Pontuacao_1");
                 }
                 else
                 {
@@ -342,7 +343,7 @@ public class Web : MonoBehaviour
             else
             {
                 Debug.Log(www.downloadHandler.text);
-                GetPontuacaoFaseEng.pontuacao = www.downloadHandler.text;
+                GetPontuacaoFase.pontuacao = www.downloadHandler.text;
             }
         }
     }
@@ -785,8 +786,6 @@ public class Web : MonoBehaviour
                 {
                     challange_new.correto = false;
                     Debug.Log(www.downloadHandler.text);
-                    if (challange_new.lenguage == 1) { SceneManager.LoadScene("erradoEng"); }
-                    else
                         SceneManager.LoadScene("errado");
                     challange_new.correto = false;
                 }

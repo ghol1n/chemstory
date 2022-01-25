@@ -166,6 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9ede19fe34242489343113b93f49ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cadastrar: {fileID: 840241987}
   largura: 200
   altura: 30
 --- !u!1 &99732378

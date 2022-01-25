@@ -22,6 +22,7 @@ public class Cadastro : MonoBehaviour
     [SerializeField]
     public static string apelidoButom;
     public static string invalido = "";
+    public Text Cadastrar;
 
 
 
@@ -41,7 +42,7 @@ public class Cadastro : MonoBehaviour
     GUIStyle black = new GUIStyle();
     void Start()
     {
-        
+        Cadastrar.text = i18n.__("Register");
         black.normal.textColor = Color.black;
         black.fontSize = 16;
         black.font = (Font)Resources.Load("Assets/retro_computer_personal_use.ttf");
@@ -81,7 +82,7 @@ public class Cadastro : MonoBehaviour
         GUI.Label(new Rect(Screen.width / 3 - (Screen.width / 13), Screen.width / 3 - Screen.width / 60, Screen.width / 3, altura), (i18n.__("Password") + ":"), black);
         GUI.Label(new Rect(Screen.width / 3 - (Screen.width / 13), Screen.width / 2 - Screen.width / 7, Screen.width / 10, altura), (i18n.__("Security Email") + ":"), black);
 
-        GUI.Label(new Rect(Screen.width / 3 + Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 2, Screen.width / 2, altura), invalido, black);
+        GUI.Label(new Rect(Screen.width / 3 + Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 2, Screen.width / 5, altura), invalido, black);
         bool ingles = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6, Screen.width / 3, altura), i18n.__("Language"));
 
         bool logar = GUI.Button(new Rect(Screen.width / 3, Screen.width / 6 + (Screen.width / 20) * 7, Screen.width / 3, altura), i18n.__("Turn Back"));
@@ -94,7 +95,7 @@ public class Cadastro : MonoBehaviour
         if (cadastrar)
         {if ((String.IsNullOrEmpty(usuarioButom)) | String.IsNullOrEmpty(senhaButom) | String.IsNullOrEmpty(apelidoButom) | String.IsNullOrEmpty(usuarioSegButom))
             {
-                invalido = "Por favor preencha todos os campos.";
+                invalido = i18n.__("Please fill in all fields.");
             }
             else
             {
@@ -102,17 +103,17 @@ public class Cadastro : MonoBehaviour
                 if (isOk == true)
                 {if (senhaButom.Length < 8)
                     {
-                        invalido = "A senha precisa ter no mínimo 8 caracteres.";
+                        invalido = i18n.__("The password must be at least 8 characters long.");
                     }
                     else
                     {
-                        invalido = "Por favor aguarde.";
+                        invalido = i18n.__("Await");
                         StartCoroutine(Web.Register(apelidoButom, usuarioButom, senhaButom,usuarioSegButom));
                     }
                 }
                 else
                 {
-                    invalido = "E-mail inválido.";
+                    invalido = i18n.__("Invalid Email");
                 }
             }
             Login.Language = i18n.GetLocale();
@@ -122,11 +123,15 @@ public class Cadastro : MonoBehaviour
                 if (i18n.GetLocale() == "pt-BR")
                 {
                     i18n.SetLocale("en-US");
+                Cadastrar.text = i18n.__("Register");
+                invalido = null;
                 }
                 else
                 {
                     i18n.SetLocale("pt-BR");
-                }
+                Cadastrar.text = i18n.__("Register");
+                invalido = null;
+            }
             }
     }
 

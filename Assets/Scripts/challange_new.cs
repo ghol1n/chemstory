@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using Mgl;
 
 public class challange_new : MonoBehaviour
 {
@@ -23,9 +24,10 @@ public class challange_new : MonoBehaviour
     public static int lastId;  
     System.Random r = new System.Random();
     int i = 0;
-    public static int lenguage;
+    public static int language;
     public static bool jarecebeu;
     public static int numPergunta;
+    public I18n i18n = I18n.Instance;
 
 
     // Start is called before the first frame update
@@ -43,13 +45,13 @@ public class challange_new : MonoBehaviour
     void getPerguntaVerificar()
     {
         
-        if (SceneManager.GetActiveScene().name.Contains("Eng"))
+        if (i18n.GetLocale() == "en-US")
         {
-            lenguage = 1; 
+            language = 1; 
         }
         else
         {
-            lenguage = 0;
+            language = 0;
         }
 
         int cont = 0;
@@ -64,7 +66,7 @@ public class challange_new : MonoBehaviour
         }
         else
         {
-            if (lenguage == 1)
+            if (language == 1)
             {
                 StartCoroutine(Web.GetPerguntaEng(aa));
             }
@@ -77,7 +79,7 @@ public class challange_new : MonoBehaviour
 
         if (aa != lastId)
         {
-            if (lenguage == 1)
+            if (language == 1)
             {
                 StartCoroutine(Web.GetPerguntaEng(aa));
             }
@@ -164,7 +166,7 @@ public class challange_new : MonoBehaviour
         }
         else
         {
-            if (lenguage == 1) { SceneManager.LoadScene("erradoEng"); }
+            if (language == 1) { SceneManager.LoadScene("erradoEng"); }
             else
             SceneManager.LoadScene("errado");
             correto = false;
@@ -179,7 +181,7 @@ public class challange_new : MonoBehaviour
         }
         else
         {
-            if (lenguage == 1) { SceneManager.LoadScene("erradoEng"); }
+            if (language == 1) { SceneManager.LoadScene("erradoEng"); }
             else
                 SceneManager.LoadScene("errado");
             correto = false;
@@ -194,7 +196,7 @@ public class challange_new : MonoBehaviour
         }
         else
         {
-            if (lenguage == 1) { SceneManager.LoadScene("erradoEng"); }
+            if (language == 1) { SceneManager.LoadScene("erradoEng"); }
             else
                 SceneManager.LoadScene("errado");
             correto = false;
@@ -209,7 +211,7 @@ public class challange_new : MonoBehaviour
         }
         else
         {
-            if (lenguage == 1) { SceneManager.LoadScene("erradoEng"); }
+            if (language == 1) { SceneManager.LoadScene("erradoEng"); }
             else
                 SceneManager.LoadScene("errado");
             correto = false;
