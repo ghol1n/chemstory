@@ -64,7 +64,7 @@ public class Web : MonoBehaviour
             else
             {
                 Debug.Log(www.downloadHandler.text);
-                if (www.downloadHandler.text.Contains("Login Sucess")) 
+                if (www.downloadHandler.text.Contains("Login Success")) 
                 {
                     
                     SceneManager.LoadScene("Tutorial");
