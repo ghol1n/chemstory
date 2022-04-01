@@ -21,6 +21,7 @@ public class Login : MonoBehaviour
     public static string usuario;
     public static string usuarioid;
     public static string token;
+    public static bool LoginSuccess;
     public int forgotstep = 0;
     public char PasswordChar { get; set; }
     public float largura;
@@ -86,7 +87,13 @@ public class Login : MonoBehaviour
             invalido = i18n.__("Await") + "...";
             Login.usuario = usuarioButom;
             Language = i18n.GetLocale();
-            StartCoroutine(Web.Conectar(usuarioButom, senhaButom));
+            token = gerarToken(6);
+            StartCoroutine(Web.Conectar(usuarioButom, senhaButom, token));
+            /*if (LoginSuccess == true)
+            {
+                StartCoroutine(Web.Cookie(usuarioButom, token));
+            }*/
+           // 
         }
         if (ingles)
         { if (i18n.GetLocale() == "pt-BR")
