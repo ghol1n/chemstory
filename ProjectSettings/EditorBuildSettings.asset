@@ -69,9 +69,6 @@ EditorBuildSettings:
     path: Assets/Scenes/ErradoEng.unity
     guid: d3ee3325487429b4cb13c7ec3df61371
   - enabled: 1
-    path: Assets/Scenes/FimConexao.unity
-    guid: 40f0233fcc0b40440b6ffa50ead84495
-  - enabled: 1
     path: Assets/Scenes/lvl_2.unity
     guid: baa4e6339105a034dbd0339a85b593c9
   - enabled: 1

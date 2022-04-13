@@ -33,7 +33,6 @@ public class challange_new : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Web.Cookie());
         correto = false;
         jarecebeu = false;
         Debug.Log("conteudo id = "+ conteudo[0]);

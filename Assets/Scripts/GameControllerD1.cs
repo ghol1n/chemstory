@@ -18,14 +18,6 @@ public class GameControllerD1 : MonoBehaviour
         instance = this;
     }
 
-
-    void Update()
-    {
-        if ((totalTime ==2))
-        {
-            StartCoroutine(Web.Cookie());
-        }
-    }
     public void UpdateTimeText()
     {
         timeText.text = totalTime.ToString().PadLeft(4, '0');

@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,15 +14,11 @@ public class Player : MonoBehaviour
     public bool isJumping;
     //public bool doubleJump;
     private Animator anim;
-
-    
     // Start is called before the first frame update
-    async void Start()
+    void Start()
     {
-        
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        
     }
 
     // Update is called once per frame
@@ -74,7 +69,7 @@ public class Player : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
             
-             if (collision.gameObject.layer == 8)
+        if (collision.gameObject.layer == 8)
            // if (Math.Abs(collision.contacts[0].normal.y) < 0.5f)
             {
                 isJumping = false;
@@ -82,11 +77,26 @@ public class Player : MonoBehaviour
             }
         if (collision.gameObject.tag == "spike1")
             {
-            StartCoroutine(Web.Cookie());
-            Debug.Log("Tocou o espinho");
+                Debug.Log("Tocou o espinho");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Tocou inimigo");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
+}
+
+        
+       /* void OnCollisionExit2D(Collision2D collision)
+        {
+            if (collision.gameObject.layer != 8)
+            {
+                isJumping = true;
+            }
+        }*/
+    
 
 

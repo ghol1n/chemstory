@@ -28,18 +28,10 @@ public class GameController1 : MonoBehaviour
         instance = this;
         nomeFase = (SceneManager.GetActiveScene().name);
     }
-    void Update()
-    {
-        if (totalTime == 2)
-        {
-            StartCoroutine(Web.Cookie());
-            totalTime = 3;
-        }
-    }
+
     public void UpdateScoreText()
     {
         scoreText.text = totalScore.ToString().PadLeft(4, '0');
-
     }
     public void UpdateTimeText()
     {
