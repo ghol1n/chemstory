@@ -290,7 +290,7 @@ public class Web : MonoBehaviour
             }
             else
             {
-                if (numfase != 3)
+                if (numfase != 15)
                 {
                     Debug.Log(www.downloadHandler.text);
                     SceneManager.LoadScene("Pontuacao_" + numfase.ToString() + "Eng");
@@ -564,12 +564,51 @@ public class Web : MonoBehaviour
             }
         }
     }
-    
-    public static IEnumerator GetPergunta(int id)
+
+    //metodo novo
+    //pega os IDs dos desafios que tem o nivel de dificuldade informado
+    public static IEnumerator GetIdDificuldade(int dificuldade)
     {
+        
+        WWWForm form = new WWWForm();
+        form.AddField("dificuldade", dificuldade);
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/idDificuldade.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+
+                Debug.Log(www.downloadHandler.text);
+                challange_new.conteudoDificuldade = www.downloadHandler.text.Split('#');
+                int i = 0;
+                Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[0]);
+                Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[1]);
+                Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[2]);
+                Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[3]);
+                Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[4]);
+                Debug.Log("challenge new: " + challange_new.conteudoDificuldade[5]);
+            }
+        }
+
+
+    }
+
+    // fim metodo novo
+
+    public static IEnumerator GetPergunta(int id, int dificuldade)
+    {
+
+        Debug.Log("dificuldade: "+dificuldade);
         WWWForm form = new WWWForm();
         Debug.Log(id);
         form.AddField("id", (id*2)-1);
+        form.AddField("dificuldade", (dificuldade));
         challange_new.numPergunta = (id * 2 -1);
         Debug.Log("numero procurado: " + challange_new.numPergunta);
 

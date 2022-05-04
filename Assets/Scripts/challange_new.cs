@@ -19,7 +19,9 @@ public class challange_new : MonoBehaviour
     int posicao3;
     int posicao4;
     public static string[] conteudo = {"", "", "", "", "", ""};
+    public static string[] conteudoDificuldade = { "", "", "", "", "",""};
     public static string[] respostas = {"", "", "", ""};
+   
     public static bool correto;
     public static int lastId;  
     System.Random r = new System.Random();
@@ -38,6 +40,7 @@ public class challange_new : MonoBehaviour
         Debug.Log("conteudo id = "+ conteudo[0]);
         Array.Clear(conteudo, 0, 6);
         Array.Clear(respostas, 0, 4);
+        Array.Clear(conteudoDificuldade, 0, 5);
        // Debug.Log(GameController1.numFase);
         getPerguntaVerificar();
     }
@@ -54,13 +57,30 @@ public class challange_new : MonoBehaviour
             language = 0;
         }
 
+
+        int numDificuldade = 0;
+        if (GameController1.numFase <= 5)
+        {
+            numDificuldade = 1;
+        }else if(GameController1.numFase > 5 && GameController1.numFase <= 10)
+        {
+            numDificuldade = 2;
+        }
+        else if (GameController1.numFase > 10)
+        {
+            numDificuldade = 3;
+        }
+
+
+        StartCoroutine(Web.GetIdDificuldade(numDificuldade));
+
         int cont = 0;
-        int aa = (r.Next(7) + 1);
+        int aa = (r.Next(10));
         if (aa == lastId)
         {
             while (aa == lastId)
             {
-                aa = (r.Next(7) + 1);
+                aa = (r.Next(10));
 
             }
         }
@@ -72,7 +92,7 @@ public class challange_new : MonoBehaviour
             }
             else
             {
-                StartCoroutine(Web.GetPergunta(aa));
+                StartCoroutine(Web.GetPergunta(aa,numDificuldade));
             }
             lastId = aa;
         }
@@ -85,7 +105,7 @@ public class challange_new : MonoBehaviour
             }
             else
             {
-                StartCoroutine(Web.GetPergunta(aa));
+                StartCoroutine(Web.GetPergunta(aa,numDificuldade));
             }
             lastId = aa;
         }
