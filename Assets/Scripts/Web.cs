@@ -257,7 +257,7 @@ public class Web : MonoBehaviour
                 }
                 else
                 {
-                if(numfase != 3) { 
+                if(numfase != 15) { 
                     Debug.Log(www.downloadHandler.text);
                         SceneManager.LoadScene("Pontuacao_1");
                 }

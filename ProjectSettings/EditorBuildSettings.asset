@@ -21,6 +21,45 @@ EditorBuildSettings:
     path: Assets/Scenes/RankingEng.unity
     guid: 2720199d5522f8648b28068b5d051a1c
   - enabled: 1
+    path: Assets/Scenes/FimConexao.unity
+    guid: 40f0233fcc0b40440b6ffa50ead84495
+  - enabled: 1
+    path: Assets/Scenes/lvl_4.unity
+    guid: 97fdcc37178a1434ebc73870478a801d
+  - enabled: 1
+    path: Assets/Scenes/lvl_5.unity
+    guid: 7da897721db3988409b87e7ab16d4f51
+  - enabled: 1
+    path: Assets/Scenes/lvl_6.unity
+    guid: b758316c8299ac64787f8aa4e15be0cd
+  - enabled: 1
+    path: Assets/Scenes/lvl_7.unity
+    guid: c39f503a15f909b48a11700c8b6c1fd2
+  - enabled: 1
+    path: Assets/Scenes/lvl_8.unity
+    guid: 8fd3920eeccf73545ac895c9b890c849
+  - enabled: 1
+    path: Assets/Scenes/lvl_9.unity
+    guid: ee030b8cbe37c9d4780469fe1ea308d5
+  - enabled: 1
+    path: Assets/Scenes/lvl_10.unity
+    guid: 3fff1199f52593941b77add5577f0ff7
+  - enabled: 1
+    path: Assets/Scenes/lvl_11.unity
+    guid: 754a7a21ab9ac4c47bfa54f218304db2
+  - enabled: 1
+    path: Assets/Scenes/lvl_12.unity
+    guid: 3c26aad9f6281cb48a75ec63bf8b5303
+  - enabled: 1
+    path: Assets/Scenes/lvl_13.unity
+    guid: db0ae753d3a252d4aa5e0e3cbae14a38
+  - enabled: 1
+    path: Assets/Scenes/lvl_14.unity
+    guid: 54ca7506dbb88c34ca6f190c16529426
+  - enabled: 1
+    path: Assets/Scenes/lvl_15.unity
+    guid: e52e40f3f7ab0f64b90b2ba3eaf9ffd7
+  - enabled: 1
     path: Assets/Scenes/Cadastro.unity
     guid: 13019a15b6a00a348a689986a1d4b975
   - enabled: 1
