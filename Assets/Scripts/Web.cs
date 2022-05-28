@@ -819,7 +819,6 @@ public class Web : MonoBehaviour
                     // Debug.Log(GameControllerD1.totalTime);
                     Debug.Log(Login.usuario);
                     // Debug.Log(pontuacao);
-                    
                 }
                 else
                 {

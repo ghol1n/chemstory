@@ -53,12 +53,12 @@ public class EnemyAI : MonoBehaviour
 
         if (direction > 0)
         {
-            anim.SetBool("walk", true);
+           // anim.SetBool("walk", true);
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
         }
         if (direction < 0)
         {
-            anim.SetBool("walk", true);
+           // anim.SetBool("walk", true);
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
         }
 

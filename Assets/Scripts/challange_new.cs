@@ -23,7 +23,11 @@ public class challange_new : MonoBehaviour
     public static string[] respostas = {"", "", "", ""};
    
     public static bool correto;
-    public static int lastId;  
+    public static int lastId;
+    // List<int> respondidos = new List<int>(30);
+    public static int[] respondidos = {99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99};
+    //public static int[] respondidos;
+    bool inseriu = false;
     System.Random r = new System.Random();
     int i = 0;
     public static int language;
@@ -76,9 +80,9 @@ public class challange_new : MonoBehaviour
 
         int cont = 0;
         int aa = (r.Next(10));
-        if (aa == lastId)
+        if (respondidos.Contains(aa)|| aa == 0)
         {
-            while (aa == lastId)
+            while (respondidos.Contains(aa) || aa == 0)
             {
                 aa = (r.Next(10));
 
@@ -132,6 +136,7 @@ public class challange_new : MonoBehaviour
         if (correto == true)
         {
             Correto();
+            
         }
 
 
@@ -257,6 +262,20 @@ public class challange_new : MonoBehaviour
         else
             StartCoroutine(Web.PontuarEng(GameController1.numFase, GameController1.totalScore, GameControllerD1.totalTime, Login.usuario, pontuacao));
 
+        if(inseriu == false) { 
+            respondidos[GameController1.numFase - 1] = lastId; 
+            Debug.Log("LISTA: " + respondidos[0] +" "+  respondidos[1] + " " + respondidos[2] + " " + respondidos[3]+ " " + respondidos[4]);
+            inseriu = true;
+        }
+            
+      //  for (i=0; i <respondidos.Count; i++)
+        //{
+            
+
+        
+       // }
+        
+        
     }
 
 
