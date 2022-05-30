@@ -25,7 +25,7 @@ public class challange_new : MonoBehaviour
     public static bool correto;
     public static int lastId;
     // List<int> respondidos = new List<int>(30);
-    public static int[] respondidos = {99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99,99};
+    public static int[] respondidos = {99,99,99,99,99,99,99,99,99,99,99,99,99,99,99};
     //public static int[] respondidos;
     bool inseriu = false;
     System.Random r = new System.Random();
@@ -34,6 +34,7 @@ public class challange_new : MonoBehaviour
     public static bool jarecebeu;
     public static int numPergunta;
     public I18n i18n = I18n.Instance;
+    public int aa;
 
 
     // Start is called before the first frame update
@@ -41,7 +42,7 @@ public class challange_new : MonoBehaviour
     {
         correto = false;
         jarecebeu = false;
-        Debug.Log("conteudo id = "+ conteudo[0]);
+        //Debug.Log("conteudo id = "+ conteudo[0]);
         Array.Clear(conteudo, 0, 6);
         Array.Clear(respostas, 0, 4);
         Array.Clear(conteudoDificuldade, 0, 5);
@@ -79,14 +80,65 @@ public class challange_new : MonoBehaviour
         StartCoroutine(Web.GetIdDificuldade(numDificuldade));
 
         int cont = 0;
-        int aa = (r.Next(10));
-        if (respondidos.Contains(aa)|| aa == 0)
+        //int aa = (r.Next(1,16));
+        if (numDificuldade == 1)
         {
+            aa = (r.Next(1, 6));
             while (respondidos.Contains(aa) || aa == 0)
             {
-                aa = (r.Next(10));
+                aa = (r.Next(1, 6));
 
             }
+        }
+        if (numDificuldade == 2)
+        {
+            aa = (r.Next(6, 11));
+            while (respondidos.Contains(aa) || aa == 0)
+            {
+                aa = (r.Next(6, 11));
+
+            }
+        }
+        if (numDificuldade == 3)
+        {
+            aa = (r.Next(11, 16));
+            while (respondidos.Contains(aa) || aa == 0)
+            {
+                aa = (r.Next(11, 16));
+
+            }
+        }
+
+        if (respondidos.Contains(aa) || aa == 0)
+        {
+            if (numDificuldade == 1)
+            {
+                aa = (r.Next(1, 6));
+                while (respondidos.Contains(aa) || aa == 0)
+                {
+                    aa = (r.Next(1, 6));
+
+                }
+            }
+                if (numDificuldade == 2)
+                {
+                    aa = (r.Next(6, 11));
+                    while (respondidos.Contains(aa) || aa == 0)
+                    {
+                        aa = (r.Next(6, 11));
+
+                    }
+                }
+                if (numDificuldade == 3)
+                {
+                    aa = (r.Next(11, 16));
+                    while (respondidos.Contains(aa) || aa == 0)
+                    {
+                        aa = (r.Next(11, 16));
+
+                    }
+                }
+            
         }
         else
         {
@@ -96,7 +148,7 @@ public class challange_new : MonoBehaviour
             }
             else
             {
-                StartCoroutine(Web.GetPergunta(aa,numDificuldade));
+                StartCoroutine(Web.GetPergunta(aa));
             }
             lastId = aa;
         }
@@ -109,7 +161,7 @@ public class challange_new : MonoBehaviour
             }
             else
             {
-                StartCoroutine(Web.GetPergunta(aa,numDificuldade));
+                StartCoroutine(Web.GetPergunta(aa));
             }
             lastId = aa;
         }
@@ -118,7 +170,7 @@ public class challange_new : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            if(conteudo is null)
+            if(botao1 is null)
         {
             getPerguntaVerificar();
         }
@@ -185,62 +237,18 @@ public class challange_new : MonoBehaviour
     public void verificar1()
     {
         StartCoroutine(Web.VerificarResposta(botao1.text,numPergunta));
-       /* if (correto)
-        {
-            Correto();
-        }
-        else
-        {
-            if (language == 1) { SceneManager.LoadScene("erradoEng"); }
-            else
-            SceneManager.LoadScene("errado");
-            correto = false;
-        }*/
     }
     public void verificar2()
     {
         StartCoroutine(Web.VerificarResposta(botao2.text, numPergunta));
-      /*  if (correto)
-        {
-            Correto();
-        }
-        else
-        {
-            if (language == 1) { SceneManager.LoadScene("erradoEng"); }
-            else
-                SceneManager.LoadScene("errado");
-            correto = false;
-        }*/
     }
     public void verificar3()
     {
         StartCoroutine(Web.VerificarResposta(botao3.text, numPergunta));
-        /*if (correto)
-        {
-            Correto();
-        }
-        else
-        {
-            if (language == 1) { SceneManager.LoadScene("erradoEng"); }
-            else
-                SceneManager.LoadScene("errado");
-            correto = false;
-        }*/
     }
     public void verificar4()
     {
         StartCoroutine(Web.VerificarResposta(botao4.text, numPergunta));
-       /* if (correto)
-        {
-            Correto();
-        }
-        else
-        {
-            if (language == 1) { SceneManager.LoadScene("erradoEng"); }
-            else
-                SceneManager.LoadScene("errado");
-            correto = false;
-        }*/
     }
 
 
@@ -253,10 +261,7 @@ public class challange_new : MonoBehaviour
         {
             pontuacao = GameController1.totalScore;
         }
-        //  Debug.Log(GameController1.totalScore);
-        // Debug.Log(GameControllerD1.totalTime);
-        Debug.Log(Login.usuario);
-        // Debug.Log(pontuacao);
+       // Debug.Log(Login.usuario);
         if (!SceneManager.GetActiveScene().name.Contains("Eng"))
             StartCoroutine(Web.Pontuar(GameController1.numFase, GameController1.totalScore, GameControllerD1.totalTime, Login.usuario, pontuacao));
         else
@@ -264,17 +269,11 @@ public class challange_new : MonoBehaviour
 
         if(inseriu == false) { 
             respondidos[GameController1.numFase - 1] = lastId; 
-            Debug.Log("LISTA: " + respondidos[0] +" "+  respondidos[1] + " " + respondidos[2] + " " + respondidos[3]+ " " + respondidos[4]);
+            for (int i = 0; i < 15; i++) 
+            { Debug.Log("LISTA " + (i+1) + ": " + respondidos[i]); }
+            Debug.Log("NumFase: "+GameController1.numFase);
             inseriu = true;
         }
-            
-      //  for (i=0; i <respondidos.Count; i++)
-        //{
-            
-
-        
-       // }
-        
         
     }
 

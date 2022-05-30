@@ -587,12 +587,12 @@ public class Web : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 challange_new.conteudoDificuldade = www.downloadHandler.text.Split('#');
                 int i = 0;
-                Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[0]);
-                Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[1]);
-                Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[2]);
-                Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[3]);
-                Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[4]);
-                Debug.Log("challenge new: " + challange_new.conteudoDificuldade[5]);
+               // Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[0]);
+               // Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[1]);
+              //  Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[2]);
+               // Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[3]);
+               // Debug.Log("challenge new: "+ challange_new.conteudoDificuldade[4]);
+               // Debug.Log("challenge new: " + challange_new.conteudoDificuldade[5]);
             }
         }
 
@@ -601,14 +601,14 @@ public class Web : MonoBehaviour
 
     // fim metodo novo
 
-    public static IEnumerator GetPergunta(int id, int dificuldade)
+    public static IEnumerator GetPergunta(int id)
     {
 
-        Debug.Log("dificuldade: "+dificuldade);
+        //Debug.Log("dificuldade: "+dificuldade);
         WWWForm form = new WWWForm();
         Debug.Log(id);
         form.AddField("id", (id*2)-1);
-        form.AddField("dificuldade", (dificuldade));
+       // form.AddField("dificuldade", (dificuldade));
         challange_new.numPergunta = (id * 2 -1);
         Debug.Log("numero procurado: " + challange_new.numPergunta);
 
