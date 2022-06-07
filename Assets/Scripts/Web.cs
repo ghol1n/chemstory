@@ -66,8 +66,22 @@ public class Web : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("Login Success")) 
                 {
+                    if (Login.numFaseProgresso == "0 results")
+                    {
+                        SceneManager.LoadScene("Tutorial");
+                    }
+                    else
+                    {
+                        if ((Int16.Parse(Login.numFaseProgresso) == 15)){
+                            SceneManager.LoadScene("lvl_1");
+                        }
+
+                    }
+                    {
+                        SceneManager.LoadScene("lvl_" + (Int16.Parse(Login.numFaseProgresso) + 1));
+                    }
                     
-                    SceneManager.LoadScene("Tutorial");
+                    
 
                 }
                 else
@@ -128,7 +142,14 @@ public class Web : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("Login Sucess"))
                 {
-                    SceneManager.LoadScene("TutorialEng");
+                    if (Login.numFaseProgresso == "0 results")
+                    {
+                        SceneManager.LoadScene("TutorialEng");
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("lvl_" + Login.numFaseProgresso);
+                    }
                 }
                 else
                 {
@@ -322,6 +343,28 @@ public class Web : MonoBehaviour
             {
                 Debug.Log(www.downloadHandler.text);
                 GetPontuacaoFase.pontuacao = www.downloadHandler.text;
+            }
+        }
+    }
+
+    public static IEnumerator GetProgresso(string usuario)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("usuario", usuario);
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetProgresso.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                Login.numFaseProgresso = (www.downloadHandler.text);
+
             }
         }
     }
@@ -818,6 +861,8 @@ public class Web : MonoBehaviour
                     //  Debug.Log(GameController1.totalScore);
                     // Debug.Log(GameControllerD1.totalTime);
                     Debug.Log(Login.usuario);
+
+
                     // Debug.Log(pontuacao);
                 }
                 else

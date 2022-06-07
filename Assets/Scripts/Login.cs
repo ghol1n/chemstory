@@ -9,6 +9,7 @@ using TMPro;
 public class Login : MonoBehaviour
 
 {
+    public static string numFaseProgresso;
     public static int foi = 0;
     // public static string IP;
     public static string usuarioButom = "";
@@ -44,6 +45,7 @@ public class Login : MonoBehaviour
         LoginEng.invalido = "";
         invalido = "";
         CadastroEng.invalido = "";
+
     }
     void Update()
     {
@@ -86,6 +88,7 @@ public class Login : MonoBehaviour
             invalido = i18n.__("Await") + "...";
             Login.usuario = usuarioButom;
             Language = i18n.GetLocale();
+            StartCoroutine(Web.GetProgresso(usuarioButom));
             StartCoroutine(Web.Conectar(usuarioButom, senhaButom));
         }
         if (ingles)

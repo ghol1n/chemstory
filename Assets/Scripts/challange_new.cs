@@ -9,6 +9,7 @@ using Mgl;
 
 public class challange_new : MonoBehaviour
 {
+    public bool pontuado = false;
     public Text botao1;
     public Text botao2;
     public Text botao3;
@@ -185,7 +186,7 @@ public class challange_new : MonoBehaviour
                 i = 1;
             }
          }
-        if (correto == true)
+        if (correto == true && pontuado == false)
         {
             Correto();
             
@@ -274,7 +275,7 @@ public class challange_new : MonoBehaviour
             Debug.Log("NumFase: "+GameController1.numFase);
             inseriu = true;
         }
-        
+        pontuado = true;
     }
 
 
