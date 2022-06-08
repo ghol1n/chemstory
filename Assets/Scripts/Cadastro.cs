@@ -37,6 +37,8 @@ public class Cadastro : MonoBehaviour
 
     private I18n i18n = I18n.Instance;
     public static string Language;
+    public static bool ExisteCheck;
+    public static bool existe;
 
 
     GUIStyle black = new GUIStyle();
@@ -108,7 +110,16 @@ public class Cadastro : MonoBehaviour
                     else
                     {
                         invalido = i18n.__("Await");
-                        StartCoroutine(Web.Register(apelidoButom, usuarioButom, senhaButom,usuarioSegButom));
+                        StartCoroutine(Web.GetEmail(usuarioButom));
+                        if(existe == true)
+                        {
+                            Cadastro.invalido = i18n.__("Email, Nickname or Security Email already registered.");
+                        }
+                        else
+                        {
+                            StartCoroutine(Web.ChecarEmail(usuarioButom));
+                            
+                        }
                     }
                 }
                 else

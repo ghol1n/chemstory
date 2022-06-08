@@ -207,7 +207,7 @@ public class Web : MonoBehaviour
                     Login.usuario = username;
                     Cadastro.invalido = "Cadastrado com sucesso.";
                     Thread.Sleep(1000);
-                    SceneManager.LoadScene("Tutorial");
+                    //SceneManager.LoadScene("Tutorial");
                     }
                 
                 else
@@ -412,6 +412,8 @@ public class Web : MonoBehaviour
                 {
                     I18n i18n = I18n.Instance;
                     Login.invalido = i18n.__("Non-existent email");
+                    Cadastro.ExisteCheck = true;
+                    Cadastro.existe = false;
                 }
 
                 else
@@ -420,6 +422,8 @@ public class Web : MonoBehaviour
                     Debug.Log(www.downloadHandler.text + Login.EmailSeg);
                     SenhaEnviada.result = Login.EmailSeg.Substring(5).PadLeft(Login.EmailSeg.Length, '*');
                     Login.foi = 1;
+                    Cadastro.ExisteCheck = true;
+                    Cadastro.existe = true;
                 }
 
 
@@ -427,13 +431,13 @@ public class Web : MonoBehaviour
         }
     }
 
-   /* public static IEnumerator GetSenha(string username)
+    public static IEnumerator GetEmail(string username)
     {
         WWWForm form = new WWWForm();
         form.AddField("loginUser", username);
 
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetSenha.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetEmail.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -443,13 +447,57 @@ public class Web : MonoBehaviour
             }
             else
             {
-                Login.SenhaSeg = www.downloadHandler.text;
                 Debug.Log(www.downloadHandler.text);
-                Login.foi = 1;
+                if (www.downloadHandler.text.Contains("0 results"))
+                {
+                    I18n i18n = I18n.Instance;
+                    Login.invalido = i18n.__("Non-existent email");
+                    Cadastro.ExisteCheck = true;
+                    Cadastro.existe = false;
+                }
+
+                else
+                {
+                    Login.EmailSeg = www.downloadHandler.text;
+                    Debug.Log(www.downloadHandler.text + Login.EmailSeg);
+                    SenhaEnviada.result = Login.EmailSeg.Substring(5).PadLeft(Login.EmailSeg.Length, '*');
+                    Login.foi = 1;
+                    Cadastro.ExisteCheck = true;
+                    Cadastro.existe = true;
+                }
+
+                Debug.Log("É ISSO: " + username);
+
 
             }
         }
-    }*/
+    }
+
+
+
+    /* public static IEnumerator GetSenha(string username)
+     {
+         WWWForm form = new WWWForm();
+         form.AddField("loginUser", username);
+
+
+         using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetSenha.php", form))
+         {
+             yield return www.SendWebRequest();
+
+             if (www.result != UnityWebRequest.Result.Success)
+             {
+                 Debug.Log(www.error);
+             }
+             else
+             {
+                 Login.SenhaSeg = www.downloadHandler.text;
+                 Debug.Log(www.downloadHandler.text);
+                 Login.foi = 1;
+
+             }
+         }
+     }*/
 
     public static IEnumerator Esqueci(string username)
     {
@@ -477,13 +525,13 @@ public class Web : MonoBehaviour
         }
     }
 
-   /* public static IEnumerator GetEmailSegEng(string username)
+    public static IEnumerator ChecarEmail(string username)
     {
         WWWForm form = new WWWForm();
         form.AddField("loginUser", username);
 
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetEmailSeguranca.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/EnvioEmail.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -494,22 +542,47 @@ public class Web : MonoBehaviour
             else
             {
                 Debug.Log(www.downloadHandler.text);
-                if (www.downloadHandler.text.Contains("0 results"))
+                if (www.downloadHandler.text.Contains("sucesso"))
                 {
                     Thread.Sleep(1000);
-                    Login.invalido = "Inexistent Email";
+                    SceneManager.LoadScene("EmailEnviado");
                 }
-
-                else
-                {
-                    Login.EmailSeg = www.downloadHandler.text;
-                    SenhaEnviada.result = Login.EmailSeg.Substring(Login.EmailSeg.Length - 16).PadLeft(Login.EmailSeg.Length, '*');
-                }
-
-
             }
         }
-    }*/
+    }
+    /* public static IEnumerator GetEmailSegEng(string username)
+     {
+         WWWForm form = new WWWForm();
+         form.AddField("loginUser", username);
+
+
+         using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetEmailSeguranca.php", form))
+         {
+             yield return www.SendWebRequest();
+
+             if (www.result != UnityWebRequest.Result.Success)
+             {
+                 Debug.Log(www.error);
+             }
+             else
+             {
+                 Debug.Log(www.downloadHandler.text);
+                 if (www.downloadHandler.text.Contains("0 results"))
+                 {
+                     Thread.Sleep(1000);
+                     Login.invalido = "Inexistent Email";
+                 }
+
+                 else
+                 {
+                     Login.EmailSeg = www.downloadHandler.text;
+                     SenhaEnviada.result = Login.EmailSeg.Substring(Login.EmailSeg.Length - 16).PadLeft(Login.EmailSeg.Length, '*');
+                 }
+
+
+             }
+         }
+     }*/
 
     public static IEnumerator GetSenhaEng(string username)
     {
@@ -797,6 +870,36 @@ public class Web : MonoBehaviour
 
             }
         }
+
+    public static IEnumerator VerificarTokenEmail(string token, string user)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("UserToken", token);
+        form.AddField("loginUser", user);
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/VerificarToken.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                if (www.downloadHandler.text.Contains("validado"))
+                {
+                    SceneManager.LoadScene("Cadastrado");
+                }
+                else
+                {
+                    SenhaEnviada.invalido = "Token Incorreto.";
+                }
+            }
+
+        }
+    }
 
     public static IEnumerator VerificarTokenEng(string token, string user)
     {

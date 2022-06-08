@@ -27,6 +27,15 @@ EditorBuildSettings:
     path: Assets/Scenes/lvl_4.unity
     guid: 97fdcc37178a1434ebc73870478a801d
   - enabled: 1
+    path: Assets/Scenes/Cadastrado.unity
+    guid: 827738964e8738b4399954bdf8c215c6
+  - enabled: 1
+    path: Assets/Scenes/EmailEnviado.unity
+    guid: 3b505c9959bcad645b13efc759af7380
+  - enabled: 1
+    path: Assets/Scenes/getProgresso.unity
+    guid: 8ea2c5908d689de41aa02c2a930f980e
+  - enabled: 1
     path: Assets/Scenes/lvl_5.unity
     guid: 7da897721db3988409b87e7ab16d4f51
   - enabled: 1
