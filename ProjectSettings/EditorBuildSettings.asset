@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/CadastroEng.unity
     guid: 0bd925da50346c643995675da3339d42
   - enabled: 1
+    path: Assets/Scenes/Cadastrado.unity
+    guid: a959de72d155d734892cc340e12a5a76
+  - enabled: 1
+    path: Assets/Scenes/EmailExistente.unity
+    guid: 4cf6593e33bd8b649ac3081e846e2289
+  - enabled: 1
     path: Assets/Scenes/RankingEng.unity
     guid: 2720199d5522f8648b28068b5d051a1c
   - enabled: 1
@@ -27,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/lvl_4.unity
     guid: 97fdcc37178a1434ebc73870478a801d
   - enabled: 1
-    path: Assets/Scenes/Cadastrado.unity
+    path: Assets/Scenes/TentarCadastro.unity
     guid: 827738964e8738b4399954bdf8c215c6
   - enabled: 1
     path: Assets/Scenes/EmailEnviado.unity

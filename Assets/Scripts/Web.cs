@@ -207,13 +207,14 @@ public class Web : MonoBehaviour
                     Login.usuario = username;
                     Cadastro.invalido = "Cadastrado com sucesso.";
                     Thread.Sleep(1000);
-                    //SceneManager.LoadScene("Tutorial");
+                    SceneManager.LoadScene("Cadastrado");
                     }
                 
                 else
                 {
                     I18n i18n = I18n.Instance;
                     Cadastro.invalido = i18n.__("Email, Nickname or Security Email already registered.");
+                    SceneManager.LoadScene("EmailExistente");
                 }
 
 
@@ -221,6 +222,42 @@ public class Web : MonoBehaviour
         }
     }
 
+    public static IEnumerator TesteEmail(string username)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("loginUser", username);
+
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/TesteUser.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                if (www.downloadHandler.text.Contains("nao existe"))
+                {
+                    Login.usuario = username;
+                    //Cadastro.invalido = "";
+                    Thread.Sleep(1000);
+                    SceneManager.LoadScene("Cadastrado");
+                }
+
+                else
+                {
+                    I18n i18n = I18n.Instance;
+                    Cadastro.invalido = i18n.__("Email, Nickname or Security Email already registered.");
+                    Cadastro.existe = true;
+                }
+
+
+            }
+        }
+    }
     public static IEnumerator RegisterEng(string nickname, string username, string password, string usernameSeg)
     {
         WWWForm form = new WWWForm();
@@ -890,7 +927,7 @@ public class Web : MonoBehaviour
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("validado"))
                 {
-                    SceneManager.LoadScene("Cadastrado");
+                    SceneManager.LoadScene("TentarCadastro");
                 }
                 else
                 {

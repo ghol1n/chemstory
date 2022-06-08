@@ -15,6 +15,7 @@ public class Cadastrado : MonoBehaviour
     void Start()
     {
         Botao.text = i18n.__("Let's play");
+
         Mensagem.text = i18n.__("Successfully registered!");
         StartCoroutine(Web.Register(Cadastro.apelidoButom, Cadastro.usuarioButom, Cadastro.senhaButom, Cadastro.usuarioSegButom));
     }
