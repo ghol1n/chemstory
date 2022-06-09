@@ -238,6 +238,7 @@ public class Web : MonoBehaviour
             }
             else
             {
+                
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("nao existe"))
                 {
@@ -246,13 +247,18 @@ public class Web : MonoBehaviour
                     Thread.Sleep(1000);
                     //SceneManager.LoadScene("Cadastrado");
                     Cadastro.existe = false;
+                    System.Threading.Thread.Sleep(500);
+                    System.Threading.Thread.Sleep(500);
                 }
 
                 else
                 {
+                    
                     I18n i18n = I18n.Instance;
                     Cadastro.invalido = i18n.__("Email, Nickname or Security Email already registered.");
                     Cadastro.existe = true;
+                    System.Threading.Thread.Sleep(500);
+                    System.Threading.Thread.Sleep(500);
                 }
 
 
@@ -565,11 +571,11 @@ public class Web : MonoBehaviour
 
     public static IEnumerator ChecarEmail(string username)
     {
-        WWWForm form = new WWWForm();
+        WWWForm form = new WWWForm(); 
         form.AddField("loginUser", username);
-
-
-        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/EnvioEmail.php", form))
+        
+        if (Cadastro.existe != true) { 
+            using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/EnvioEmail.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -583,9 +589,11 @@ public class Web : MonoBehaviour
                 if (www.downloadHandler.text.Contains("sucesso"))
                 {
                     Thread.Sleep(1000);
-                    SceneManager.LoadScene("EmailEnviado");
+                    if (Cadastro.existe != true) 
+                    { SceneManager.LoadScene("EmailEnviado"); };
                 }
             }
+        }
         }
     }
     /* public static IEnumerator GetEmailSegEng(string username)
