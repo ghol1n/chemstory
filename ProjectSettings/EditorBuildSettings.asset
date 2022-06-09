@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/EmailExistente.unity
     guid: 4cf6593e33bd8b649ac3081e846e2289
   - enabled: 1
+    path: Assets/Scenes/testeaa.unity
+    guid: 17ee1496b38fc3d4381544d826f85240
+  - enabled: 1
     path: Assets/Scenes/RankingEng.unity
     guid: 2720199d5522f8648b28068b5d051a1c
   - enabled: 1

@@ -465,6 +465,7 @@ public class Web : MonoBehaviour
                     Login.EmailSeg = www.downloadHandler.text;
                     Debug.Log(www.downloadHandler.text + Login.EmailSeg);
                     SenhaEnviada.result = Login.EmailSeg.Substring(5).PadLeft(Login.EmailSeg.Length, '*');
+                    SenhaEnviada.emailSeg = Login.EmailSeg;
                     Login.foi = 1;
                     Cadastro.ExisteCheck = true;
                     Cadastro.existe = true;

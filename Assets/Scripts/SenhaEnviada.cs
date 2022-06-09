@@ -26,6 +26,7 @@ public class SenhaEnviada : MonoBehaviour
     public float altura;
     void Start()
     {
+        
         textoMensagem = i18n.__("Token Sent 1") + result + i18n.__("Token Sent 2");
         //result = Login.EmailSeg.Substring(Login.EmailSeg.Length/2).PadLeft(Login.EmailSeg.Length, '*');
         black.normal.textColor = Color.black;
