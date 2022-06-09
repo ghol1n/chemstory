@@ -3123,14 +3123,14 @@ MonoBehaviour:
   speechTxt:
   - BLABLABLA OLEBA BALOEBA BLEBLU
   - ABO BOLO ARALA ABA EBE IBI OBO UBU
-  - "Oh! Voc\xEA n\xE3o fala o idioma Tuvalu! D:"
+  - "Oh! Voc\xEA n\xE3o fala o idioma Tuvulu! D:"
   - "O que faz aqui ent\xE3o?..."
   - "Entendi... Bom, se realmente quiser sair daqui, sugiro que se mantenha longe
     dessas coisas molengas que come\xE7aram a aparecer do nada nos \xFAltimos dias!"
   speechTxtEng:
   - BLABLABLA OLEBA BALOEBA BLEBLU
   - ABO BOLO ARALA ABA EBE IBI OBO UBU
-  - 'Oh! You don''t speak the Tuvalu language! D:'
+  - 'Oh! You don''t speak the Tuvulu language! D:'
   - ' What are you doing here then?'
   - I see... Well, if you really wanna get out of here, I suggest  you stay away
     from these slimy things that have been appearing out of nowhere in the last few

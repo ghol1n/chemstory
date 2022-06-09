@@ -4220,18 +4220,18 @@ MonoBehaviour:
   profile: {fileID: 21300000, guid: 2ae998e470aae4343a859484ac8c4a06, type: 3}
   speechTxt:
   - OLELELALALA BLOGA TROBLOS GRULIS BRUGOS
-  - "Ah! Sempre esque\xE7o que tu n\xE3o fala Tuvalu!"
+  - "Ah! Sempre esque\xE7o que tu n\xE3o fala Tuvulu!"
   - "Como cheguei aqui? N\xE3o importa!"
   - "O que importa \xE9 que para sair daqui da forma como voc\xEA queria, precisa
     achar a sa\xEDda correta!"
   speechTxtEng:
   - OLELELALALA BLOGA TROBLOS GRULIS BRUGOS
-  - Ah! I always forget you don't speak Tuvalu!
+  - Ah! I always forget you don't speak Tuvulu!
   - How did I get here? Doesn't matter!
   - What matters is the fact that to get out of here as you initially wanted, you'll
     need to find the right exit!
-  actorName: Nativo Tuvalu
-  actorNameEng: Tuvalu Native
+  actorName: Nativo Tuvulu
+  actorNameEng: Tuvulu Native
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
