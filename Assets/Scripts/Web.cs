@@ -244,7 +244,8 @@ public class Web : MonoBehaviour
                     Login.usuario = username;
                     //Cadastro.invalido = "";
                     Thread.Sleep(1000);
-                    SceneManager.LoadScene("Cadastrado");
+                    //SceneManager.LoadScene("Cadastrado");
+                    Cadastro.existe = false;
                 }
 
                 else
