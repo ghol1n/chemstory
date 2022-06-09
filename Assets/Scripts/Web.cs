@@ -585,6 +585,7 @@ public class Web : MonoBehaviour
             }
             else
             {
+                    EmailEnviado.result = username;
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("sucesso"))
                 {
