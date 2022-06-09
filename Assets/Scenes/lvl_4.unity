@@ -3135,8 +3135,8 @@ MonoBehaviour:
   - I see... Well, if you really wanna get out of here, I suggest  you stay away
     from these slimy things that have been appearing out of nowhere in the last few
     days!
-  actorName: Nativo Tuvalu
-  actorNameEng: Tuvalu Native
+  actorName: Nativo Tuvulu
+  actorNameEng: Tuvulu Native
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
