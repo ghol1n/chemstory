@@ -1,23 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
+using MySql.Data.MySqlClient;
+using UnityEngine.UI;
+using UnityEditor;
+using System.Collections;
+using System;
+using UnityEngine;
+using System.Threading;
+using Mgl;
 
 public class Dialogue : MonoBehaviour
 {
     public Sprite profile;
     public string[] speechTxt;
+    public string[] speechTxtEng;
     public string actorName;
 
     public LayerMask playerLayer;
     public float radius;
     bool onRadius;
     bool talking = false;
-
+    private I18n i18n = I18n.Instance;
+    public string locale;
     private DialogueControl dc;
 
     private void Start()
     {
         dc = FindObjectOfType<DialogueControl>();
+        locale = i18n.GetLocale();
+
     }
 
     private void FixedUpdate()
@@ -27,11 +38,18 @@ public class Dialogue : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && onRadius && !talking)
+        if (Input.GetKeyDown(KeyCode.E) && onRadius && !talking && locale == "pt-BR")
         {
             talking = true;
             dc.Speech(profile, speechTxt, actorName);
         }
+
+        if (Input.GetKeyDown(KeyCode.E) && onRadius && !talking && locale == "en-US")
+        {
+            talking = true;
+            dc.Speech(profile, speechTxtEng, actorName);
+        }
+
     }
 
 

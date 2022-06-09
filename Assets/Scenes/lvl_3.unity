@@ -2734,11 +2734,15 @@ MonoBehaviour:
   speechTxt:
   - "Ol\xE1 caro amigo! Como vai voc\xEA?"
   - "N\xE3o me parece uma boa ideia voc\xEA pegar esta primeira cereja! Hahaha"
+  speechTxtEng:
+  - asasafdsadsf
+  - asfdafdsfsad
   actorName: Dr. Rocha
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
   radius: 0.69
+  locale: 
 --- !u!95 &973769202
 Animator:
   serializedVersion: 3
