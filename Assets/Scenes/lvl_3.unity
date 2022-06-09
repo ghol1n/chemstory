@@ -310,7 +310,7 @@ MonoBehaviour:
   profile: {fileID: 1881650305}
   speechText: {fileID: 1843988906}
   actorNameText: {fileID: 2134898823}
-  typingSpeed: 0.05
+  typingSpeed: 0.02
 --- !u!4 &171059279
 Transform:
   m_ObjectHideFlags: 0
@@ -2732,16 +2732,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   profile: {fileID: 21300000, guid: 83e9d3d1b9071b94bb05f6102c14b141, type: 3}
   speechTxt:
-  - "Ol\xE1 caro amigo! Como vai voc\xEA?"
-  - "N\xE3o me parece uma boa ideia voc\xEA pegar esta primeira cereja! Hahaha"
+  - "Ol\xE1 velho amigo! Como vai voc\xEA?"
+  - Ainda tentando fugir da ilha?
+  - "Com certeza! Hahaha! De qualquer forma, n\xE3o me parece uma boa ideia voc\xEA
+    pegar esta primeira cereja! Hahaha!"
   speechTxtEng:
-  - asasafdsadsf
-  - asfdafdsfsad
+  - Hello old friend! How are you?
+  - Still trying to get out of this island?
+  - Sure! Hahaha! Anyways, taking grabbing this first cherry doesn't seem like a
+    good idea! Hahaha!
   actorName: Dr. Rocha
+  actorNameEng: Dr. Stone
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
-  radius: 0.69
+  radius: 1.53
   locale: 
 --- !u!95 &973769202
 Animator:
@@ -2831,7 +2836,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.19, y: 0.23}
+    oldSize: {x: 2.5, y: 2.5}
     newSize: {x: 0.19, y: 0.23}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2880,7 +2885,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -4934090438831179268, guid: 0c6aa3685085c5f438f7a7e98a81ae88, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be153547904d5c7489c0f3aeecf10d47, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2899,8 +2904,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973769200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.29, y: -0.67, z: 0}
-  m_LocalScale: {x: 4.919313, y: 4.919313, z: 4.919313}
+  m_LocalPosition: {x: -7.3232, y: 0.1374, z: 0}
+  m_LocalScale: {x: 1.1671029, y: 1.1671029, z: 1.1671029}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12

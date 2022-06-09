@@ -15,6 +15,8 @@ public class Dialogue : MonoBehaviour
     public string[] speechTxt;
     public string[] speechTxtEng;
     public string actorName;
+    public string actorNameEng;
+
 
     public LayerMask playerLayer;
     public float radius;
@@ -47,7 +49,7 @@ public class Dialogue : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && onRadius && !talking && locale == "en-US")
         {
             talking = true;
-            dc.Speech(profile, speechTxtEng, actorName);
+            dc.Speech(profile, speechTxtEng, actorNameEng);
         }
 
     }
