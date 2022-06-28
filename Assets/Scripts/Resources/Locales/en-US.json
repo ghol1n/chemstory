@@ -1,4 +1,4 @@
-{
+    {
     "Await": "Await",
     "Collect as many cherries as possible and complete the level in the shortest time for a good score! Good luck!": "Press E to talk to other characters and click the arrows in the dialogue box to advance. Collect as many cherries as possible and complete the level in the shortest time for a good score! Good luck!",
     "Configuration": "Configuration",
@@ -35,6 +35,7 @@
     "Token Sent 3": "Enter the token sent to the email '",
     "Token Sent 4": "'. don't forget to check the spam box. =)",
     "Turn back": "Turn Back",
+    "Unfortunately you have been logged out because someone has logged into your account from somewhere else.": "Unfortunately you have been logged out because someone has logged into your account from somewhere else.",
     "Username": "Username",
     "Welcome to Chemstory, let's go to the tutorial!": "Welcome to Chemstory, let's go to the tutorial!",
     "Wrong Answer!": "Wrong Answer!"

@@ -506,8 +506,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 31, y: 49}
-  m_SizeDelta: {x: 352.5927, y: 149.8899}
+  m_AnchoredPosition: {x: 1.3273, y: 66.92728}
+  m_SizeDelta: {x: 580.084, y: 185.7444}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1486666550
 GameObject:
@@ -787,9 +787,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1928431250}
-        m_TargetAssemblyTypeName: Cadastrado, Assembly-CSharp
-        m_MethodName: GoTutorial
+      - m_Target: {fileID: 1928431255}
+        m_TargetAssemblyTypeName: EmailExistente, Assembly-CSharp
+        m_MethodName: GoCadastro
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -894,6 +894,7 @@ GameObject:
   - component: {fileID: 1928431252}
   - component: {fileID: 1928431251}
   - component: {fileID: 1928431250}
+  - component: {fileID: 1928431255}
   m_Layer: 0
   m_Name: Main Camera (1)
   m_TagString: MainCamera
@@ -908,7 +909,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928431249}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a9a88650a3ee2948a4569b558a95e9d, type: 3}
   m_Name: 
@@ -996,3 +997,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1928431255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928431249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b3b5e94f847af45b71322a0a0f3ea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Botao: {fileID: 1772205792}
+  Mensagem: {fileID: 1327437152}

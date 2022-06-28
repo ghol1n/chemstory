@@ -1,4 +1,4 @@
-{ 
+ { 
     "Await": "Aguarde",
     "Collect as many cherries as possible and complete the level in the shortest time for a good score! Good luck!": "Para conversar, pressione E perto de um personagem e para avançar a conversa, clique nas setinhas. Colecione o máximo de cerejas possível e conclua a fase no menor tempo para uma boa pontuação! Boa sorte!",
     "Configuration": "Configuração",
@@ -35,6 +35,7 @@
     "Token Sent 3": "Insira o token enviado ao e-mail '",
     "Token Sent 4": "'. Não esqueÇa de checar a caixa de spam. =)",
     "Turn Back": "Voltar",
+    "Unfortunately you have been logged out because someone has logged into your account from somewhere else.": "Infelizmente você foi desconectado pois alguém fez login em sua conta em outro lugar.",
     "Username": "Usuário",
     "Welcome to Chemstory, let's go to the tutorial!": "Bem-vindo a Chemstory, vamos ao tutorial!",
     "Wrong Answer!": "Resposta Errada!"

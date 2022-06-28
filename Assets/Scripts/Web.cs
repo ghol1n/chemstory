@@ -45,13 +45,17 @@ public class Web : MonoBehaviour
             }
         }
     }
-    
 
-    public static IEnumerator Conectar(string username, string password)
+
+
+
+
+    public static IEnumerator Conectar(string username, string password, string token)
     {
         WWWForm form = new WWWForm();
         form.AddField("loginUser", username);
         form.AddField("loginPass", password);
+        form.AddField("token", token);
 
         using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/Login.php", form))
         {
@@ -60,12 +64,26 @@ public class Web : MonoBehaviour
             if (www.result != UnityWebRequest.Result.Success)
             {
                 Debug.Log(www.error);
+
             }
             else
             {
                 Debug.Log(www.downloadHandler.text);
                 if (www.downloadHandler.text.Contains("Login Success")) 
                 {
+                    Login.LoginSuccess = true;
+                    using (UnityWebRequest wwww = UnityWebRequest.Post("https://chemstory.space/Cookie.php", form))
+                    {
+                        yield return wwww.SendWebRequest();
+
+                        if (wwww.result != UnityWebRequest.Result.Success)
+                        {
+                            Debug.Log(wwww.error);
+                        }
+                        else
+                        {
+                        }
+                    }
                     if (Login.numFaseProgresso == "0 results")
                     {
                         SceneManager.LoadScene("Tutorial");
@@ -95,6 +113,38 @@ public class Web : MonoBehaviour
         }
     }
 
+    public static IEnumerator Cookie()
+    {
+        WWWForm form = new WWWForm();
+
+        using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetCookie.php", form))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log(www.downloadHandler.text);
+                if (www.downloadHandler.text.Contains("invalido"))
+                {
+                    SceneManager.LoadScene("FimConexao");
+                }
+                else
+                {
+                }
+
+
+            }
+        }
+    }
+
+    private static void SetRequestHeader(string v1, string v2)
+    {
+        throw new NotImplementedException();
+    }
 
     public static IEnumerator Session()
     {
