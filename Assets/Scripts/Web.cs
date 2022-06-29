@@ -113,9 +113,11 @@ public class Web : MonoBehaviour
         }
     }
 
-    public static IEnumerator Cookie()
+    public static IEnumerator Cookie(string username)
     {
         WWWForm form = new WWWForm();
+        form.AddField("loginUser", username);
+        
 
         using (UnityWebRequest www = UnityWebRequest.Post("https://chemstory.space/GetCookie.php", form))
         {

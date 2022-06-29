@@ -77,7 +77,7 @@ public class Player : MonoBehaviour
             }
         if (collision.gameObject.tag == "spike1")
             {
-            StartCoroutine(Web.Cookie());
+            StartCoroutine(Web.Cookie(Login.usuarioButom));
             Debug.Log("Tocou o espinho");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
