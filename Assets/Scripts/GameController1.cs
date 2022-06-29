@@ -45,7 +45,7 @@ public class GameController1 : MonoBehaviour
     {
         if (totalTime == 2)
         {
-            StartCoroutine(Web.Cookie(Login.usuarioButom));
+            StartCoroutine(Web.Cookie(Login.usuarioButom, Login.token));
             totalTime = 3;
         }
     }
